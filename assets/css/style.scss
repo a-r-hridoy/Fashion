@@ -2774,9 +2774,9 @@ footer {
       }
       .virtual-btn {
          button {
-           border: none;
-           background-color: transparent;
-            a{
+            border: none;
+            background-color: transparent;
+            a {
                padding: 8px 20px 8px 20px;
                text-transform: capitalize;
                font-size: 18px;
@@ -2788,7 +2788,6 @@ footer {
                   color: var(--white);
                }
             }
-            
          }
       }
       .color-box {
@@ -2982,7 +2981,7 @@ footer {
 .options-panel {
    position: fixed !important;
    left: 30px !important;
-   top: 115px !important;
+   top: 110px !important;
    z-index: 2 !important;
 }
 .options-panel img {
@@ -2995,7 +2994,6 @@ footer {
 .options-panel img.selected {
    border-color: green !important;
 }
-
 
 // virtual-end
 /* -------------------------------------------------------------------------------- */
@@ -4731,4 +4729,3 @@ footer {
       margin-left: 30px !important;
    }
 }
-
