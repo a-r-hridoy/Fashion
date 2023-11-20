@@ -132,7 +132,7 @@ ul {
    width: 80px;
    height: auto;
    position: fixed;
-   right: 43px;
+   right: 0;
    top: 300px;
    z-index: 2;
    cursor: pointer;
@@ -304,7 +304,7 @@ ul {
          .box2 .span3 b {
             position: absolute;
             top: 15%;
-            right: 43%;
+            right: 41%;
             transform: rotate(270deg);
          }
 
@@ -2974,26 +2974,26 @@ footer {
 
 // virtual-start
 .example-container {
-   overflow: hidden;
-   position: absolute;
-   width: 100%;
-   height: 100%;
+   overflow: hidden !important;
+   position: absolute !important;
+   width: 100% !important;
+   height: 100% !important;
 }
 .options-panel {
-   position: fixed;
-   left: 0;
-   top: 110px;
-   z-index: 2;
+   position: fixed !important;
+   left: 30px !important;
+   top: 115px !important;
+   z-index: 2 !important;
 }
 .options-panel img {
-   border: solid 2px;
-   width: 100px;
-   height: 100px;
+   border: solid 2px !important;
+   width: 100px !important;
+   height: 100px !important;
    // object-fit: cover;
-   cursor: pointer;
+   cursor: pointer !important;
 }
 .options-panel img.selected {
-   border-color: green;
+   border-color: green !important;
 }
 
 
@@ -4710,6 +4710,7 @@ footer {
                }
             }
             .checkout-box {
+               padding: 40px 15px 0;
                .checkout-btn {
                   .view-cart {
                      button {
