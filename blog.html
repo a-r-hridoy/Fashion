@@ -1,701 +1,668 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fashion</title>
+        <!-- bootstrap-link-start -->
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <!-- bootstrap-link-end -->
+        <!-- owl-carousel-start -->
+        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+        <!-- owl-carousel-end -->
+        <!-- fontawesome-link-start -->
+        <link rel="stylesheet" href="./assets/css/all.min.css" />
+        <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+        <!-- fontawesome-link-end -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fashion</title>
-    <!-- bootstrap-link-start -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <!-- bootstrap-link-end -->
-    <!-- owl-carousel-start -->
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
-    <!-- owl-carousel-end -->
-    <!-- fontawesome-link-start -->
-    <link rel="stylesheet" href="./assets/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
-    <!-- fontawesome-link-end -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
+    <body onload="preloder_function()">
+        <!-- Preloader area start -->
+        <div id="preloader"></div>
+        <!-- Preloader area end -->
 
-<body onload="preloder_function()">
-    <!-- Preloader area start -->
-    <div id="preloader"></div>
-    <!-- Preloader area end -->
+        <!-- Preloader area end -->
+        <!-- scroll-top-start -->
+        <div class="scrollTop" onclick="scrollToTop();">
+            <a href="#"> <i class="fa-solid fa-angles-up"></i></a>
+        </div>
+        <!-- scroll-top-end -->
 
-    <!-- Preloader area end -->
-    <!-- scroll-top-start -->
-    <div class="scrollTop" onclick="scrollToTop();">
-        <a href="#"> <i class="fa-solid fa-angles-up"></i></a>
-    </div>
-    <!-- scroll-top-end -->
+        <!-- discount-wheel-start -->
+        <div class="discount-wheel">
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img src="./assets/images/whell.png" alt="" /></button>
+        </div>
+        <!-- discount-wheel-end -->
 
-    <!-- discount-wheel-start -->
-    <div class="discount-wheel">
-        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions"><img src="./assets/images/whell.png" alt=""></button>
-    </div>
-    <!-- discount-wheel-end -->
-
-    <!-- navbar-start -->
-    <nav class="navbar navbar-expand-xl fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="categories-button">
-                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvastwo"
-                        aria-controls="offcanvastwo"><i class="fa-solid fa-bars-staggered"></i></button>
-
-                    <div class="c-content">all categories</div>
-                </div>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="about.html">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="shop.html">shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <div class="page-drop">
-                            <a class="nav-link" aria-current="page" href="#">page <i
-                                    class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
-
-                            <div class="page-item shadow-sm mb-5 bg-body rounded">
-                                <ul class="">
-                                    <li>
-                                        <a href="product.html" href="product.html"><span>All products</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="product-grid.html" href="product-grid.html"><span>product grid
-                                                view</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="product-list.html" href="product-list.html"><span>product list
-                                                view</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="product-details.html" href="product-details.html"><span>product
-                                                details</span></a>
-                                    </li>
-
-                                    <li>
-                                        <a href="sign-up.html"><span>sign-up</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="page-drop">
-                            <a class="nav-link active" aria-current="blog" href="#">blog <i
-                                    class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
-
-                            <div class="page-item shadow-sm mb-5 bg-body rounded">
-                                <ul class="">
-                                    <li>
-                                        <a href="blog.html" class="active"><span>blog</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-details-1.html"><span>blog-details-1</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-details-2.html"><span>blog-details-2</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="contact.html">contact</a>
-                    </li>
-                </ul>
+          <!-- offer-alert-start -->
+          <div class="offer-alert">
+            <div class="offer-content">
+                <marquee behavior="" direction="">
+                    <h5>25% off <span>on selected winter product</span></h5>
+                </marquee>
             </div>
+        </div>
+        <!-- offer-alert-end -->
 
-            <div class="nav-right">
-                <form class="d-flex" role="search">
-                    <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
-                    <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-                <div class="nav-icon d-flex align-items-center">
-                    <a href="log-in.html"> <i class="fa-light fa-user"></i></a>
+        <!-- navbar-start -->
+        <nav class="navbar navbar-expand-xl ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="categories-button">
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvastwo" aria-controls="offcanvastwo"><i class="fa-solid fa-bars-staggered"></i></button>
 
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                            <a href="#"><i class="fa-sharp fa-light fa-cart-shopping" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i></a>
-                            <span>1</span>
+                        <div class="c-content">all categories</div>
+                    </div>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about.html">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="shop.html">shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="page-drop">
+                                <a class="nav-link" aria-current="page" href="#">page <i class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
+
+                                <div class="page-item shadow-sm mb-5 bg-body rounded">
+                                    <ul class="">
+                                        <li>
+                                            <a href="product.html" href="product.html"><span>All products</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="product-grid.html" href="product-grid.html"><span>product grid view</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="product-list.html" href="product-list.html"><span>product list view</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="product-details.html" href="product-details.html"><span>product details</span></a>
+                                        </li>
+
+                                        <li>
+                                            <a href="sign-up.html"><span>sign-up</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="page-drop">
+                                <a class="nav-link active" aria-current="blog" href="#">blog <i class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
+
+                                <div class="page-item shadow-sm mb-5 bg-body rounded">
+                                    <ul class="">
+                                        <li>
+                                            <a href="blog.html" class="active"><span>blog</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="blog-details-1.html"><span>blog-details-1</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="blog-details-2.html"><span>blog-details-2</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-right">
+                    <form class="d-flex" role="search">
+                        <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
+                        <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <div class="nav-icon d-flex align-items-center">
+                        <a href="log-in.html"> <i class="fa-light fa-user"></i></a>
+
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <a href="#"><i class="fa-sharp fa-light fa-cart-shopping" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i></a>
+                                <span>1</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="search-icon">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#searchModal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
                 </div>
+            </div>
+        </nav>
+        <!-- navbar-end -->
 
-                <div class="search-icon">
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#searchModal">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+        <!-- banner-section-start -->
+        <section class="banner-section">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-6">
+                        <div class="banner-content">
+                            <h3>Blog</h3>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">blog</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="banner-img text-end">
+                            <img src="assets/images/banner/banner.png" alt="" />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- navbar-end -->
+        </section>
+        <!-- banner-section-end -->
 
-    <!-- banner-section-start -->
-    <section class="banner-section">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-6">
-                    <div class="banner-content">
-                        <h3>Blog</h3>
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">blog</li>
-                            </ol>
-                        </nav>
-                    </div>
+        <!-- blgo-section-start -->
+        <section class="blog-section section-1">
+            <div class="container">
+                <div class="blog-top">
+                    <h3>from our blog</h3>
                 </div>
-                <div class="col-md-6">
-                    <div class="banner-img text-end">
-                        <img src="assets/images/banner/banner.png" alt="" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- banner-section-end -->
-
-    <!-- blgo-section-start -->
-    <section class="blog-section section-1">
-        <div class="container">
-            <div class="blog-top">
-                <h3>from our blog</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="./assets/images/blog/blog1.png" alt="" />
-                        </div>
-                        <div class="blog-content">
-                            <h6>life style</h6>
-                            <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
-                            <a href="#">view details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="./assets/images/blog/blog2.png" alt="" />
-                        </div>
-                        <div class="blog-content">
-                            <h6>new arrival</h6>
-                            <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
-                            <a href="#">view details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="./assets/images/blog/blog3.png" alt="" />
-                        </div>
-                        <div class="blog-content">
-                            <h6>top sell</h6>
-                            <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
-                            <a href="#">view details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="./assets/images/blog/blog4.png" alt="" />
-                        </div>
-                        <div class="blog-content">
-                            <h6>life style</h6>
-                            <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
-                            <a href="#">view details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="./assets/images/blog/blog5.png" alt="" />
-                        </div>
-                        <div class="blog-content">
-                            <h6>life style</h6>
-                            <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
-                            <a href="#">view details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="./assets/images/blog/blog6.png" alt="" />
-                        </div>
-                        <div class="blog-content">
-                            <h6>new arrival</h6>
-                            <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
-                            <a href="#">view details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="./assets/images/blog/blog7.png" alt="" />
-                        </div>
-                        <div class="blog-content">
-                            <h6>top sell</h6>
-                            <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
-                            <a href="#">view details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="./assets/images/blog/blog8.png" alt="" />
-                        </div>
-                        <div class="blog-content">
-                            <h6>life style</h6>
-                            <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
-                            <a href="#">view details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- blgo-section-end -->
-
-    <!-- footer-start -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-box section-1">
-                <div class="footer-content">
-                    <h2>subscribe now and <span>20%</span> OFF</h2>
-                    <p>Learn first about our newest products and special promotions.</p>
-                </div>
-                <div class="footer-search-box">
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Enter your email:"
-                            aria-label="Recipient's username" aria-describedby="button-addon2" />
-                        <button class="btn" type="button" id="button-addon2">subscribe</button>
-                    </div>
-                </div>
-                <div class="footer-nav">
-                    <a href="#">home</a>
-                    <a href="#">about</a>
-                    <a href="#">page</a>
-                    <a href="#">blog</a>
-                    <a href="#">contact</a>
-                </div>
-                <div class="footer-nav">
-                    <a href="#">categories</a>
-                    <a href="#">featured</a>
-                    <a href="#">best-selling</a>
-                    <a href="#">latest-collection</a>
-                    <a href="#">profile</a>
-                </div>
-                <div class="follow-us">
-                    <h4>follow us</h4>
-                    <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container d-flex justify-content-between">
-                <div class="fotter-b-content">
-                    <p>Copyright © 2023 <span>Techno</span> All Rights Reserved</p>
-                </div>
-                <div class="footer-b-list">
-                    <a href="contact.html">Contact Us</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms &amp; Conditions</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer-end -->
-
-    <!-- search-modal-start -->
-    <div class="search-modal">
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <form class="d-flex" role="search">
-                            <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
-                            <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- search-modal-end -->
-
-    <!-- categories-canvas-start -->
-    <div class="categories-canvas">
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvastwo" aria-labelledby="offcanvastwoLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvastwoLabel">categories</h5>
-                <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i
-                        class="fa-solid fa-arrow-left"></i></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="categories-item">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="d-flex justify-content-between align-items-center collapsed"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                    aria-expanded="false" aria-controls="collapseOne">
-                                    women
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <h3>categories</h3>
-                                        <li><a href="#">Activewear</a></li>
-                                        <li><a href="#">Cargos</a></li>
-                                        <li><a href="#">Coats & Jackets</a></li>
-                                        <li><a href="#">Dresses</a></li>
-                                        <li><a href="#">One-Pieces</a></li>
-                                        <li><a href="#">Pants</a></li>
-                                        <li><a href="#">Shirts & Tops</a></li>
-                                        <li><a href="#">Sleepwear & Loungewear</a></li>
-                                        <li><a href="#">Activewear</a></li>
-                                    </ul>
-                                    <ul>
-                                        <h3>explore</h3>
-                                        <li><a href="#">Latest Arrivals</a></li>
-                                        <li><a href="#">Our sales</a></li>
-                                        <li><a href="#">Bestsellers</a></li>
-                                        <li><a href="#">Not expensive</a></li>
-                                        <li><a href="#">Expensive</a></li>
-                                        <li><a href="#">Exclusive</a></li>
-                                        <li><a href="#">Season summer</a></li>
-                                        <li><a href="#">Season winter</a></li>
-                                        <li><a href="#">Season autumn</a></li>
-                                    </ul>
-                                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img src="./assets/images/blog/blog1.png" alt="" />
+                            </div>
+                            <div class="blog-content">
+                                <h6>life style</h6>
+                                <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
+                                <a href="#">view details</a>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="d-flex justify-content-between align-items-center collapsed"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                    men
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <h3>popular</h3>
-                                        <li><a href="#"> Arm Warmers & Sleeves</a></li>
-                                        <li><a href="#">Balaclavas</a></li>
-                                        <li><a href="#"> Bandanas & Headties</a></li>
-                                        <li><a href="#"> Bridal Accessories</a></li>
-                                        <li><a href="#"> Earmuffs</a></li>
-                                    </ul>
-                                    <ul>
-                                        <h3>on sale</h3>
-                                        <li><a href="#"> Hand Muffs</a></li>
-                                        <li><a href="#">Hats</a></li>
-                                        <li><a href="#"> Sunglasses</a></li>
-                                        <li><a href="#"> Suspenders</a></li>
-                                        <li><a href="#"> Scarves & Shawls</a></li>
-                                    </ul>
-                                    <ul>
-                                        <h3>explore</h3>
-                                        <li><a href="#"> Latest Arrivals</a></li>
-                                        <li><a href="#">Our sales</a></li>
-                                        <li><a href="#"> Bestsellers</a></li>
-                                        <li><a href="#"> Not expensive</a></li>
-                                        <li><a href="#"> Expensive</a></li>
-                                    </ul>
-                                </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img src="./assets/images/blog/blog2.png" alt="" />
+                            </div>
+                            <div class="blog-content">
+                                <h6>new arrival</h6>
+                                <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
+                                <a href="#">view details</a>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="d-flex justify-content-between align-items-center collapsed"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree">
-                                    kids
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <h3>categories</h3>
-                                        <li><a href="#">Overalls</a></li>
-                                        <li><a href="#">Mittens</a></li>
-                                        <li><a href="#">Beanie</a></li>
-                                        <li><a href="#">Baby apron</a></li>
-                                        <li><a href="#">Socks</a></li>
-                                        <li><a href="#">Diaper</a></li>
-                                        <li><a href="#">Singlet</a></li>
-                                        <li><a href="#">Shoes</a></li>
-                                        <li><a href="#">Safety pin</a></li>
-                                    </ul>
-                                </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img src="./assets/images/blog/blog3.png" alt="" />
+                            </div>
+                            <div class="blog-content">
+                                <h6>top sell</h6>
+                                <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
+                                <a href="#">view details</a>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingfour">
-                                <button class="d-flex justify-content-between align-items-center collapsed"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour"
-                                    aria-expanded="false" aria-controls="collapsefour">
-                                    Dresses
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                            </h2>
-                            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul>
-
-                                        <li>Economics</li>
-                                        <li>Sociology</li>
-                                        <li>Nursing</li>
-                                        <li>English</li>
-                                    </ul>
-                                </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img src="./assets/images/blog/blog4.png" alt="" />
+                            </div>
+                            <div class="blog-content">
+                                <h6>life style</h6>
+                                <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
+                                <a href="#">view details</a>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingfive">
-                                <button class="d-flex justify-content-between align-items-center collapsed"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive"
-                                    aria-expanded="false" aria-controls="collapsefive">
-                                    clothing
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                            </h2>
-                            <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <h3>winter cloth</h3>
-                                        <li><a href="#">Sweater</a></li>
-                                        <li><a href="#">Gloves</a></li>
-                                        <li><a href="#">Fleece jacket</a></li>
-                                        <li><a href="#">Trench coat (Women)</a></li>
-                                        <li><a href="#">Boots</a></li>
-                                    </ul>
-                                    <ul>
-                                        <h3>summer cloth</h3>
-                                        <li><a href="#">T-shirt</a></li>
-                                        <li><a href="#">Singlet</a></li>
-                                        <li><a href="#">Swim trunks</a></li>
-                                        <li><a href="#">One-piece bathing suit</a></li>
-                                        <li><a href="#">Cap</a></li>
-                                    </ul>
-                                </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img src="./assets/images/blog/blog5.png" alt="" />
+                            </div>
+                            <div class="blog-content">
+                                <h6>life style</h6>
+                                <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
+                                <a href="#">view details</a>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingSix">
-                                <button class="d-flex justify-content-between align-items-center collapsed"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
-                                    aria-expanded="false" aria-controls="collapseSix">
-                                    shoes
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                            </h2>
-                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <h3>Athletic Shoes</h3>
-                                        <li><a href="#">Golf shoes</a></li>
-                                        <li><a href="#">Hiking boots</a></li>
-                                        <li><a href="#">High-tops</a></li>
-                                        <li><a href="#">Running shoes</a></li>
-                                        <li><a href="#">Climbing shoes</a></li>
-                                    </ul>
-                                    <ul>
-                                        <h3>Boots</h3>
-                                        <li><a href="#">Knee-high boots</a></li>
-                                        <li><a href="#">Laced booties</a></li>
-                                        <li><a href="#">Hiking boots</a></li>
-                                        <li><a href="#">Riding boots</a></li>
-                                        <li><a href="#">Snow boots</a></li>
-                                    </ul>
-                                </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img src="./assets/images/blog/blog6.png" alt="" />
+                            </div>
+                            <div class="blog-content">
+                                <h6>new arrival</h6>
+                                <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
+                                <a href="#">view details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img src="./assets/images/blog/blog7.png" alt="" />
+                            </div>
+                            <div class="blog-content">
+                                <h6>top sell</h6>
+                                <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
+                                <a href="#">view details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img src="./assets/images/blog/blog8.png" alt="" />
+                            </div>
+                            <div class="blog-content">
+                                <h6>life style</h6>
+                                <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
+                                <a href="#">view details</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- categories-canvas-end -->
+        </section>
+        <!-- blgo-section-end -->
 
-    <!-- modal-start -->
-    <div class="cart-canvas">
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header justify-content-end">
-                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="dropdown-content">
-                    <div class="shoping-cart-top">
-                        <div class="shoping-cart-title">
-                            <h4>shopping cart</h4>
-                            <p>
-                                Congratulations! You are qualified a <span>FREE SHIPPING <i
-                                        class="fa-solid fa-truck-fast"></i></span>
-                            </p>
+        <!-- footer-start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-box section-1">
+                    <div class="footer-content">
+                        <h2>subscribe now and <span>20%</span> OFF</h2>
+                        <p>Learn first about our newest products and special promotions.</p>
+                    </div>
+                    <div class="footer-search-box">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email:" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                            <button class="btn" type="button" id="button-addon2">subscribe</button>
                         </div>
                     </div>
-                    <div class="cart-box d-flex align-items-center">
-                        <div class="cart-img">
-                            <img src="./assets/images/home/feature-product-3.png" alt="" />
-                        </div>
-                        <div class="cart-content-box">
-                            <div class="cart-content">
-                                <h5>Sneakers Basketball shoes</h5>
-                                <div class="cart-details">
-                                    <h6>size : 6</h6>
-                                    <h6>color : deep green</h6>
-                                </div>
-                            </div>
-                            <div class="cart-info d-flex align-items-center justify-content-between">
-                                <div class="prize">
-                                    <h6><span>$</span>65.00</h6>
-                                </div>
-                                <div class="cart-quantity">
-                                    <button><i class="fa-solid fa-minus"></i></button>
-                                    <span>1</span>
-                                    <button><i class="fa-solid fa-plus"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="trash-icon">
-                            <button><i class="fa-light fa-trash"></i></button>
-                        </div>
+                    <div class="footer-nav">
+                        <a href="#">home</a>
+                        <a href="#">about</a>
+                        <a href="#">page</a>
+                        <a href="#">blog</a>
+                        <a href="#">contact</a>
+                    </div>
+                    <div class="footer-nav">
+                        <a href="#">categories</a>
+                        <a href="#">featured</a>
+                        <a href="#">best-selling</a>
+                        <a href="#">latest-collection</a>
+                        <a href="#">profile</a>
+                    </div>
+                    <div class="follow-us">
+                        <h4>follow us</h4>
+                        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
                     </div>
                 </div>
-                <div class="checkout-box">
-                    <div class="sub-total">
-                        <h6>
-                            <span><i class="fa-solid fa-tag fa-rotate-90"></i></span>week of 30% off ($19.50)
-                        </h6>
-                        <h4>subtotal $45.50 USD</h4>
+            </div>
+            <div class="footer-bottom">
+                <div class="container d-flex justify-content-between">
+                    <div class="fotter-b-content">
+                        <p>Copyright © 2023 <span>Techno</span> All Rights Reserved</p>
                     </div>
-                    <div class="form-wrap">
-                        <input class="form-input form-control-has-validation" id="subscribe-form-email" type="email"
-                            name="note" placeholder="Order special instructions" />
-                        <label class="form-label rd-input-label" for="subscribe-form-email"></label>
+                    <div class="footer-b-list">
+                        <a href="contact.html">Contact Us</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms &amp; Conditions</a>
                     </div>
-                    <div class="checkout-btn d-flex flex-wrap justify-content-between">
-                        <div class="view-cart">
-                            <button>view-cart</button>
-                        </div>
-                        <div class="check-out">
-                            <button>check out</button>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-end -->
+
+        <!-- search-modal-start -->
+        <div class="search-modal">
+            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <form class="d-flex" role="search">
+                                <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
+                                <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- modal-end -->
+        <!-- search-modal-end -->
 
-    <!-- discount-wheel-canvas-start -->
-    <div class="discount-wheel-canvas">
-        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-            aria-labelledby="offcanvasWithBothOptionsLabel">
-            <div class="offcanvas-header">
-
-                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="row d-flex flex-lg-row-reverse">
-                    <div class="col-lg-6">
-                        <div class="spin-button">
-                            <h2>Fall Sale!</h2>
-                            <p>It's your chance to win a big discount this Fall. Press the "SPIN THE WHEEL" button and
-                                try your luck on our Coupon Wheel!</p>
-                            <button class="spin" onclick="spin()"><img src="./assets/images/right-arrow.png"
-                                    alt="">spin</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="spin-box">
-                            <div class="mainbox" id="mainbox">
-                                <div class="box" id="box">
-                                    <div class="box1">
-                                        <span class="font span1"><b>21% off</b></span>
-                                        <span class="font span2"><b>150 tk off</b></span>
-                                        <span class="font span3"><b>7% off</b></span>
-                                        <span class="font span4"><b>200 tk off</b></span>
-                                        <span class="font span5"><b>15% off </b></span>
-
-                                    </div>
-                                    <div class="box2">
-                                        <span class="font span1"><b>5% off</b></span>
-                                        <span class="font span2"><b>80 tk off </b></span>
-                                        <span class="font span3"><b>50 tk off</b></span>
-                                        <span class="font span4"><b>10% off</b></span>
-                                        <span class="font span5"><b>22% off </b></span>
+        <!-- categories-canvas-start -->
+        <div class="categories-canvas">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvastwo" aria-labelledby="offcanvastwoLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvastwoLabel">categories</h5>
+                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="categories-item">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        women
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <h3>categories</h3>
+                                            <li><a href="#">Activewear</a></li>
+                                            <li><a href="#">Cargos</a></li>
+                                            <li><a href="#">Coats & Jackets</a></li>
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">One-Pieces</a></li>
+                                            <li><a href="#">Pants</a></li>
+                                            <li><a href="#">Shirts & Tops</a></li>
+                                            <li><a href="#">Sleepwear & Loungewear</a></li>
+                                            <li><a href="#">Activewear</a></li>
+                                        </ul>
+                                        <ul>
+                                            <h3>explore</h3>
+                                            <li><a href="#">Latest Arrivals</a></li>
+                                            <li><a href="#">Our sales</a></li>
+                                            <li><a href="#">Bestsellers</a></li>
+                                            <li><a href="#">Not expensive</a></li>
+                                            <li><a href="#">Expensive</a></li>
+                                            <li><a href="#">Exclusive</a></li>
+                                            <li><a href="#">Season summer</a></li>
+                                            <li><a href="#">Season winter</a></li>
+                                            <li><a href="#">Season autumn</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <button>spin</button>
                             </div>
-                            <audio controls="controls" id="applause" src="./assets/images/applause.mp3"
-                                type="audio/mp3"></audio>
-                            <audio controls="controls" id="wheel" src="./assets/images/wheel.mp3"
-                                type="audio/mp3"></audio>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        men
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <h3>popular</h3>
+                                            <li><a href="#"> Arm Warmers & Sleeves</a></li>
+                                            <li><a href="#">Balaclavas</a></li>
+                                            <li><a href="#"> Bandanas & Headties</a></li>
+                                            <li><a href="#"> Bridal Accessories</a></li>
+                                            <li><a href="#"> Earmuffs</a></li>
+                                        </ul>
+                                        <ul>
+                                            <h3>on sale</h3>
+                                            <li><a href="#"> Hand Muffs</a></li>
+                                            <li><a href="#">Hats</a></li>
+                                            <li><a href="#"> Sunglasses</a></li>
+                                            <li><a href="#"> Suspenders</a></li>
+                                            <li><a href="#"> Scarves & Shawls</a></li>
+                                        </ul>
+                                        <ul>
+                                            <h3>explore</h3>
+                                            <li><a href="#"> Latest Arrivals</a></li>
+                                            <li><a href="#">Our sales</a></li>
+                                            <li><a href="#"> Bestsellers</a></li>
+                                            <li><a href="#"> Not expensive</a></li>
+                                            <li><a href="#"> Expensive</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        kids
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <h3>categories</h3>
+                                            <li><a href="#">Overalls</a></li>
+                                            <li><a href="#">Mittens</a></li>
+                                            <li><a href="#">Beanie</a></li>
+                                            <li><a href="#">Baby apron</a></li>
+                                            <li><a href="#">Socks</a></li>
+                                            <li><a href="#">Diaper</a></li>
+                                            <li><a href="#">Singlet</a></li>
+                                            <li><a href="#">Shoes</a></li>
+                                            <li><a href="#">Safety pin</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingfour">
+                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                        Dresses
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Economics</li>
+                                            <li>Sociology</li>
+                                            <li>Nursing</li>
+                                            <li>English</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingfive">
+                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                        clothing
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <h3>winter cloth</h3>
+                                            <li><a href="#">Sweater</a></li>
+                                            <li><a href="#">Gloves</a></li>
+                                            <li><a href="#">Fleece jacket</a></li>
+                                            <li><a href="#">Trench coat (Women)</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                        </ul>
+                                        <ul>
+                                            <h3>summer cloth</h3>
+                                            <li><a href="#">T-shirt</a></li>
+                                            <li><a href="#">Singlet</a></li>
+                                            <li><a href="#">Swim trunks</a></li>
+                                            <li><a href="#">One-piece bathing suit</a></li>
+                                            <li><a href="#">Cap</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        shoes
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <h3>Athletic Shoes</h3>
+                                            <li><a href="#">Golf shoes</a></li>
+                                            <li><a href="#">Hiking boots</a></li>
+                                            <li><a href="#">High-tops</a></li>
+                                            <li><a href="#">Running shoes</a></li>
+                                            <li><a href="#">Climbing shoes</a></li>
+                                        </ul>
+                                        <ul>
+                                            <h3>Boots</h3>
+                                            <li><a href="#">Knee-high boots</a></li>
+                                            <li><a href="#">Laced booties</a></li>
+                                            <li><a href="#">Hiking boots</a></li>
+                                            <li><a href="#">Riding boots</a></li>
+                                            <li><a href="#">Snow boots</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- discount-wheel-canvas-end -->
+        <!-- categories-canvas-end -->
 
-    <script src="./assets/js/jquery-3.7.1.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/countMe.min.js"></script>
-    <script src="./assets/js/range-slider.min.js"></script>
+        <!-- modal-start -->
+        <div class="cart-canvas">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header justify-content-end">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="dropdown-content">
+                        <div class="shoping-cart-top">
+                            <div class="shoping-cart-title">
+                                <h4>shopping cart</h4>
+                                <p>
+                                    Congratulations! You are qualified a <span>FREE SHIPPING <i class="fa-solid fa-truck-fast"></i></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cart-box d-flex align-items-center">
+                            <div class="cart-img">
+                                <img src="./assets/images/home/feature-product-3.png" alt="" />
+                            </div>
+                            <div class="cart-content-box">
+                                <div class="cart-content">
+                                    <h5>Sneakers Basketball shoes</h5>
+                                    <div class="cart-details">
+                                        <h6>size : 6</h6>
+                                        <h6>color : deep green</h6>
+                                    </div>
+                                </div>
+                                <div class="cart-info d-flex align-items-center justify-content-between">
+                                    <div class="prize">
+                                        <h6><span>$</span>65.00</h6>
+                                    </div>
+                                    <div class="cart-quantity">
+                                        <button><i class="fa-solid fa-minus"></i></button>
+                                        <span>1</span>
+                                        <button><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trash-icon">
+                                <button><i class="fa-light fa-trash"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout-box">
+                        <div class="sub-total">
+                            <h6>
+                                <span><i class="fa-solid fa-tag fa-rotate-90"></i></span>week of 30% off ($19.50)
+                            </h6>
+                            <h4>subtotal $45.50 USD</h4>
+                        </div>
+                        <div class="form-wrap">
+                            <input class="form-input form-control-has-validation" id="subscribe-form-email" type="email" name="note" placeholder="Order special instructions" />
+                            <label class="form-label rd-input-label" for="subscribe-form-email"></label>
+                        </div>
+                        <div class="checkout-btn d-flex flex-wrap justify-content-between">
+                            <div class="view-cart">
+                                <button>view-cart</button>
+                            </div>
+                            <div class="check-out">
+                                <button>check out</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal-end -->
 
-    <script src="./assets/js/fancybox.umd.js"></script>
-    <script src="./assets/js/jquery.easing.min.js"></script>
-    <script src="./assets/js/notiflix.min.js"></script>
+        <!-- discount-wheel-canvas-start -->
+        <div class="discount-wheel-canvas">
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="row d-flex flex-lg-row-reverse">
+                        <div class="col-lg-6">
+                            <div class="spin-button">
+                                <h2>Fall Sale!</h2>
+                                <p>It's your chance to win a big discount this Fall. Press the "SPIN THE WHEEL" button and try your luck on our Coupon Wheel!</p>
+                                <button class="spin" onclick="spin()"><img src="./assets/images/right-arrow.png" alt="" />spin</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="spin-box">
+                                <div class="mainbox" id="mainbox">
+                                    <div class="box" id="box">
+                                        <div class="box1">
+                                            <span class="font span1"><b>21% off</b></span>
+                                            <span class="font span2"><b>150 tk off</b></span>
+                                            <span class="font span3"><b>7% off</b></span>
+                                            <span class="font span4"><b>200 tk off</b></span>
+                                            <span class="font span5"><b>15% off </b></span>
+                                        </div>
+                                        <div class="box2">
+                                            <span class="font span1"><b>5% off</b></span>
+                                            <span class="font span2"><b>80 tk off </b></span>
+                                            <span class="font span3"><b>50 tk off</b></span>
+                                            <span class="font span4"><b>10% off</b></span>
+                                            <span class="font span5"><b>22% off </b></span>
+                                        </div>
+                                    </div>
+                                    <button>spin</button>
+                                </div>
+                                <audio controls="controls" id="applause" src="./assets/images/applause.mp3" type="audio/mp3"></audio>
+                                <audio controls="controls" id="wheel" src="./assets/images/wheel.mp3" type="audio/mp3"></audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- discount-wheel-canvas-end -->
 
-    <script src="./assets/js/main.js"></script>
-</body>
+        <script src="./assets/js/jquery-3.7.1.min.js"></script>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="./assets/js/countMe.min.js"></script>
+        <script src="./assets/js/range-slider.min.js"></script>
 
+        <script src="./assets/js/fancybox.umd.js"></script>
+        <script src="./assets/js/jquery.easing.min.js"></script>
+        <script src="./assets/js/notiflix.min.js"></script>
+
+        <script src="./assets/js/main.js"></script>
+    </body>
 </html>

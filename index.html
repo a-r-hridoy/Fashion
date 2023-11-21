@@ -1,495 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fashion</title>
+        <!-- bootstrap-link-start -->
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <!-- bootstrap-link-end -->
+        <!-- owl-carousel-start -->
+        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+        <!-- owl-carousel-end -->
+        <!-- fontawesome-link-start -->
+        <link rel="stylesheet" href="./assets/css/all.min.css" />
+        <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+        <!-- fontawesome-link-end -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fashion</title>
-    <!-- bootstrap-link-start -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <!-- bootstrap-link-end -->
-    <!-- owl-carousel-start -->
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
-    <!-- owl-carousel-end -->
-    <!-- fontawesome-link-start -->
-    <link rel="stylesheet" href="./assets/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
-    <!-- fontawesome-link-end -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-
-<body onload="preloder_function()">
-    <!-- Preloader area start -->
-    <div id="preloader"></div>
-    <!-- Preloader area end -->
-    <!-- scroll-top-start -->
-    <div class="scrollTop" onclick="scrollToTop();">
-        <a href="#"> <i class="fa-solid fa-angles-up"></i></a>
-    </div>
-    <!-- scroll-top-end -->
-
-    <!-- discount-wheel-start -->
-    <div class="discount-wheel">
-        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions"><img src="./assets/images/whell.png" alt=""></button>
-    </div>
-    <!-- discount-wheel-end -->
-
-    <!-- offer-alert-start -->
-    <div class="offer-alert">
-        <div class="offer-content">
-            <marquee behavior="" direction="">
-                <h5>25% off <span>on selected winter product</span></h5>
-            </marquee>
+    <body onload="preloder_function()">
+        <!-- Preloader area start -->
+        <div id="preloader"></div>
+        <!-- Preloader area end -->
+        <!-- scroll-top-start -->
+        <div class="scrollTop" onclick="scrollToTop();">
+            <a href="#"> <i class="fa-solid fa-angles-up"></i></a>
         </div>
-    </div>
-    <!-- offer-alert-end -->
+        <!-- scroll-top-end -->
 
-    <!-- navbar-start -->
-    <nav class="navbar navbar-expand-xl ">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="about.html">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="shop.html">shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <div class="page-drop">
-                            <a class="nav-link" aria-current="page" href="#">page <i
-                                    class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
+        <!-- discount-wheel-start -->
+        <div class="discount-wheel">
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img src="./assets/images/whell.png" alt="" /></button>
+        </div>
+        <!-- discount-wheel-end -->
 
-                            <div class="page-item shadow-sm mb-5 bg-body rounded">
-                                <ul class="">
-                                    <li>
-                                        <a href="product.html" href="product.html"><span>All products</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="product-grid.html" href="product-grid.html"><span>product grid
-                                                view</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="product-list.html" href="product-list.html"><span>product list
-                                                view</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="product-details.html" href="product-details.html"><span>product
-                                                details</span></a>
-                                    </li>
-
-                                    <li>
-                                        <a href="sign-up.html"><span>sign-up</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="page-drop">
-                            <a class="nav-link " aria-current="blog" href="#">blog <i
-                                    class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
-
-                            <div class="page-item shadow-sm mb-5 bg-body rounded">
-                                <ul class="">
-                                    <li>
-                                        <a href="blog.html"><span>blog</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-details-1.html"><span>blog-details-1</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-details-2.html"><span>blog-details-2</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="contact.html">contact</a>
-                    </li>
-                </ul>
+        <!-- offer-alert-start -->
+        <div class="offer-alert">
+            <div class="offer-content">
+                <marquee behavior="" direction="">
+                    <h5>25% off <span>on selected winter product</span></h5>
+                </marquee>
             </div>
+        </div>
+        <!-- offer-alert-end -->
 
-            <div class="nav-right">
-                <form class="d-flex" role="search">
-                    <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
-                    <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
+        <!-- navbar-start -->
+        <nav class="navbar navbar-expand-xl">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about.html">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="shop.html">shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="page-drop">
+                                <a class="nav-link" aria-current="page" href="#">page <i class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
 
-                <div class="nav-icon d-flex align-items-center">
-                    <a href="log-in.html"> <i class="fa-light fa-user"></i></a>
+                                <div class="page-item shadow-sm mb-5 bg-body rounded">
+                                    <ul class="">
+                                        <li>
+                                            <a href="product.html" href="product.html"><span>All products</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="product-grid.html" href="product-grid.html"><span>product grid view</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="product-list.html" href="product-list.html"><span>product list view</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="product-details.html" href="product-details.html"><span>product details</span></a>
+                                        </li>
 
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                            <a><i class="fa-sharp fa-light fa-cart-shopping" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i></a>
-                            <span>1</span>
+                                        <li>
+                                            <a href="sign-up.html"><span>sign-up</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="page-drop">
+                                <a class="nav-link" aria-current="blog" href="#">blog <i class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
+
+                                <div class="page-item shadow-sm mb-5 bg-body rounded">
+                                    <ul class="">
+                                        <li>
+                                            <a href="blog.html"><span>blog</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="blog-details-1.html"><span>blog-details-1</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="blog-details-2.html"><span>blog-details-2</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-right">
+                    <form class="d-flex" role="search">
+                        <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
+                        <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+
+                    <div class="nav-icon d-flex align-items-center">
+                        <a href="log-in.html"> <i class="fa-light fa-user"></i></a>
+
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <a><i class="fa-sharp fa-light fa-cart-shopping" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i></a>
+                                <span>1</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="search-icon">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#searchModal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
                 </div>
-                <div class="search-icon">
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#searchModal">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </div>
             </div>
-        </div>
-    </nav>
-    <!-- navbar-end -->
+        </nav>
+        <!-- navbar-end -->
 
-    <!-- home-section-start -->
-    <section class="home-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-lg-12">
-                    <div class="categories-drop">
-                        <div class="categories-button">
-                            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvastwo"
-                                aria-controls="offcanvastwo"><i class="fa-solid fa-bars-staggered"></i></button>
+        <!-- home-section-start -->
+        <section class="home-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-12">
+                        <div class="categories-drop">
+                            <div class="categories-button">
+                                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvastwo" aria-controls="offcanvastwo"><i class="fa-solid fa-bars-staggered"></i></button>
 
-                            <div class="c-content">all categories</div>
+                                <div class="c-content">all categories</div>
+                            </div>
+                            <div class="categories-item">
+                                <ul>
+                                    <li class="ct-1">
+                                        <a href="#"><span>women </span><i class="fa-solid fa-chevron-right"></i></a>
+                                        <div class="box1 d-flex justify-content-between">
+                                            <ul>
+                                                <h3>categories</h3>
+                                                <li><a href="#">Activewear</a></li>
+                                                <li><a href="#">Coats & Jackets</a></li>
+                                                <li><a href="#">Dresses</a></li>
+                                                <li><a href="#">One-Pieces</a></li>
+                                                <li><a href="#">Outerwear</a></li>
+                                                <li><a href="#">Pants</a></li>
+                                                <li><a href="#">Shirts & Tops</a></li>
+                                            </ul>
+                                            <ul>
+                                                <h3>explore</h3>
+                                                <li><a href="#">Latest Arrivals</a></li>
+                                                <li><a href="#">Our sales</a></li>
+                                                <li><a href="#">Bestsellers</a></li>
+                                                <li><a href="#">Not expensive</a></li>
+                                                <li><a href="#">Expensive</a></li>
+                                                <li><a href="#">Exclusive</a></li>
+                                                <li><a href="#">Season summer</a></li>
+                                            </ul>
+                                            <div class="img-box">
+                                                <img src="./assets/images/home/home-banner2.png" alt="" />
+                                            </div>
+                                            <div class="img-box2">
+                                                <img src="./assets/images/home/feature-product-5.png" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ct-1">
+                                        <a href="#"><span>men </span><i class="fa-solid fa-chevron-right"></i></a>
+                                        <div class="box1 d-flex justify-content-between">
+                                            <ul>
+                                                <h3>categories</h3>
+                                                <li><a href="#">Activewear</a></li>
+                                                <li><a href="#">Coats & Jackets</a></li>
+                                                <li><a href="#">Dresses</a></li>
+                                                <li><a href="#">One-Pieces</a></li>
+                                                <li><a href="#">Outerwear</a></li>
+                                                <li><a href="#">Pants</a></li>
+                                                <li><a href="#">Shirts & Tops</a></li>
+                                            </ul>
+                                            <ul>
+                                                <h3>explore</h3>
+                                                <li><a href="#">Latest Arrivals</a></li>
+                                                <li><a href="#">Our sales</a></li>
+                                                <li><a href="#">Bestsellers</a></li>
+                                                <li><a href="#">Not expensive</a></li>
+                                                <li><a href="#">Expensive</a></li>
+                                                <li><a href="#">Exclusive</a></li>
+                                                <li><a href="#">Season summer</a></li>
+                                            </ul>
+                                            <div class="img-box">
+                                                <img src="./assets/images/home/home-banner3.png" alt="" />
+                                            </div>
+                                            <div class="img-box2">
+                                                <img src="./assets/images/home/home-banner1.png" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ct-1">
+                                        <a href="#"><span>kids </span><i class="fa-solid fa-chevron-right"></i></a>
+                                        <div class="box1 d-flex justify-content-between">
+                                            <ul>
+                                                <h3>categories</h3>
+                                                <li><a href="#">Activewear</a></li>
+                                                <li><a href="#">Coats & Jackets</a></li>
+                                                <li><a href="#">Dresses</a></li>
+                                                <li><a href="#">One-Pieces</a></li>
+                                                <li><a href="#">Outerwear</a></li>
+                                                <li><a href="#">Pants</a></li>
+                                                <li><a href="#">Shirts & Tops</a></li>
+                                            </ul>
+                                            <ul>
+                                                <h3>explore</h3>
+                                                <li><a href="#">Latest Arrivals</a></li>
+                                                <li><a href="#">Our sales</a></li>
+                                                <li><a href="#">Bestsellers</a></li>
+                                                <li><a href="#">Not expensive</a></li>
+                                                <li><a href="#">Expensive</a></li>
+                                                <li><a href="#">Exclusive</a></li>
+                                                <li><a href="#">Season summer</a></li>
+                                            </ul>
+                                            <div class="img-box">
+                                                <img src="./assets/images/home/home-banner2.png" alt="" />
+                                            </div>
+                                            <div class="img-box2">
+                                                <img src="./assets/images/home/feature-product-5.png" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ct-1">
+                                        <a href="#"><span>Dresses </span><i class="fa-solid fa-chevron-right"></i></a>
+                                        <div class="box1 d-flex justify-content-between">
+                                            <ul>
+                                                <h3>categories</h3>
+                                                <li><a href="#">Activewear</a></li>
+                                                <li><a href="#">Coats & Jackets</a></li>
+                                                <li><a href="#">Dresses</a></li>
+                                                <li><a href="#">One-Pieces</a></li>
+                                                <li><a href="#">Outerwear</a></li>
+                                                <li><a href="#">Pants</a></li>
+                                                <li><a href="#">Shirts & Tops</a></li>
+                                            </ul>
+                                            <ul>
+                                                <h3>explore</h3>
+                                                <li><a href="#">Latest Arrivals</a></li>
+                                                <li><a href="#">Our sales</a></li>
+                                                <li><a href="#">Bestsellers</a></li>
+                                                <li><a href="#">Not expensive</a></li>
+                                                <li><a href="#">Expensive</a></li>
+                                                <li><a href="#">Exclusive</a></li>
+                                                <li><a href="#">Season summer</a></li>
+                                            </ul>
+                                            <div class="img-box">
+                                                <img src="./assets/images/product/product1.png" alt="" />
+                                            </div>
+                                            <div class="img-box2">
+                                                <img src="./assets/images/product/product6.png" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ct-1">
+                                        <a href="#"><span>clothing </span><i class="fa-solid fa-chevron-right"></i></a>
+                                        <div class="box1 d-flex justify-content-between">
+                                            <ul>
+                                                <h3>categories</h3>
+                                                <li><a href="#">Activewear</a></li>
+                                                <li><a href="#">Coats & Jackets</a></li>
+                                                <li><a href="#">Dresses</a></li>
+                                                <li><a href="#">One-Pieces</a></li>
+                                                <li><a href="#">Outerwear</a></li>
+                                                <li><a href="#">Pants</a></li>
+                                                <li><a href="#">Shirts & Tops</a></li>
+                                            </ul>
+                                            <ul>
+                                                <h3>explore</h3>
+                                                <li><a href="#">Latest Arrivals</a></li>
+                                                <li><a href="#">Our sales</a></li>
+                                                <li><a href="#">Bestsellers</a></li>
+                                                <li><a href="#">Not expensive</a></li>
+                                                <li><a href="#">Expensive</a></li>
+                                                <li><a href="#">Exclusive</a></li>
+                                                <li><a href="#">Season summer</a></li>
+                                            </ul>
+                                            <div class="img-box">
+                                                <img src="./assets/images/home/home-banner2.png" alt="" />
+                                            </div>
+                                            <div class="img-box2">
+                                                <img src="./assets/images/home/feature-product-5.png" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ct-1">
+                                        <a href="#"><span>top </span><i class="fa-solid fa-chevron-right"></i></a>
+                                        <div class="box1 d-flex justify-content-between">
+                                            <ul>
+                                                <h3>categories</h3>
+                                                <li><a href="#">Activewear</a></li>
+                                                <li><a href="#">Coats & Jackets</a></li>
+                                                <li><a href="#">Dresses</a></li>
+                                                <li><a href="#">One-Pieces</a></li>
+                                                <li><a href="#">Outerwear</a></li>
+                                                <li><a href="#">Pants</a></li>
+                                                <li><a href="#">Shirts & Tops</a></li>
+                                            </ul>
+                                            <ul>
+                                                <h3>explore</h3>
+                                                <li><a href="#">Latest Arrivals</a></li>
+                                                <li><a href="#">Our sales</a></li>
+                                                <li><a href="#">Bestsellers</a></li>
+                                                <li><a href="#">Not expensive</a></li>
+                                                <li><a href="#">Expensive</a></li>
+                                                <li><a href="#">Exclusive</a></li>
+                                                <li><a href="#">Season summer</a></li>
+                                            </ul>
+                                            <div class="img-box">
+                                                <img src="./assets/images/home/home-banner2.png" alt="" />
+                                            </div>
+                                            <div class="img-box2">
+                                                <img src="./assets/images/home/feature-product-5.png" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ct-1">
+                                        <a href="#"><span>shoes </span><i class="fa-solid fa-chevron-right"></i></a>
+                                        <div class="box1 d-flex justify-content-between">
+                                            <ul>
+                                                <h3>categories</h3>
+                                                <li><a href="#">Activewear</a></li>
+                                                <li><a href="#">Coats & Jackets</a></li>
+                                                <li><a href="#">Dresses</a></li>
+                                                <li><a href="#">One-Pieces</a></li>
+                                                <li><a href="#">Outerwear</a></li>
+                                                <li><a href="#">Pants</a></li>
+                                                <li><a href="#">Shirts & Tops</a></li>
+                                            </ul>
+                                            <ul>
+                                                <h3>explore</h3>
+                                                <li><a href="#">Latest Arrivals</a></li>
+                                                <li><a href="#">Our sales</a></li>
+                                                <li><a href="#">Bestsellers</a></li>
+                                                <li><a href="#">Not expensive</a></li>
+                                                <li><a href="#">Expensive</a></li>
+                                                <li><a href="#">Exclusive</a></li>
+                                                <li><a href="#">Season summer</a></li>
+                                            </ul>
+                                            <div class="img-box">
+                                                <img src="./assets/images/home/best-sale1.png" alt="" />
+                                            </div>
+                                            <div class="img-box2">
+                                                <img src="./assets/images/home/feature-product-3.png" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ct-1">
+                                        <a href="#"><span>t-shirt </span><i class="fa-solid fa-chevron-right"></i></a>
+                                        <div class="box1 d-flex justify-content-between">
+                                            <ul>
+                                                <h3>categories</h3>
+                                                <li><a href="#">Activewear</a></li>
+                                                <li><a href="#">Coats & Jackets</a></li>
+                                                <li><a href="#">Dresses</a></li>
+                                                <li><a href="#">One-Pieces</a></li>
+                                                <li><a href="#">Outerwear</a></li>
+                                                <li><a href="#">Pants</a></li>
+                                                <li><a href="#">Shirts & Tops</a></li>
+                                            </ul>
+                                            <ul>
+                                                <h3>explore</h3>
+                                                <li><a href="#">Latest Arrivals</a></li>
+                                                <li><a href="#">Our sales</a></li>
+                                                <li><a href="#">Bestsellers</a></li>
+                                                <li><a href="#">Not expensive</a></li>
+                                                <li><a href="#">Expensive</a></li>
+                                                <li><a href="#">Exclusive</a></li>
+                                                <li><a href="#">Season summer</a></li>
+                                            </ul>
+                                            <div class="img-box">
+                                                <img src="./assets/images/product/product6.png" alt="" />
+                                            </div>
+                                            <div class="img-box2">
+                                                <img src="./assets/images/product/product8.png" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="categories-item">
-                            <ul>
-                                <li class="ct-1">
-                                    <a href="#"><span>women </span><i class="fa-solid fa-chevron-right"></i></a>
-                                    <div class="box1 d-flex justify-content-between">
-                                        <ul>
-                                            <h3>categories</h3>
-                                            <li><a href="#">Activewear</a></li>
-                                            <li><a href="#">Coats & Jackets</a></li>
-                                            <li><a href="#">Dresses</a></li>
-                                            <li><a href="#">One-Pieces</a></li>
-                                            <li><a href="#">Outerwear</a></li>
-                                            <li><a href="#">Pants</a></li>
-                                            <li><a href="#">Shirts & Tops</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>explore</h3>
-                                            <li><a href="#">Latest Arrivals</a></li>
-                                            <li><a href="#">Our sales</a></li>
-                                            <li><a href="#">Bestsellers</a></li>
-                                            <li><a href="#">Not expensive</a></li>
-                                            <li><a href="#">Expensive</a></li>
-                                            <li><a href="#">Exclusive</a></li>
-                                            <li><a href="#">Season summer</a></li>
-                                        </ul>
-                                        <div class="img-box">
-                                            <img src="./assets/images/home/home-banner2.png" alt="" />
-                                        </div>
-                                        <div class="img-box2">
-                                            <img src="./assets/images/home/feature-product-5.png" alt="" />
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="ct-1">
-                                    <a href="#"><span>men </span><i class="fa-solid fa-chevron-right"></i></a>
-                                    <div class="box1 d-flex justify-content-between">
-                                        <ul>
-                                            <h3>categories</h3>
-                                            <li><a href="#">Activewear</a></li>
-                                            <li><a href="#">Coats & Jackets</a></li>
-                                            <li><a href="#">Dresses</a></li>
-                                            <li><a href="#">One-Pieces</a></li>
-                                            <li><a href="#">Outerwear</a></li>
-                                            <li><a href="#">Pants</a></li>
-                                            <li><a href="#">Shirts & Tops</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>explore</h3>
-                                            <li><a href="#">Latest Arrivals</a></li>
-                                            <li><a href="#">Our sales</a></li>
-                                            <li><a href="#">Bestsellers</a></li>
-                                            <li><a href="#">Not expensive</a></li>
-                                            <li><a href="#">Expensive</a></li>
-                                            <li><a href="#">Exclusive</a></li>
-                                            <li><a href="#">Season summer</a></li>
-                                        </ul>
-                                        <div class="img-box">
-                                            <img src="./assets/images/home/home-banner3.png" alt="" />
-                                        </div>
-                                        <div class="img-box2">
-                                            <img src="./assets/images/home/home-banner1.png" alt="" />
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="ct-1">
-                                    <a href="#"><span>kids </span><i class="fa-solid fa-chevron-right"></i></a>
-                                    <div class="box1 d-flex justify-content-between">
-                                        <ul>
-                                            <h3>categories</h3>
-                                            <li><a href="#">Activewear</a></li>
-                                            <li><a href="#">Coats & Jackets</a></li>
-                                            <li><a href="#">Dresses</a></li>
-                                            <li><a href="#">One-Pieces</a></li>
-                                            <li><a href="#">Outerwear</a></li>
-                                            <li><a href="#">Pants</a></li>
-                                            <li><a href="#">Shirts & Tops</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>explore</h3>
-                                            <li><a href="#">Latest Arrivals</a></li>
-                                            <li><a href="#">Our sales</a></li>
-                                            <li><a href="#">Bestsellers</a></li>
-                                            <li><a href="#">Not expensive</a></li>
-                                            <li><a href="#">Expensive</a></li>
-                                            <li><a href="#">Exclusive</a></li>
-                                            <li><a href="#">Season summer</a></li>
-                                        </ul>
-                                        <div class="img-box">
-                                            <img src="./assets/images/home/home-banner2.png" alt="" />
-                                        </div>
-                                        <div class="img-box2">
-                                            <img src="./assets/images/home/feature-product-5.png" alt="" />
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="ct-1">
-                                    <a href="#"><span>Dresses </span><i class="fa-solid fa-chevron-right"></i></a>
-                                    <div class="box1 d-flex justify-content-between">
-                                        <ul>
-                                            <h3>categories</h3>
-                                            <li><a href="#">Activewear</a></li>
-                                            <li><a href="#">Coats & Jackets</a></li>
-                                            <li><a href="#">Dresses</a></li>
-                                            <li><a href="#">One-Pieces</a></li>
-                                            <li><a href="#">Outerwear</a></li>
-                                            <li><a href="#">Pants</a></li>
-                                            <li><a href="#">Shirts & Tops</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>explore</h3>
-                                            <li><a href="#">Latest Arrivals</a></li>
-                                            <li><a href="#">Our sales</a></li>
-                                            <li><a href="#">Bestsellers</a></li>
-                                            <li><a href="#">Not expensive</a></li>
-                                            <li><a href="#">Expensive</a></li>
-                                            <li><a href="#">Exclusive</a></li>
-                                            <li><a href="#">Season summer</a></li>
-                                        </ul>
-                                        <div class="img-box">
-                                            <img src="./assets/images/product/product1.png" alt="" />
-                                        </div>
-                                        <div class="img-box2">
-                                            <img src="./assets/images/product/product6.png" alt="" />
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="ct-1">
-                                    <a href="#"><span>clothing </span><i class="fa-solid fa-chevron-right"></i></a>
-                                    <div class="box1 d-flex justify-content-between">
-                                        <ul>
-                                            <h3>categories</h3>
-                                            <li><a href="#">Activewear</a></li>
-                                            <li><a href="#">Coats & Jackets</a></li>
-                                            <li><a href="#">Dresses</a></li>
-                                            <li><a href="#">One-Pieces</a></li>
-                                            <li><a href="#">Outerwear</a></li>
-                                            <li><a href="#">Pants</a></li>
-                                            <li><a href="#">Shirts & Tops</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>explore</h3>
-                                            <li><a href="#">Latest Arrivals</a></li>
-                                            <li><a href="#">Our sales</a></li>
-                                            <li><a href="#">Bestsellers</a></li>
-                                            <li><a href="#">Not expensive</a></li>
-                                            <li><a href="#">Expensive</a></li>
-                                            <li><a href="#">Exclusive</a></li>
-                                            <li><a href="#">Season summer</a></li>
-                                        </ul>
-                                        <div class="img-box">
-                                            <img src="./assets/images/home/home-banner2.png" alt="" />
-                                        </div>
-                                        <div class="img-box2">
-                                            <img src="./assets/images/home/feature-product-5.png" alt="" />
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="ct-1">
-                                    <a href="#"><span>top </span><i class="fa-solid fa-chevron-right"></i></a>
-                                    <div class="box1 d-flex justify-content-between">
-                                        <ul>
-                                            <h3>categories</h3>
-                                            <li><a href="#">Activewear</a></li>
-                                            <li><a href="#">Coats & Jackets</a></li>
-                                            <li><a href="#">Dresses</a></li>
-                                            <li><a href="#">One-Pieces</a></li>
-                                            <li><a href="#">Outerwear</a></li>
-                                            <li><a href="#">Pants</a></li>
-                                            <li><a href="#">Shirts & Tops</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>explore</h3>
-                                            <li><a href="#">Latest Arrivals</a></li>
-                                            <li><a href="#">Our sales</a></li>
-                                            <li><a href="#">Bestsellers</a></li>
-                                            <li><a href="#">Not expensive</a></li>
-                                            <li><a href="#">Expensive</a></li>
-                                            <li><a href="#">Exclusive</a></li>
-                                            <li><a href="#">Season summer</a></li>
-                                        </ul>
-                                        <div class="img-box">
-                                            <img src="./assets/images/home/home-banner2.png" alt="" />
-                                        </div>
-                                        <div class="img-box2">
-                                            <img src="./assets/images/home/feature-product-5.png" alt="" />
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="ct-1">
-                                    <a href="#"><span>shoes </span><i class="fa-solid fa-chevron-right"></i></a>
-                                    <div class="box1 d-flex justify-content-between">
-                                        <ul>
-                                            <h3>categories</h3>
-                                            <li><a href="#">Activewear</a></li>
-                                            <li><a href="#">Coats & Jackets</a></li>
-                                            <li><a href="#">Dresses</a></li>
-                                            <li><a href="#">One-Pieces</a></li>
-                                            <li><a href="#">Outerwear</a></li>
-                                            <li><a href="#">Pants</a></li>
-                                            <li><a href="#">Shirts & Tops</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>explore</h3>
-                                            <li><a href="#">Latest Arrivals</a></li>
-                                            <li><a href="#">Our sales</a></li>
-                                            <li><a href="#">Bestsellers</a></li>
-                                            <li><a href="#">Not expensive</a></li>
-                                            <li><a href="#">Expensive</a></li>
-                                            <li><a href="#">Exclusive</a></li>
-                                            <li><a href="#">Season summer</a></li>
-                                        </ul>
-                                        <div class="img-box">
-                                            <img src="./assets/images/home/best-sale1.png" alt="" />
-                                        </div>
-                                        <div class="img-box2">
-                                            <img src="./assets/images/home/feature-product-3.png" alt="" />
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="ct-1">
-                                    <a href="#"><span>t-shirt </span><i class="fa-solid fa-chevron-right"></i></a>
-                                    <div class="box1 d-flex justify-content-between">
-                                        <ul>
-                                            <h3>categories</h3>
-                                            <li><a href="#">Activewear</a></li>
-                                            <li><a href="#">Coats & Jackets</a></li>
-                                            <li><a href="#">Dresses</a></li>
-                                            <li><a href="#">One-Pieces</a></li>
-                                            <li><a href="#">Outerwear</a></li>
-                                            <li><a href="#">Pants</a></li>
-                                            <li><a href="#">Shirts & Tops</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>explore</h3>
-                                            <li><a href="#">Latest Arrivals</a></li>
-                                            <li><a href="#">Our sales</a></li>
-                                            <li><a href="#">Bestsellers</a></li>
-                                            <li><a href="#">Not expensive</a></li>
-                                            <li><a href="#">Expensive</a></li>
-                                            <li><a href="#">Exclusive</a></li>
-                                            <li><a href="#">Season summer</a></li>
-                                        </ul>
-                                        <div class="img-box">
-                                            <img src="./assets/images/product/product6.png" alt="" />
-                                        </div>
-                                        <div class="img-box2">
-                                            <img src="./assets/images/product/product8.png" alt="" />
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="super-sale d-flex align-items-center justify-content-between">
+                            <div class="sale-img-1">
+                                <img src="assets/images/home/home-offer1.png" alt="" />
+                            </div>
+                            <div class="sale-content">
+                                <h4>30% off</h4>
+                                <h5>women`s red high heel shoes</h5>
+                                <span>get in now<i class="fa-solid fa-right-long"></i></span>
+                            </div>
+                            <div class="sale-img-2">
+                                <span>supar sale</span>
+                                <img src="assets/images/home/home-offer2.png" alt="" />
+                            </div>
                         </div>
                     </div>
-                    <div class="super-sale d-flex align-items-center justify-content-between">
-                        <div class="sale-img-1">
-                            <img src="assets/images/home/home-offer1.png" alt="" />
-                        </div>
-                        <div class="sale-content">
-                            <h4>30% off</h4>
-                            <h5>women`s red high heel shoes</h5>
-                            <span>get in now<i class="fa-solid fa-right-long"></i></span>
-                        </div>
-                        <div class="sale-img-2">
-                            <span>supar sale</span>
-                            <img src="assets/images/home/home-offer2.png" alt="" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-9 col-lg-12">
-                    <div class="home-box">
-                        <div class="owl-carousel home-carousel">
-                            <div class="item">
-                                <div class="row align-items-center g-3">
-                                    <div class="col-md-6">
-                                        <div class="home-img">
-                                            <img src="assets/images/home/home-banner1.png" alt="" />
+                    <div class="col-xl-9 col-lg-12">
+                        <div class="home-box">
+                            <div class="owl-carousel home-carousel">
+                                <div class="item">
+                                    <div class="row align-items-center g-3">
+                                        <div class="col-md-6">
+                                            <div class="home-img">
+                                                <img src="assets/images/home/home-banner1.png" alt="" />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="d-flex flex-column justify-content-center">
-                                            <div class="home-content">
-                                                <h5>new arrivals</h5>
-                                                <h2>stylish & fashionable</h2>
-                                                <p>Credibly deliver focused opportunities rather than cutting
-                                                    Energistically impact client-centric testing.</p>
-                                                <button>shop now</button><br />
-                                                <span>Save up to 40% off on techno collection</span>
+                                        <div class="col-md-6">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <div class="home-content">
+                                                    <h5>new arrivals</h5>
+                                                    <h2>stylish & fashionable</h2>
+                                                    <p>Credibly deliver focused opportunities rather than cutting Energistically impact client-centric testing.</p>
+                                                    <button>shop now</button><br />
+                                                    <span>Save up to 40% off on techno collection</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="row align-items-center g-3">
-                                    <div class="col-md-6">
-                                        <div class="home-img">
-                                            <img src="assets/images/home/home-banner2.png" alt="" />
+                                <div class="item">
+                                    <div class="row align-items-center g-3">
+                                        <div class="col-md-6">
+                                            <div class="home-img">
+                                                <img src="assets/images/home/home-banner2.png" alt="" />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="d-flex flex-column justify-content-center">
-                                            <div class="home-content">
-                                                <h5>new arrivals</h5>
-                                                <h2>stylish & fashionable</h2>
-                                                <p>Credibly deliver focused opportunities rather than cutting
-                                                    Energistically impact client-centric testing.</p>
-                                                <button>shop now</button><br />
-                                                <span>Save up to 40% off on techno collection</span>
+                                        <div class="col-md-6">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <div class="home-content">
+                                                    <h5>new arrivals</h5>
+                                                    <h2>stylish & fashionable</h2>
+                                                    <p>Credibly deliver focused opportunities rather than cutting Energistically impact client-centric testing.</p>
+                                                    <button>shop now</button><br />
+                                                    <span>Save up to 40% off on techno collection</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="row align-items-center g-3">
-                                    <div class="col-md-6">
-                                        <div class="home-img">
-                                            <img src="assets/images/home/home-banner3.png" alt="" />
+                                <div class="item">
+                                    <div class="row align-items-center g-3">
+                                        <div class="col-md-6">
+                                            <div class="home-img">
+                                                <img src="assets/images/home/home-banner3.png" alt="" />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="d-flex flex-column justify-content-center">
-                                            <div class="home-content">
-                                                <h5>new arrivals</h5>
-                                                <h2>stylish & fashionable</h2>
-                                                <p>Credibly deliver focused opportunities rather than cutting
-                                                    Energistically impact client-centric testing.</p>
-                                                <button>shop now</button><br />
-                                                <span>Save up to 40% off on techno collection</span>
+                                        <div class="col-md-6">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <div class="home-content">
+                                                    <h5>new arrivals</h5>
+                                                    <h2>stylish & fashionable</h2>
+                                                    <p>Credibly deliver focused opportunities rather than cutting Energistically impact client-centric testing.</p>
+                                                    <button>shop now</button><br />
+                                                    <span>Save up to 40% off on techno collection</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -499,1054 +486,1017 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- home-section-end -->
+        </section>
+        <!-- home-section-end -->
 
-    <!-- flash-modal-start -->
-    <section class="flash-sale">
-        <div class="flash-modal">
-            <div id="flasModal" class="modal fade">
-                <div class="modal-dialog modal-dialog-centered">
+        <!-- flash-modal-start -->
+        <section class="flash-sale">
+            <div class="flash-modal">
+                <div id="flasModal" class="modal fade">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="flasmodalLabel"></h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="flash-img">
+                                    <img src="./assets/images/flash.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- flash-modal-end -->
+
+        <!-- feature-start -->
+        <section class="feature-section section-1">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="feature-box d-flex align-items-center">
+                            <div class="feature-img">
+                                <img src="assets/images/home/feature1.png" alt="" />
+                            </div>
+                            <div class="feature-content">
+                                <h5>free shipping</h5>
+                                <span>oreder over $50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="feature-box d-flex align-items-center">
+                            <div class="feature-img">
+                                <img src="assets/images/home/feature2.png" alt="" />
+                            </div>
+                            <div class="feature-content">
+                                <h5>Secure Transaction</h5>
+                                <span>Checkout securely</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="feature-box d-flex align-items-center">
+                            <div class="feature-img">
+                                <img src="assets/images/home/feature3.png" alt="" />
+                            </div>
+                            <div class="feature-content">
+                                <h5>Super Sale</h5>
+                                <span>On many products</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="feature-box d-flex align-items-center">
+                            <div class="feature-img">
+                                <img src="assets/images/home/feature4.png" alt="" />
+                            </div>
+                            <div class="feature-content">
+                                <h5>24/7 Support</h5>
+                                <span>Ready to pickup calls</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- feature-end -->
+
+        <!-- feature-2-start -->
+        <section class="feature2-section section-2">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature2-box feature-box1 d-flex align-items-center">
+                            <div class="feature-img2">
+                                <img src="assets/images/home/feature-img1.png" alt="" />
+                            </div>
+                            <div class="feature-conten2">
+                                <h5>new arrival</h5>
+                                <h4>women t-sthirt</h4>
+                                <p>don`t late, gate now!</p>
+                                <a href="#">shop now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature2-box feature-box2 d-flex align-items-center">
+                            <div class="feature-img2">
+                                <img src="assets/images/home/feature-img2.png" alt="" />
+                            </div>
+                            <div class="feature-conten2">
+                                <h5>Black Friday</h5>
+                                <h4>Casual black suit</h4>
+                                <p>don`t late, gate now!</p>
+                                <a href="#">shop now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature2-box feature-box3 d-flex align-items-center">
+                            <div class="feature-img2">
+                                <img src="assets/images/home/feature-img3.png" alt="" />
+                            </div>
+                            <div class="feature-conten2">
+                                <h5>Special Offer</h5>
+                                <h4>Black Sunglass</h4>
+                                <p>don`t late, gate now!</p>
+                                <a href="#">shop now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- feature-2-end -->
+
+        <!-- trending-categories-start -->
+        <section class="t-categories-section section-1">
+            <div class="container">
+                <div class="t-categories-top">
+                    <h3>Trending Categories</h3>
+                </div>
+                <div class="t-categories-carousel owl-carousel">
+                    <div class="item">
+                        <div class="t-categories-box">
+                            <div class="t-categories-img d-flex justify-content-center">
+                                <img src="assets/images/home/categories1.png" alt="" />
+                            </div>
+                            <div class="t-categories-content">
+                                <h5>t-shirt & shirt</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="t-categories-box">
+                            <div class="t-categories-img d-flex justify-content-center">
+                                <img src="assets/images/home/categories2.png" alt="" />
+                            </div>
+                            <div class="t-categories-content">
+                                <h5>shoes</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="t-categories-box">
+                            <div class="t-categories-img d-flex justify-content-center">
+                                <img src="assets/images/home/categories3.png" alt="" />
+                            </div>
+                            <div class="t-categories-content">
+                                <h5>kids</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="t-categories-box">
+                            <div class="t-categories-img d-flex justify-content-center">
+                                <img src="assets/images/home/categories4.png" alt="" />
+                            </div>
+                            <div class="t-categories-content">
+                                <h5>jeans</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="t-categories-box">
+                            <div class="t-categories-img d-flex justify-content-center">
+                                <img src="assets/images/home/categories5.png" alt="" />
+                            </div>
+                            <div class="t-categories-content">
+                                <h5>tops</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- trending-categories-end -->
+
+        <!-- f-product-start -->
+        <section class="f-product-section section-2">
+            <div class="container">
+                <div class="f-product-top">
+                    <h3>feature products</h3>
+                </div>
+                <div class="owl-carousel product-carousel">
+                    <div class="item">
+                        <div class="f-product-box">
+                            <div class="f-product-hover">
+                                <div class="f-product-img">
+                                    <span>-10%</span>
+                                    <img src="./assets/images/home/feature-product-1.png" alt="" />
+                                </div>
+                                <div class="f-product-content">
+                                    <h5>Apple Watch Series 8 Apple Watch Series 2 Apple Watch...</h5>
+                                    <h3>$590.00</h3>
+                                </div>
+                            </div>
+                            <div class="f-product-icon d-flex flex-column">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                            </div>
+                            <div class="f-product-btn">
+                                <button><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="f-product-box">
+                            <div class="f-product-hover">
+                                <div class="f-product-img">
+                                    <span>-25%</span>
+                                    <img src="./assets/images/home/feature-product-2.png" alt="" />
+                                </div>
+                                <div class="f-product-content">
+                                    <h5>Apple Watch Series 8 Apple Watch Series 2 Apple Watch...</h5>
+                                    <h3>$200.00</h3>
+                                </div>
+                            </div>
+                            <div class="f-product-icon d-flex flex-column">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                            </div>
+                            <div class="f-product-btn">
+                                <button><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="f-product-box">
+                            <div class="f-product-hover">
+                                <div class="f-product-img">
+                                    <span>-5%</span>
+                                    <img src="./assets/images/home/feature-product-3.png" alt="" />
+                                </div>
+                                <div class="f-product-content">
+                                    <h5>Apple Watch Series 8 Apple Watch Series 2 Apple Watch...</h5>
+                                    <h3>$590.00</h3>
+                                </div>
+                            </div>
+                            <div class="f-product-icon d-flex flex-column">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                            </div>
+                            <div class="f-product-btn">
+                                <button><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="f-product-box">
+                            <div class="f-product-hover">
+                                <div class="f-product-img">
+                                    <span>-10%</span>
+                                    <img src="./assets/images/home/feature-product-4.png" alt="" />
+                                </div>
+                                <div class="f-product-content">
+                                    <h5>Apple Watch Series 8 Apple Watch Series 2 Apple Watch...</h5>
+                                    <h3>$290.00</h3>
+                                </div>
+                            </div>
+                            <div class="f-product-icon d-flex flex-column">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                            </div>
+                            <div class="f-product-btn">
+                                <button><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="f-product-box">
+                            <div class="f-product-hover">
+                                <div class="f-product-img">
+                                    <span>-10%</span>
+                                    <img src="./assets/images/home/feature-product-5.png" alt="" />
+                                </div>
+                                <div class="f-product-content">
+                                    <h5>Apple Watch Series 8 Apple Watch Series 2 Apple Watch...</h5>
+                                    <h3>$550.00</h3>
+                                </div>
+                            </div>
+                            <div class="f-product-icon d-flex flex-column">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                            </div>
+                            <div class="f-product-btn">
+                                <button><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="f-product-box">
+                            <div class="f-product-hover">
+                                <div class="f-product-img">
+                                    <span>-10%</span>
+                                    <img src="./assets/images/home/feature-product-6.png" alt="" />
+                                </div>
+                                <div class="f-product-content">
+                                    <h5>Apple Watch Series 8 Apple Watch Series 2 Apple Watch...</h5>
+                                    <h3>$390.00</h3>
+                                </div>
+                            </div>
+                            <div class="f-product-icon d-flex flex-column">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                            </div>
+                            <div class="f-product-btn">
+                                <button><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- f-product-end -->
+
+        <!-- sale-section-start -->
+        <section class="sale-section section-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="sale-offer-content">
+                            <h3>
+                                big sale <br />
+                                up to 70% off
+                            </h3>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
+                            <button>shop now</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="sale-offer-img text-end">
+                            <img src="./assets/images/home/sale-banner.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sale-section-end -->
+
+        <!-- product-section-start -->
+        <section class="product-section section-2">
+            <div class="container">
+                <div class="product-top">
+                    <h3>best selling</h3>
+                </div>
+                <div class="row g-3">
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="product-box">
+                            <div class="product-hover">
+                                <div class="product-img">
+                                    <span>on Sale</span>
+                                    <img src="./assets/images/home/best-sale1.png" alt="" />
+                                </div>
+                                <div class="product-content">
+                                    <h5>Unpaired black running shoe, Skate shoe Nike Adidas...</h5>
+                                    <h3>$300.00</h3>
+                                </div>
+                            </div>
+                            <div class="product-icon d-flex flex-column">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="product-box">
+                            <div class="product-hover">
+                                <div class="product-img">
+                                    <span>on Sale</span>
+                                    <img src="./assets/images/home/best-sale2.png" alt="" />
+                                </div>
+                                <div class="product-content">
+                                    <h5>TRESemmé Shampoo Hair conditioner Moisturizer, Shampoo..</h5>
+                                    <h3>$300.00</h3>
+                                </div>
+                            </div>
+                            <div class="product-icon d-flex flex-column">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="product-box">
+                            <div class="product-hover">
+                                <div class="product-img">
+                                    <span>on Sale</span>
+                                    <img src="./assets/images/home/best-sale3.png" alt="" />
+                                </div>
+                                <div class="product-content">
+                                    <h5>Women's red and black polka-dot halterdres, 1950s Dress Halt..</h5>
+                                    <h3>$300.00</h3>
+                                </div>
+                            </div>
+                            <div class="product-icon d-flex flex-column">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="product-box">
+                            <div class="product-hover">
+                                <div class="product-img">
+                                    <span>on Sale</span>
+                                    <img src="./assets/images/home/best-sale4.png" alt="" />
+                                </div>
+                                <div class="product-content">
+                                    <h5>Backpack Baggage Satchel Briefcase, school supplies, purple....</h5>
+                                    <h3>$300.00</h3>
+                                </div>
+                            </div>
+                            <div class="product-icon d-flex flex-column">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="product-box">
+                            <div class="product-hover">
+                                <div class="product-img">
+                                    <span>on Sale</span>
+                                    <img src="./assets/images/home/best-sale5.png" alt="" />
+                                </div>
+                                <div class="product-content">
+                                    <h5>Polo shirt T-shirt Piqué Lacoste polo shirt, tshirt, teal, active..</h5>
+                                    <h3>$300.00</h3>
+                                </div>
+                            </div>
+                            <div class="product-icon d-flex flex-column">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="product-box">
+                            <div class="product-hover">
+                                <div class="product-img">
+                                    <span>on Sale</span>
+                                    <img src="./assets/images/home/best-sale6.png" alt="" />
+                                </div>
+                                <div class="product-content">
+                                    <h5>Unpaired black running shoe, Sneakers Skate shoe Nike Adidas...</h5>
+                                    <h3>$300.00</h3>
+                                </div>
+                            </div>
+                            <div class="product-icon d-flex flex-column">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-rotate"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- product-section-end -->
+
+        <!-- collection-section-start -->
+        <section class="collection-section section-1">
+            <div class="container">
+                <div class="collection-top">
+                    <h3>latest collection</h3>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="collection-trendy">
+                            <div class="collection-trendy-img">
+                                <img src="./assets/images/home/collection1.png" alt="" />
+                            </div>
+                            <div class="collection-trendy-content">
+                                <h5>trendy women`s wear</h5>
+                                <a href="#">shop now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="collection-product">
+                                    <div class="collection-img">
+                                        <span>new</span>
+                                        <img src="./assets/images/home/collection2.png" alt="" />
+                                    </div>
+                                    <div class="collection-content">
+                                        <h5>Casual hipster warm winter sweater clothes, with yellow...</h5>
+                                    </div>
+                                    <div class="prize">
+                                        <h3>$899.00<span>$1299.00</span></h3>
+                                    </div>
+                                    <div class="collection-product-icon d-flex flex-column">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-solid fa-rotate"></i>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="collection-product">
+                                    <div class="collection-img">
+                                        <span>new</span>
+                                        <img src="./assets/images/home/collection3.png" alt="" />
+                                    </div>
+                                    <div class="collection-content">
+                                        <h5>handsome smiling stylish young man model dressed in jeans clothes...</h5>
+                                    </div>
+                                    <div class="prize">
+                                        <h3>$899.00<span>$1299.00</span></h3>
+                                    </div>
+                                    <div class="collection-product-icon d-flex flex-column">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-solid fa-rotate"></i>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="collection-product">
+                                    <div class="collection-img">
+                                        <span>new</span>
+                                        <img src="./assets/images/home/collection4.png" alt="" />
+                                    </div>
+                                    <div class="collection-content">
+                                        <h5>Casual hipster warm winter sweater clothes, with yellow...</h5>
+                                    </div>
+                                    <div class="prize">
+                                        <h3>$899.00<span>$1299.00</span></h3>
+                                    </div>
+                                    <div class="collection-product-icon d-flex flex-column">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-solid fa-rotate"></i>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- collection-section-end -->
+
+        <!-- blgo-section-start -->
+        <section class="blog-section section-1">
+            <div class="container">
+                <div class="blog-top">
+                    <h3>from our blog</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img src="./assets/images/blog/blog1.png" alt="" />
+                            </div>
+                            <div class="blog-content">
+                                <h6>life style</h6>
+                                <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
+                                <a href="#">view details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img src="./assets/images/blog/blog2.png" alt="" />
+                            </div>
+                            <div class="blog-content">
+                                <h6>new arrival</h6>
+                                <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
+                                <a href="#">view details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img src="./assets/images/blog/blog3.png" alt="" />
+                            </div>
+                            <div class="blog-content">
+                                <h6>top sell</h6>
+                                <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
+                                <a href="#">view details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img src="./assets/images/blog/blog4.png" alt="" />
+                            </div>
+                            <div class="blog-content">
+                                <h6>life style</h6>
+                                <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
+                                <a href="#">view details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blgo-section-end -->
+
+        <!-- footer-start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-box section-1">
+                    <div class="footer-content">
+                        <h2>subscribe now and <span>20%</span> OFF</h2>
+                        <p>Learn first about our newest products and special promotions.</p>
+                    </div>
+                    <div class="footer-search-box">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email:" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                            <button class="btn" type="button" id="button-addon2">subscribe</button>
+                        </div>
+                    </div>
+                    <div class="footer-nav">
+                        <a href="#">home</a>
+                        <a href="#">about</a>
+                        <a href="#">page</a>
+                        <a href="#">blog</a>
+                        <a href="#">contact</a>
+                    </div>
+                    <div class="footer-nav">
+                        <a href="#">categories</a>
+                        <a href="#">featured</a>
+                        <a href="#">best-selling</a>
+                        <a href="#">latest-collection</a>
+                        <a href="#">profile</a>
+                    </div>
+                    <div class="follow-us">
+                        <h4>follow us</h4>
+                        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container d-flex justify-content-between">
+                    <div class="fotter-b-content">
+                        <p>Copyright © 2023 <span>Techno</span> All Rights Reserved</p>
+                    </div>
+                    <div class="footer-b-list">
+                        <a href="contact.html">Contact Us</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-end -->
+
+        <!-- search-modal-start -->
+        <div class="search-modal">
+            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="flasmodalLabel"></h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
                         <div class="modal-body">
-                            <div class="flash-img">
-                                <img src="./assets/images/flash.jpg" alt="">
+                            <form class="d-flex" role="search">
+                                <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
+                                <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- search-modal-end -->
+
+        <!-- categories-canvas-start -->
+        <div class="categories-canvas">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvastwo" aria-labelledby="offcanvastwoLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvastwoLabel">categories</h5>
+                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="categories-item">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        women
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <h3>categories</h3>
+                                            <li><a href="#">Activewear</a></li>
+                                            <li><a href="#">Cargos</a></li>
+                                            <li><a href="#">Coats & Jackets</a></li>
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">One-Pieces</a></li>
+                                            <li><a href="#">Pants</a></li>
+                                            <li><a href="#">Shirts & Tops</a></li>
+                                            <li><a href="#">Sleepwear & Loungewear</a></li>
+                                            <li><a href="#">Activewear</a></li>
+                                        </ul>
+                                        <ul>
+                                            <h3>explore</h3>
+                                            <li><a href="#">Latest Arrivals</a></li>
+                                            <li><a href="#">Our sales</a></li>
+                                            <li><a href="#">Bestsellers</a></li>
+                                            <li><a href="#">Not expensive</a></li>
+                                            <li><a href="#">Expensive</a></li>
+                                            <li><a href="#">Exclusive</a></li>
+                                            <li><a href="#">Season summer</a></li>
+                                            <li><a href="#">Season winter</a></li>
+                                            <li><a href="#">Season autumn</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        men
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <h3>popular</h3>
+                                            <li><a href="#"> Arm Warmers & Sleeves</a></li>
+                                            <li><a href="#">Balaclavas</a></li>
+                                            <li><a href="#"> Bandanas & Headties</a></li>
+                                            <li><a href="#"> Bridal Accessories</a></li>
+                                            <li><a href="#"> Earmuffs</a></li>
+                                        </ul>
+                                        <ul>
+                                            <h3>on sale</h3>
+                                            <li><a href="#"> Hand Muffs</a></li>
+                                            <li><a href="#">Hats</a></li>
+                                            <li><a href="#"> Sunglasses</a></li>
+                                            <li><a href="#"> Suspenders</a></li>
+                                            <li><a href="#"> Scarves & Shawls</a></li>
+                                        </ul>
+                                        <ul>
+                                            <h3>explore</h3>
+                                            <li><a href="#"> Latest Arrivals</a></li>
+                                            <li><a href="#">Our sales</a></li>
+                                            <li><a href="#"> Bestsellers</a></li>
+                                            <li><a href="#"> Not expensive</a></li>
+                                            <li><a href="#"> Expensive</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        kids
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <h3>categories</h3>
+                                            <li><a href="#">Overalls</a></li>
+                                            <li><a href="#">Mittens</a></li>
+                                            <li><a href="#">Beanie</a></li>
+                                            <li><a href="#">Baby apron</a></li>
+                                            <li><a href="#">Socks</a></li>
+                                            <li><a href="#">Diaper</a></li>
+                                            <li><a href="#">Singlet</a></li>
+                                            <li><a href="#">Shoes</a></li>
+                                            <li><a href="#">Safety pin</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingfour">
+                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                        Dresses
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <h3>categories</h3>
+                                            <li><a href="#">Overalls</a></li>
+                                            <li><a href="#">Mittens</a></li>
+                                            <li><a href="#">Beanie</a></li>
+                                            <li><a href="#">Baby apron</a></li>
+                                            <li><a href="#">Socks</a></li>
+                                            <li><a href="#">Diaper</a></li>
+                                            <li><a href="#">Singlet</a></li>
+                                            <li><a href="#">Shoes</a></li>
+                                            <li><a href="#">Safety pin</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingfive">
+                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                        clothing
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <h3>winter cloth</h3>
+                                            <li><a href="#">Sweater</a></li>
+                                            <li><a href="#">Gloves</a></li>
+                                            <li><a href="#">Fleece jacket</a></li>
+                                            <li><a href="#">Trench coat (Women)</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                        </ul>
+                                        <ul>
+                                            <h3>summer cloth</h3>
+                                            <li><a href="#">T-shirt</a></li>
+                                            <li><a href="#">Singlet</a></li>
+                                            <li><a href="#">Swim trunks</a></li>
+                                            <li><a href="#">One-piece bathing suit</a></li>
+                                            <li><a href="#">Cap</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        shoes
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <h3>Athletic Shoes</h3>
+                                            <li><a href="#">Golf shoes</a></li>
+                                            <li><a href="#">Hiking boots</a></li>
+                                            <li><a href="#">High-tops</a></li>
+                                            <li><a href="#">Running shoes</a></li>
+                                            <li><a href="#">Climbing shoes</a></li>
+                                        </ul>
+                                        <ul>
+                                            <h3>Boots</h3>
+                                            <li><a href="#">Knee-high boots</a></li>
+                                            <li><a href="#">Laced booties</a></li>
+                                            <li><a href="#">Hiking boots</a></li>
+                                            <li><a href="#">Riding boots</a></li>
+                                            <li><a href="#">Snow boots</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- flash-modal-end -->
+        <!-- categories-canvas-end -->
 
-
-
-    <!-- feature-start -->
-    <section class="feature-section section-1">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-xl-3 col-md-6">
-                    <div class="feature-box d-flex align-items-center">
-                        <div class="feature-img">
-                            <img src="assets/images/home/feature1.png" alt="" />
-                        </div>
-                        <div class="feature-content">
-                            <h5>free shipping</h5>
-                            <span>oreder over $50</span>
-                        </div>
-                    </div>
+        <!-- shoping-cart-modal-start -->
+        <div class="cart-canvas">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header justify-content-end">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="feature-box d-flex align-items-center">
-                        <div class="feature-img">
-                            <img src="assets/images/home/feature2.png" alt="" />
-                        </div>
-                        <div class="feature-content">
-                            <h5>Secure Transaction</h5>
-                            <span>Checkout securely</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="feature-box d-flex align-items-center">
-                        <div class="feature-img">
-                            <img src="assets/images/home/feature3.png" alt="" />
-                        </div>
-                        <div class="feature-content">
-                            <h5>Super Sale</h5>
-                            <span>On many products</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="feature-box d-flex align-items-center">
-                        <div class="feature-img">
-                            <img src="assets/images/home/feature4.png" alt="" />
-                        </div>
-                        <div class="feature-content">
-                            <h5>24/7 Support</h5>
-                            <span>Ready to pickup calls</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- feature-end -->
-
-    <!-- feature-2-start -->
-    <section class="feature2-section section-2">
-        <div class="container">
-            <div class="row g-3">
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature2-box feature-box1 d-flex align-items-center">
-                        <div class="feature-img2">
-                            <img src="assets/images/home/feature-img1.png" alt="" />
-                        </div>
-                        <div class="feature-conten2">
-                            <h5>new arrival</h5>
-                            <h4>women t-sthirt</h4>
-                            <p>don`t late, gate now!</p>
-                            <a href="#">shop now!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature2-box feature-box2 d-flex align-items-center">
-                        <div class="feature-img2">
-                            <img src="assets/images/home/feature-img2.png" alt="" />
-                        </div>
-                        <div class="feature-conten2">
-                            <h5>Black Friday</h5>
-                            <h4>Casual black suit</h4>
-                            <p>don`t late, gate now!</p>
-                            <a href="#">shop now!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature2-box feature-box3 d-flex align-items-center">
-                        <div class="feature-img2">
-                            <img src="assets/images/home/feature-img3.png" alt="" />
-                        </div>
-                        <div class="feature-conten2">
-                            <h5>Special Offer</h5>
-                            <h4>Black Sunglass</h4>
-                            <p>don`t late, gate now!</p>
-                            <a href="#">shop now!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- feature-2-end -->
-
-    <!-- trending-categories-start -->
-    <section class="t-categories-section section-1">
-        <div class="container">
-            <div class="t-categories-top">
-                <h3>Trending Categories</h3>
-            </div>
-            <div class="t-categories-carousel owl-carousel">
-                <div class="item">
-                    <div class="t-categories-box">
-                        <div class="t-categories-img d-flex justify-content-center">
-                            <img src="assets/images/home/categories1.png" alt="" />
-                        </div>
-                        <div class="t-categories-content">
-                            <h5>t-shirt & shirt</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="t-categories-box">
-                        <div class="t-categories-img d-flex justify-content-center">
-                            <img src="assets/images/home/categories2.png" alt="" />
-                        </div>
-                        <div class="t-categories-content">
-                            <h5>shoes</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="t-categories-box">
-                        <div class="t-categories-img d-flex justify-content-center">
-                            <img src="assets/images/home/categories3.png" alt="" />
-                        </div>
-                        <div class="t-categories-content">
-                            <h5>kids</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="t-categories-box">
-                        <div class="t-categories-img d-flex justify-content-center">
-                            <img src="assets/images/home/categories4.png" alt="" />
-                        </div>
-                        <div class="t-categories-content">
-                            <h5>jeans</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="t-categories-box">
-                        <div class="t-categories-img d-flex justify-content-center">
-                            <img src="assets/images/home/categories5.png" alt="" />
-                        </div>
-                        <div class="t-categories-content">
-                            <h5>tops</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- trending-categories-end -->
-
-    <!-- f-product-start -->
-    <section class="f-product-section section-2">
-        <div class="container">
-            <div class="f-product-top">
-                <h3>feature products</h3>
-            </div>
-            <div class="owl-carousel product-carousel">
-                <div class="item">
-                    <div class="f-product-box">
-                        <div class="f-product-hover">
-                            <div class="f-product-img">
-                                <span>-10%</span>
-                                <img src="./assets/images/home/feature-product-1.png" alt="" />
-                            </div>
-                            <div class="f-product-content">
-                                <h5>Apple Watch Series 8 Apple Watch Series 2 Apple Watch...</h5>
-                                <h3>$590.00</h3>
+                <div class="offcanvas-body">
+                    <div class="dropdown-content">
+                        <div class="shoping-cart-top">
+                            <div class="shoping-cart-title">
+                                <h4>shopping cart</h4>
+                                <p>
+                                    Congratulations! You are qualified a <span>FREE SHIPPING <i class="fa-solid fa-truck-fast"></i></span>
+                                </p>
                             </div>
                         </div>
-                        <div class="f-product-icon d-flex flex-column">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-rotate"></i>
-                        </div>
-                        <div class="f-product-btn">
-                            <button><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="f-product-box">
-                        <div class="f-product-hover">
-                            <div class="f-product-img">
-                                <span>-25%</span>
-                                <img src="./assets/images/home/feature-product-2.png" alt="" />
-                            </div>
-                            <div class="f-product-content">
-                                <h5>Apple Watch Series 8 Apple Watch Series 2 Apple Watch...</h5>
-                                <h3>$200.00</h3>
-                            </div>
-                        </div>
-                        <div class="f-product-icon d-flex flex-column">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-rotate"></i>
-                        </div>
-                        <div class="f-product-btn">
-                            <button><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="f-product-box">
-                        <div class="f-product-hover">
-                            <div class="f-product-img">
-                                <span>-5%</span>
+                        <div class="cart-box d-flex align-items-center">
+                            <div class="cart-img">
                                 <img src="./assets/images/home/feature-product-3.png" alt="" />
                             </div>
-                            <div class="f-product-content">
-                                <h5>Apple Watch Series 8 Apple Watch Series 2 Apple Watch...</h5>
-                                <h3>$590.00</h3>
-                            </div>
-                        </div>
-                        <div class="f-product-icon d-flex flex-column">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-rotate"></i>
-                        </div>
-                        <div class="f-product-btn">
-                            <button><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="f-product-box">
-                        <div class="f-product-hover">
-                            <div class="f-product-img">
-                                <span>-10%</span>
-                                <img src="./assets/images/home/feature-product-4.png" alt="" />
-                            </div>
-                            <div class="f-product-content">
-                                <h5>Apple Watch Series 8 Apple Watch Series 2 Apple Watch...</h5>
-                                <h3>$290.00</h3>
-                            </div>
-                        </div>
-                        <div class="f-product-icon d-flex flex-column">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-rotate"></i>
-                        </div>
-                        <div class="f-product-btn">
-                            <button><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="f-product-box">
-                        <div class="f-product-hover">
-                            <div class="f-product-img">
-                                <span>-10%</span>
-                                <img src="./assets/images/home/feature-product-5.png" alt="" />
-                            </div>
-                            <div class="f-product-content">
-                                <h5>Apple Watch Series 8 Apple Watch Series 2 Apple Watch...</h5>
-                                <h3>$550.00</h3>
-                            </div>
-                        </div>
-                        <div class="f-product-icon d-flex flex-column">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-rotate"></i>
-                        </div>
-                        <div class="f-product-btn">
-                            <button><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="f-product-box">
-                        <div class="f-product-hover">
-                            <div class="f-product-img">
-                                <span>-10%</span>
-                                <img src="./assets/images/home/feature-product-6.png" alt="" />
-                            </div>
-                            <div class="f-product-content">
-                                <h5>Apple Watch Series 8 Apple Watch Series 2 Apple Watch...</h5>
-                                <h3>$390.00</h3>
-                            </div>
-                        </div>
-                        <div class="f-product-icon d-flex flex-column">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-rotate"></i>
-                        </div>
-                        <div class="f-product-btn">
-                            <button><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- f-product-end -->
-
-    <!-- sale-section-start -->
-    <section class="sale-section section-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="sale-offer-content">
-                        <h3>
-                            big sale <br />
-                            up to 70% off
-                        </h3>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                            consequuntur magni dolores.</p>
-                        <button>shop now</button>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="sale-offer-img text-end">
-                        <img src="./assets/images/home/sale-banner.png" alt="" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- sale-section-end -->
-
-    <!-- product-section-start -->
-    <section class="product-section section-2">
-        <div class="container">
-            <div class="product-top">
-                <h3>best selling</h3>
-            </div>
-            <div class="row g-3">
-                <div class="col-xl-2 col-lg-4 col-md-6">
-                    <div class="product-box">
-                        <div class="product-hover">
-                            <div class="product-img">
-                                <span>on Sale</span>
-                                <img src="./assets/images/home/best-sale1.png" alt="" />
-                            </div>
-                            <div class="product-content">
-                                <h5>Unpaired black running shoe, Skate shoe Nike Adidas...</h5>
-                                <h3>$300.00</h3>
-                            </div>
-                        </div>
-                        <div class="product-icon d-flex flex-column">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-rotate"></i>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-4 col-md-6">
-                    <div class="product-box">
-                        <div class="product-hover">
-                            <div class="product-img">
-                                <span>on Sale</span>
-                                <img src="./assets/images/home/best-sale2.png" alt="" />
-                            </div>
-                            <div class="product-content">
-                                <h5>TRESemmé Shampoo Hair conditioner Moisturizer, Shampoo..</h5>
-                                <h3>$300.00</h3>
-                            </div>
-                        </div>
-                        <div class="product-icon d-flex flex-column">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-rotate"></i>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-4 col-md-6">
-                    <div class="product-box">
-                        <div class="product-hover">
-                            <div class="product-img">
-                                <span>on Sale</span>
-                                <img src="./assets/images/home/best-sale3.png" alt="" />
-                            </div>
-                            <div class="product-content">
-                                <h5>Women's red and black polka-dot halterdres, 1950s Dress Halt..</h5>
-                                <h3>$300.00</h3>
-                            </div>
-                        </div>
-                        <div class="product-icon d-flex flex-column">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-rotate"></i>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-4 col-md-6">
-                    <div class="product-box">
-                        <div class="product-hover">
-                            <div class="product-img">
-                                <span>on Sale</span>
-                                <img src="./assets/images/home/best-sale4.png" alt="" />
-                            </div>
-                            <div class="product-content">
-                                <h5>Backpack Baggage Satchel Briefcase, school supplies, purple....</h5>
-                                <h3>$300.00</h3>
-                            </div>
-                        </div>
-                        <div class="product-icon d-flex flex-column">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-rotate"></i>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-4 col-md-6">
-                    <div class="product-box">
-                        <div class="product-hover">
-                            <div class="product-img">
-                                <span>on Sale</span>
-                                <img src="./assets/images/home/best-sale5.png" alt="" />
-                            </div>
-                            <div class="product-content">
-                                <h5>Polo shirt T-shirt Piqué Lacoste polo shirt, tshirt, teal, active..</h5>
-                                <h3>$300.00</h3>
-                            </div>
-                        </div>
-                        <div class="product-icon d-flex flex-column">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-rotate"></i>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-4 col-md-6">
-                    <div class="product-box">
-                        <div class="product-hover">
-                            <div class="product-img">
-                                <span>on Sale</span>
-                                <img src="./assets/images/home/best-sale6.png" alt="" />
-                            </div>
-                            <div class="product-content">
-                                <h5>Unpaired black running shoe, Sneakers Skate shoe Nike Adidas...</h5>
-                                <h3>$300.00</h3>
-                            </div>
-                        </div>
-                        <div class="product-icon d-flex flex-column">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-rotate"></i>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- product-section-end -->
-
-    <!-- collection-section-start -->
-    <section class="collection-section section-1">
-        <div class="container">
-            <div class="collection-top">
-                <h3>latest collection</h3>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="collection-trendy">
-                        <div class="collection-trendy-img">
-                            <img src="./assets/images/home/collection1.png" alt="" />
-                        </div>
-                        <div class="collection-trendy-content">
-                            <h5>trendy women`s wear</h5>
-                            <a href="#">shop now!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="row g-4">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="collection-product">
-                                <div class="collection-img">
-                                    <span>new</span>
-                                    <img src="./assets/images/home/collection2.png" alt="" />
-                                </div>
-                                <div class="collection-content">
-                                    <h5>Casual hipster warm winter sweater clothes, with yellow...</h5>
-                                </div>
-                                <div class="prize">
-                                    <h3>$899.00<span>$1299.00</span></h3>
-                                </div>
-                                <div class="collection-product-icon d-flex flex-column">
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-rotate"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="collection-product">
-                                <div class="collection-img">
-                                    <span>new</span>
-                                    <img src="./assets/images/home/collection3.png" alt="" />
-                                </div>
-                                <div class="collection-content">
-                                    <h5>handsome smiling stylish young man model dressed in jeans clothes...</h5>
-                                </div>
-                                <div class="prize">
-                                    <h3>$899.00<span>$1299.00</span></h3>
-                                </div>
-                                <div class="collection-product-icon d-flex flex-column">
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-rotate"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="collection-product">
-                                <div class="collection-img">
-                                    <span>new</span>
-                                    <img src="./assets/images/home/collection4.png" alt="" />
-                                </div>
-                                <div class="collection-content">
-                                    <h5>Casual hipster warm winter sweater clothes, with yellow...</h5>
-                                </div>
-                                <div class="prize">
-                                    <h3>$899.00<span>$1299.00</span></h3>
-                                </div>
-                                <div class="collection-product-icon d-flex flex-column">
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-rotate"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- collection-section-end -->
-
-    <!-- blgo-section-start -->
-    <section class="blog-section section-1">
-        <div class="container">
-            <div class="blog-top">
-                <h3>from our blog</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="./assets/images/blog/blog1.png" alt="" />
-                        </div>
-                        <div class="blog-content">
-                            <h6>life style</h6>
-                            <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
-                            <a href="#">view details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="./assets/images/blog/blog2.png" alt="" />
-                        </div>
-                        <div class="blog-content">
-                            <h6>new arrival</h6>
-                            <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
-                            <a href="#">view details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="./assets/images/blog/blog3.png" alt="" />
-                        </div>
-                        <div class="blog-content">
-                            <h6>top sell</h6>
-                            <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
-                            <a href="#">view details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="./assets/images/blog/blog4.png" alt="" />
-                        </div>
-                        <div class="blog-content">
-                            <h6>life style</h6>
-                            <h4>Fashionable-pale-brunette-long-green dress-black-jacket-sunglasses.</h4>
-                            <a href="#">view details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- blgo-section-end -->
-
-    <!-- footer-start -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-box section-1">
-                <div class="footer-content">
-                    <h2>subscribe now and <span>20%</span> OFF</h2>
-                    <p>Learn first about our newest products and special promotions.</p>
-                </div>
-                <div class="footer-search-box">
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Enter your email:"
-                            aria-label="Recipient's username" aria-describedby="button-addon2" />
-                        <button class="btn" type="button" id="button-addon2">subscribe</button>
-                    </div>
-                </div>
-                <div class="footer-nav">
-                    <a href="#">home</a>
-                    <a href="#">about</a>
-                    <a href="#">page</a>
-                    <a href="#">blog</a>
-                    <a href="#">contact</a>
-                </div>
-                <div class="footer-nav">
-                    <a href="#">categories</a>
-                    <a href="#">featured</a>
-                    <a href="#">best-selling</a>
-                    <a href="#">latest-collection</a>
-                    <a href="#">profile</a>
-                </div>
-                <div class="follow-us">
-                    <h4>follow us</h4>
-                    <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container d-flex justify-content-between">
-                <div class="fotter-b-content">
-                    <p>Copyright © 2023 <span>Techno</span> All Rights Reserved</p>
-                </div>
-                <div class="footer-b-list">
-                    <a href="contact.html">Contact Us</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms &amp; Conditions</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer-end -->
-
-    <!-- search-modal-start -->
-    <div class="search-modal">
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <form class="d-flex" role="search">
-                            <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
-                            <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- search-modal-end -->
-
-    <!-- categories-canvas-start -->
-    <div class="categories-canvas">
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvastwo" aria-labelledby="offcanvastwoLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvastwoLabel">categories</h5>
-                <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i
-                        class="fa-solid fa-arrow-left"></i></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="categories-item">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="d-flex justify-content-between align-items-center collapsed"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                    aria-expanded="false" aria-controls="collapseOne">
-                                    women
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <h3>categories</h3>
-                                        <li><a href="#">Activewear</a></li>
-                                        <li><a href="#">Cargos</a></li>
-                                        <li><a href="#">Coats & Jackets</a></li>
-                                        <li><a href="#">Dresses</a></li>
-                                        <li><a href="#">One-Pieces</a></li>
-                                        <li><a href="#">Pants</a></li>
-                                        <li><a href="#">Shirts & Tops</a></li>
-                                        <li><a href="#">Sleepwear & Loungewear</a></li>
-                                        <li><a href="#">Activewear</a></li>
-                                    </ul>
-                                    <ul>
-                                        <h3>explore</h3>
-                                        <li><a href="#">Latest Arrivals</a></li>
-                                        <li><a href="#">Our sales</a></li>
-                                        <li><a href="#">Bestsellers</a></li>
-                                        <li><a href="#">Not expensive</a></li>
-                                        <li><a href="#">Expensive</a></li>
-                                        <li><a href="#">Exclusive</a></li>
-                                        <li><a href="#">Season summer</a></li>
-                                        <li><a href="#">Season winter</a></li>
-                                        <li><a href="#">Season autumn</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="d-flex justify-content-between align-items-center collapsed"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                    men
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <h3>popular</h3>
-                                        <li><a href="#"> Arm Warmers & Sleeves</a></li>
-                                        <li><a href="#">Balaclavas</a></li>
-                                        <li><a href="#"> Bandanas & Headties</a></li>
-                                        <li><a href="#"> Bridal Accessories</a></li>
-                                        <li><a href="#"> Earmuffs</a></li>
-                                    </ul>
-                                    <ul>
-                                        <h3>on sale</h3>
-                                        <li><a href="#"> Hand Muffs</a></li>
-                                        <li><a href="#">Hats</a></li>
-                                        <li><a href="#"> Sunglasses</a></li>
-                                        <li><a href="#"> Suspenders</a></li>
-                                        <li><a href="#"> Scarves & Shawls</a></li>
-                                    </ul>
-                                    <ul>
-                                        <h3>explore</h3>
-                                        <li><a href="#"> Latest Arrivals</a></li>
-                                        <li><a href="#">Our sales</a></li>
-                                        <li><a href="#"> Bestsellers</a></li>
-                                        <li><a href="#"> Not expensive</a></li>
-                                        <li><a href="#"> Expensive</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="d-flex justify-content-between align-items-center collapsed"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree">
-                                    kids
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <h3>categories</h3>
-                                        <li><a href="#">Overalls</a></li>
-                                        <li><a href="#">Mittens</a></li>
-                                        <li><a href="#">Beanie</a></li>
-                                        <li><a href="#">Baby apron</a></li>
-                                        <li><a href="#">Socks</a></li>
-                                        <li><a href="#">Diaper</a></li>
-                                        <li><a href="#">Singlet</a></li>
-                                        <li><a href="#">Shoes</a></li>
-                                        <li><a href="#">Safety pin</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingfour">
-                                <button class="d-flex justify-content-between align-items-center collapsed"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour"
-                                    aria-expanded="false" aria-controls="collapsefour">
-                                    Dresses
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                            </h2>
-                            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul>
-
-                                        <h3>categories</h3>
-                                        <li><a href="#">Overalls</a></li>
-                                        <li><a href="#">Mittens</a></li>
-                                        <li><a href="#">Beanie</a></li>
-                                        <li><a href="#">Baby apron</a></li>
-                                        <li><a href="#">Socks</a></li>
-                                        <li><a href="#">Diaper</a></li>
-                                        <li><a href="#">Singlet</a></li>
-                                        <li><a href="#">Shoes</a></li>
-                                        <li><a href="#">Safety pin</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingfive">
-                                <button class="d-flex justify-content-between align-items-center collapsed"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive"
-                                    aria-expanded="false" aria-controls="collapsefive">
-                                    clothing
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                            </h2>
-                            <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <h3>winter cloth</h3>
-                                        <li><a href="#">Sweater</a></li>
-                                        <li><a href="#">Gloves</a></li>
-                                        <li><a href="#">Fleece jacket</a></li>
-                                        <li><a href="#">Trench coat (Women)</a></li>
-                                        <li><a href="#">Boots</a></li>
-                                    </ul>
-                                    <ul>
-                                        <h3>summer cloth</h3>
-                                        <li><a href="#">T-shirt</a></li>
-                                        <li><a href="#">Singlet</a></li>
-                                        <li><a href="#">Swim trunks</a></li>
-                                        <li><a href="#">One-piece bathing suit</a></li>
-                                        <li><a href="#">Cap</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingSix">
-                                <button class="d-flex justify-content-between align-items-center collapsed"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
-                                    aria-expanded="false" aria-controls="collapseSix">
-                                    shoes
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                            </h2>
-                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <h3>Athletic Shoes</h3>
-                                        <li><a href="#">Golf shoes</a></li>
-                                        <li><a href="#">Hiking boots</a></li>
-                                        <li><a href="#">High-tops</a></li>
-                                        <li><a href="#">Running shoes</a></li>
-                                        <li><a href="#">Climbing shoes</a></li>
-                                    </ul>
-                                    <ul>
-                                        <h3>Boots</h3>
-                                        <li><a href="#">Knee-high boots</a></li>
-                                        <li><a href="#">Laced booties</a></li>
-                                        <li><a href="#">Hiking boots</a></li>
-                                        <li><a href="#">Riding boots</a></li>
-                                        <li><a href="#">Snow boots</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- categories-canvas-end -->
-
-    <!-- shoping-cart-modal-start -->
-    <div class="cart-canvas">
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header justify-content-end">
-                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="dropdown-content">
-                    <div class="shoping-cart-top">
-                        <div class="shoping-cart-title">
-                            <h4>shopping cart</h4>
-                            <p>
-                                Congratulations! You are qualified a <span>FREE SHIPPING <i
-                                        class="fa-solid fa-truck-fast"></i></span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cart-box d-flex align-items-center">
-                        <div class="cart-img">
-                            <img src="./assets/images/home/feature-product-3.png" alt="" />
-                        </div>
-                        <div class="cart-content-box">
-                            <div class="cart-content">
-                                <h5>Sneakers Basketball shoes</h5>
-                                <div class="cart-details">
-                                    <h6>size : 6</h6>
-                                    <h6>color : deep green</h6>
-                                </div>
-                            </div>
-                            <div class="cart-info d-flex align-items-center justify-content-between">
-                                <div class="prize">
-                                    <h6><span>$</span>65.00</h6>
-                                </div>
-                                <div class="cart-quantity">
-                                    <button><i class="fa-solid fa-minus"></i></button>
-                                    <span>1</span>
-                                    <button><i class="fa-solid fa-plus"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="trash-icon">
-                            <button><i class="fa-light fa-trash"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="checkout-box">
-                    <div class="sub-total">
-                        <h6>
-                            <span><i class="fa-solid fa-tag fa-rotate-90"></i></span>week of 30% off ($19.50)
-                        </h6>
-                        <h4>subtotal $45.50 USD</h4>
-                    </div>
-                    <div class="form-wrap">
-                        <input class="form-input form-control-has-validation" id="subscribe-form-email" type="email"
-                            name="note" placeholder="Order special instructions" />
-                        <label class="form-label rd-input-label" for="subscribe-form-email"></label>
-                    </div>
-                    <div class="checkout-btn d-flex flex-wrap justify-content-between">
-                        <div class="view-cart">
-                            <button>view-cart</button>
-                        </div>
-                        <div class="check-out">
-                            <button>check out</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- shoping-cart-modal-end -->
-
-    <!-- discount-wheel-canvas-start -->
-    <div class="discount-wheel-canvas">
-        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-            aria-labelledby="offcanvasWithBothOptionsLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="row d-flex flex-lg-row-reverse">
-                    <div class="col-lg-6">
-                        <div class="spin-button">
-                            <h2>Fall Sale!</h2>
-                            <p>It's your chance to win a big discount this Fall. Press the "SPIN THE WHEEL" button and
-                                try your luck on our Coupon Wheel!</p>
-                            <button class="spin" onclick="spin()"><img src="./assets/images/right-arrow.png"
-                                    alt="">spin</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="spin-box">
-                            <div class="mainbox" id="mainbox">
-                                <div class="box" id="box">
-                                    <div class="box1">
-                                        <span class="font span1"><b>21% off</b></span>
-                                        <span class="font span2"><b>150 tk off</b></span>
-                                        <span class="font span3"><b>7% off</b></span>
-                                        <span class="font span4"><b>200 tk off</b></span>
-                                        <span class="font span5"><b>15% off </b></span>
-
-                                    </div>
-                                    <div class="box2">
-                                        <span class="font span1"><b>5% off</b></span>
-                                        <span class="font span2"><b>80 tk off </b></span>
-                                        <span class="font span3"><b>50 tk off</b></span>
-                                        <span class="font span4"><b>10% off</b></span>
-                                        <span class="font span5"><b>22% off </b></span>
+                            <div class="cart-content-box">
+                                <div class="cart-content">
+                                    <h5>Sneakers Basketball shoes</h5>
+                                    <div class="cart-details">
+                                        <h6>size : 6</h6>
+                                        <h6>color : deep green</h6>
                                     </div>
                                 </div>
-                                <button>spin</button>
+                                <div class="cart-info d-flex align-items-center justify-content-between">
+                                    <div class="prize">
+                                        <h6><span>$</span>65.00</h6>
+                                    </div>
+                                    <div class="cart-quantity">
+                                        <button><i class="fa-solid fa-minus"></i></button>
+                                        <span>1</span>
+                                        <button><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
                             </div>
-                            <audio controls="controls" id="applause" src="./assets/images/applause.mp3"
-                                type="audio/mp3"></audio>
-                            <audio controls="controls" id="wheel" src="./assets/images/wheel.mp3"
-                                type="audio/mp3"></audio>
+                            <div class="trash-icon">
+                                <button><i class="fa-light fa-trash"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout-box">
+                        <div class="sub-total">
+                            <h6>
+                                <span><i class="fa-solid fa-tag fa-rotate-90"></i></span>week of 30% off ($19.50)
+                            </h6>
+                            <h4>subtotal $45.50 USD</h4>
+                        </div>
+                        <div class="form-wrap">
+                            <input class="form-input form-control-has-validation" id="subscribe-form-email" type="email" name="note" placeholder="Order special instructions" />
+                            <label class="form-label rd-input-label" for="subscribe-form-email"></label>
+                        </div>
+                        <div class="checkout-btn d-flex flex-wrap justify-content-between">
+                            <div class="view-cart">
+                                <button>view-cart</button>
+                            </div>
+                            <div class="check-out">
+                                <button>check out</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- discount-wheel-canvas-end -->
+        <!-- shoping-cart-modal-end -->
 
+        <!-- discount-wheel-canvas-start -->
+        <div class="discount-wheel-canvas">
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="row d-flex flex-lg-row-reverse">
+                        <div class="col-lg-6">
+                            <div class="spin-button">
+                                <h2>Fall Sale!</h2>
+                                <p>It's your chance to win a big discount this Fall. Press the "SPIN THE WHEEL" button and try your luck on our Coupon Wheel!</p>
+                                <button class="spin" onclick="spin()"><img src="./assets/images/right-arrow.png" alt="" />spin</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="spin-box">
+                                <div class="mainbox" id="mainbox">
+                                    <div class="box" id="box">
+                                        <div class="box1">
+                                            <span class="font span1"><b>21% off</b></span>
+                                            <span class="font span2"><b>150 tk off</b></span>
+                                            <span class="font span3"><b>7% off</b></span>
+                                            <span class="font span4"><b>200 tk off</b></span>
+                                            <span class="font span5"><b>15% off </b></span>
+                                        </div>
+                                        <div class="box2">
+                                            <span class="font span1"><b>5% off</b></span>
+                                            <span class="font span2"><b>80 tk off </b></span>
+                                            <span class="font span3"><b>50 tk off</b></span>
+                                            <span class="font span4"><b>10% off</b></span>
+                                            <span class="font span5"><b>22% off </b></span>
+                                        </div>
+                                    </div>
+                                    <button>spin</button>
+                                </div>
+                                <audio controls="controls" id="applause" src="./assets/images/applause.mp3" type="audio/mp3"></audio>
+                                <audio controls="controls" id="wheel" src="./assets/images/wheel.mp3" type="audio/mp3"></audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- discount-wheel-canvas-end -->
 
+        <script src="./assets/js/jquery-3.7.1.min.js"></script>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="./assets/js/countMe.min.js"></script>
+        <script src="./assets/js/range-slider.min.js"></script>
 
-    <script src="./assets/js/jquery-3.7.1.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/countMe.min.js"></script>
-    <script src="./assets/js/range-slider.min.js"></script>
-
-    <script src="./assets/js/fancybox.umd.js"></script>
-    <script src="./assets/js/jquery.easing.min.js"></script>
-    <script src="./assets/js/notiflix.min.js"></script>
-    <script src="./assets/js/main.js"></script>
-</body>
-
+        <script src="./assets/js/fancybox.umd.js"></script>
+        <script src="./assets/js/jquery.easing.min.js"></script>
+        <script src="./assets/js/notiflix.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+    </body>
 </html>

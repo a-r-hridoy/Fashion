@@ -1,219 +1,188 @@
 <html>
-
-<head>
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <!-- bootstrap-link-start -->
-   <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-   <!-- bootstrap-link-end -->
-   <!-- owl-carousel-start -->
-   <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-   <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
-   <!-- owl-carousel-end -->
-   <!-- fontawesome-link-start -->
-   <link rel="stylesheet" href="./assets/css/all.min.css" />
-   <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
-   <!-- fontawesome-link-end -->
-   <link rel="stylesheet" href="./assets/css/style.css" />
-   <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-face-aframe.prod.js"></script>
-   <script>
-      document.addEventListener("DOMContentLoaded", function () {
-         const list = ["glasses1", "glasses2", "hat1", "hat2", "earring"];
-         const visibles = [true, false, false, true, true];
-         const setVisible = (button, entities, visible) => {
-            if (visible) {
-               button.classList.add("selected");
-            } else {
-               button.classList.remove("selected");
-            }
-            entities.forEach((entity) => {
-               entity.setAttribute("visible", visible);
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- bootstrap-link-start -->
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <!-- bootstrap-link-end -->
+        <!-- owl-carousel-start -->
+        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+        <!-- owl-carousel-end -->
+        <!-- fontawesome-link-start -->
+        <link rel="stylesheet" href="./assets/css/all.min.css" />
+        <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+        <!-- fontawesome-link-end -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-face-aframe.prod.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const list = ["glasses1", "glasses2", "hat1", "hat2", "earring"];
+                const visibles = [true, false, false, true, true];
+                const setVisible = (button, entities, visible) => {
+                    if (visible) {
+                        button.classList.add("selected");
+                    } else {
+                        button.classList.remove("selected");
+                    }
+                    entities.forEach((entity) => {
+                        entity.setAttribute("visible", visible);
+                    });
+                };
+                list.forEach((item, index) => {
+                    const button = document.querySelector("#" + item);
+                    const entities = document.querySelectorAll("." + item + "-entity");
+                    setVisible(button, entities, visibles[index]);
+                    button.addEventListener("click", () => {
+                        visibles[index] = !visibles[index];
+                        setVisible(button, entities, visibles[index]);
+                    });
+                });
             });
-         }
-         list.forEach((item, index) => {
-            const button = document.querySelector("#" + item);
-            const entities = document.querySelectorAll("." + item + "-entity");
-            setVisible(button, entities, visibles[index]);
-            button.addEventListener('click', () => {
-               visibles[index] = !visibles[index];
-               setVisible(button, entities, visibles[index]);
-            });
-         });
-      })
-   </script>
-</head>
+        </script>
+    </head>
 
-<body>
+    <body>
+        <!-- navbar-start -->
+        <nav class="navbar navbar-expand-xl fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="categories-button">
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvastwo" aria-controls="offcanvastwo"><i class="fa-solid fa-bars-staggered"></i></button>
 
-   <!-- navbar-start -->
-   <nav class="navbar navbar-expand-xl fixed-top">
-      <div class="container">
-         <a class="navbar-brand" href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="categories-button">
-               <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvastwo"
-                  aria-controls="offcanvastwo"><i class="fa-solid fa-bars-staggered"></i></button>
+                        <div class="c-content">all categories</div>
+                    </div>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about.html">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="shop.html">shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="page-drop">
+                                <a class="nav-link active" aria-current="page" href="#">page <i class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
 
-               <div class="c-content">all categories</div>
+                                <div class="page-item shadow-sm mb-5 bg-body rounded">
+                                    <ul class="">
+                                        <li>
+                                            <a href="product.html" href="product.html"><span>All products</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="product-grid.html" href="product-grid.html"><span>product grid view</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="product-list.html" href="product-list.html"><span>product list view</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="product-details.html" href="product-details.html"><span>product details</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="sign-up.html" class="active"><span>sign-up</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="page-drop">
+                                <a class="nav-link" aria-current="blog" href="#">blog <i class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
+
+                                <div class="page-item shadow-sm mb-5 bg-body rounded">
+                                    <ul class="">
+                                        <li>
+                                            <a href="blog.html"><span>blog</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="blog-details-1.html"><span>blog-details-1</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="blog-details-2.html"><span>blog-details-2</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-right">
+                    <form class="d-flex" role="search">
+                        <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
+                        <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <div class="nav-icon d-flex align-items-center">
+                        <a href="log-in.html"> <i class="fa-light fa-user"></i></a>
+
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <a href="#"><i class="fa-sharp fa-light fa-cart-shopping" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i></a>
+                                <span>1</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="search-icon">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#searchModal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-               <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="about.html">about</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="shop.html">shop</a>
-               </li>
-               <li class="nav-item">
-                  <div class="page-drop">
-                     <a class="nav-link active" aria-current="page" href="#">page <i
-                           class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
+        </nav>
+        <!-- navbar-end -->
 
-                     <div class="page-item shadow-sm mb-5 bg-body rounded">
-                        <ul class="">
-                           <li>
-                              <a href="product.html" href="product.html"><span>All products</span></a>
-                           </li>
-                           <li>
-                              <a href="product-grid.html" href="product-grid.html"><span>product grid view</span></a>
-                           </li>
-                           <li>
-                              <a href="product-list.html" href="product-list.html"><span>product list view</span></a>
-                           </li>
-                           <li>
-                              <a href="product-details.html" href="product-details.html"><span>product
-                                    details</span></a>
-                           </li>
-
-                           <li>
-                              <a href="sign-up.html" class="active"><span>sign-up</span></a>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </li>
-               <li class="nav-item">
-                  <div class="page-drop">
-                     <a class="nav-link " aria-current="blog" href="#">blog <i class="fa-solid fa-angle-down"></i><i
-                           class="fa-solid fa-angle-up"></i></a>
-
-                     <div class="page-item shadow-sm mb-5 bg-body rounded">
-                        <ul class="">
-                           <li>
-                              <a href="blog.html"><span>blog</span></a>
-                           </li>
-                           <li>
-                              <a href="blog-details-1.html"><span>blog-details-1</span></a>
-                           </li>
-                           <li>
-                              <a href="blog-details-2.html"><span>blog-details-2</span></a>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="contact.html">contact</a>
-               </li>
-            </ul>
-         </div>
-
-         <div class="nav-right">
-            <form class="d-flex" role="search">
-               <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
-               <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-            <div class="nav-icon d-flex align-items-center">
-               <a href="log-in.html"> <i class="fa-light fa-user"></i></a>
-
-               <div class="dropdown">
-                  <button class="dropbtn">
-                     <a href="#"><i class="fa-sharp fa-light fa-cart-shopping" data-bs-toggle="offcanvas"
-                           data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i></a>
-                     <span>1</span>
-                  </button>
-               </div>
+        <div class="virtual-container">
+            <div class="options-panel">
+                <img id="hat1" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/hat/thumbnail.png" />
+                <img id="hat2" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/hat2/thumbnail.png" />
+                <img id="glasses1" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/glasses/thumbnail.png" />
+                <img id="glasses2" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/glasses2/thumbnail.png" />
+                <img id="earring" src="./assets/images/product-details/1.png" />
             </div>
-
-            <div class="search-icon">
-               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#searchModal">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-               </button>
-            </div>
-         </div>
-      </div>
-   </nav>
-   <!-- navbar-end -->
-
-
-
-   <div class="virtual-container">
-      <div class="options-panel">
-         <img id="hat1"
-            src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/hat/thumbnail.png" />
-         <img id="hat2"
-            src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/hat2/thumbnail.png" />
-         <img id="glasses1"
-            src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/glasses/thumbnail.png" />
-         <img id="glasses2"
-            src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/glasses2/thumbnail.png" />
-         <img id="earring"
-            src="./assets/images/product-details/1.png" />
-      </div>
-      <a-scene mindar-face embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights"
-         vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
-         <a-assets>
-            <a-asset-item id="headModel"
-               src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/sparkar/headOccluder.glb"></a-asset-item>
-            <a-asset-item id="glassesModel"
-               src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/glasses/scene.gltf"></a-asset-item>
-            <a-asset-item id="glassesModel2"
-               src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/glasses2/scene.gltf"></a-asset-item>
-            <a-asset-item id="hatModel"
-               src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/hat/scene.gltf"></a-asset-item>
-            <a-asset-item id="hatModel2"
-               src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/hat2/scene.gltf"></a-asset-item>
-            <a-asset-item id="earringModel"
-               src="./assets/images/product-details/tshirt-3D.GLTF"></a-asset-item>
-         </a-assets>
-         <a-camera active="false" position="0 0 0"></a-camera>
-         <!-- head occluder -->
-         <a-entity mindar-face-target="anchorIndex: 168">
-            <a-gltf-model mindar-face-occluder position="0 -0.3 0.15" rotation="0 0 0" scale="0.065 0.065 0.065"
-               src="#headModel"></a-gltf-model>
-         </a-entity>
-         <a-entity mindar-face-target="anchorIndex: 10">
-            <a-gltf-model rotation="0 -0 0" position="0 1.0 -0.5" scale="0.35 0.35 0.35" src="#hatModel"
-               class="hat1-entity" visible="false"></a-gltf-model>
-         </a-entity>
-         <a-entity mindar-face-target="anchorIndex: 10">
-            <a-gltf-model rotation="0 -0 0" position="0 -0.2 -0.5" scale="0.008 0.008 0.008" src="#hatModel2"
-               class="hat2-entity" visible="false"></a-gltf-model>
-         </a-entity>
-         <a-entity mindar-face-target="anchorIndex: 168">
-            <a-gltf-model rotation="0 -0 0" position="0 0 0" scale="0.01 0.01 0.01" src="#glassesModel"
-               class="glasses1-entity" visible="false"></a-gltf-model>
-         </a-entity>
-         <a-entity mindar-face-target="anchorIndex: 168">
-            <a-gltf-model rotation="0 -90 0" position="0 -0.3 0" scale="0.6 0.6 0.6" src="#glassesModel2"
-               class="glasses2-entity" visible="false"></a-gltf-model>
-         </a-entity>
-         <a-entity mindar-face-target="anchorIndex: 127">
-            <a-gltf-model rotation="-0.1 -0 0" position="0 -0.3 -0.3" scale="0.05 0.05 0.05" src="#earringModel"
-               class="earring-entity" visible="false"></a-gltf-model>
-         </a-entity>
-         <a-entity mindar-face-target="anchorIndex: 356">
-            <a-gltf-model rotation="0.1 -0 0" position="0 -0.3 -0.3" scale="0.05 0.05 0.05" src="#earringModel"
-               class="earring-entity" visible="false"></a-gltf-model>
-         </a-entity>
-      </a-scene>
-   </div>
-</body>
-
+            <a-scene mindar-face embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+                <a-assets>
+                    <a-asset-item id="headModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/sparkar/headOccluder.glb"></a-asset-item>
+                    <a-asset-item id="glassesModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/glasses/scene.gltf"></a-asset-item>
+                    <a-asset-item id="glassesModel2" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/glasses2/scene.gltf"></a-asset-item>
+                    <a-asset-item id="hatModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/hat/scene.gltf"></a-asset-item>
+                    <a-asset-item id="hatModel2" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/face-tracking/assets/hat2/scene.gltf"></a-asset-item>
+                    <a-asset-item id="earringModel" src="./assets/images/product-details/tshirt-3D.GLTF"></a-asset-item>
+                </a-assets>
+                <a-camera active="false" position="0 0 0"></a-camera>
+                <!-- head occluder -->
+                <a-entity mindar-face-target="anchorIndex: 168">
+                    <a-gltf-model mindar-face-occluder position="0 -0.3 0.15" rotation="0 0 0" scale="0.065 0.065 0.065" src="#headModel"></a-gltf-model>
+                </a-entity>
+                <a-entity mindar-face-target="anchorIndex: 10">
+                    <a-gltf-model rotation="0 -0 0" position="0 1.0 -0.5" scale="0.35 0.35 0.35" src="#hatModel" class="hat1-entity" visible="false"></a-gltf-model>
+                </a-entity>
+                <a-entity mindar-face-target="anchorIndex: 10">
+                    <a-gltf-model rotation="0 -0 0" position="0 -0.2 -0.5" scale="0.008 0.008 0.008" src="#hatModel2" class="hat2-entity" visible="false"></a-gltf-model>
+                </a-entity>
+                <a-entity mindar-face-target="anchorIndex: 168">
+                    <a-gltf-model rotation="0 -0 0" position="0 0 0" scale="0.01 0.01 0.01" src="#glassesModel" class="glasses1-entity" visible="false"></a-gltf-model>
+                </a-entity>
+                <a-entity mindar-face-target="anchorIndex: 168">
+                    <a-gltf-model rotation="0 -90 0" position="0 -0.3 0" scale="0.6 0.6 0.6" src="#glassesModel2" class="glasses2-entity" visible="false"></a-gltf-model>
+                </a-entity>
+                <a-entity mindar-face-target="anchorIndex: 127">
+                    <a-gltf-model rotation="-0.1 -0 0" position="0 -0.3 -0.3" scale="0.05 0.05 0.05" src="#earringModel" class="earring-entity" visible="false"></a-gltf-model>
+                </a-entity>
+                <a-entity mindar-face-target="anchorIndex: 356">
+                    <a-gltf-model rotation="0.1 -0 0" position="0 -0.3 -0.3" scale="0.05 0.05 0.05" src="#earringModel" class="earring-entity" visible="false"></a-gltf-model>
+                </a-entity>
+            </a-scene>
+        </div>
+    </body>
 </html>
