@@ -19,6 +19,20 @@ function scrollToTop() {
    });
 }
 
+
+// add bg to nav to fixed
+window.addEventListener("scroll", function () {
+   let scrollpos = window.scrollY;
+   const header = document.querySelector("nav");
+   const headerHeight = header.offsetHeight;
+   if (scrollpos >= headerHeight) {
+      header.classList.add("active", "fixed-top");
+   } else {
+      header.classList.remove("active", "fixed-top");
+   }
+});
+
+
 // flash-modal-start
 $(document).ready(function () {
    $("#flasModal").modal("show");

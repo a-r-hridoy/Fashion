@@ -467,6 +467,25 @@ ul {
 }
 // flash-end
 
+// offer-alert-start
+.offer-alert{
+   background-color: var(--black);
+   text-align: center;
+   padding: 10px;
+   .offer-content{
+      h5{
+         color: var(--white);
+         span{
+            color: var(--bg-feature);
+            text-transform: capitalize;
+            font-size: 15px;
+            margin-left: 10px;
+         }
+      }
+   }
+}  
+// offer-alert-end
+
 .section-1 {
    padding: 50px 0;
 }
@@ -867,7 +886,7 @@ ul {
 
 // home-section-start
 .home-section {
-   margin-top: 80px;
+   // margin-top: 150px;
    .categories-drop {
       .categories-button {
          margin: 30px 0 10px;
