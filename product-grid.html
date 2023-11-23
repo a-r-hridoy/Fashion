@@ -1,994 +1,826 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Fashion</title>
-        <!-- bootstrap-link-start -->
-        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-        <!-- bootstrap-link-end -->
-        <!-- owl-carousel-start -->
-        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
-        <!-- owl-carousel-end -->
-        <!-- range-slider-start -->
-        <link rel="stylesheet" href="./assets/css/range-slider.css" />
-        <!-- range-slider-end -->
-        <!-- fontawesome-link-start -->
-        <link rel="stylesheet" href="./assets/css/all.min.css" />
-        <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
-        <!-- fontawesome-link-end -->
-        <link rel="stylesheet" href="./assets/css/style.css" />
-    </head>
 
-    <body onload="preloder_function()">
-        <!-- Preloader area start -->
-        <div id="preloader"></div>
-        <!-- Preloader area end -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion</title>
+    <!-- bootstrap-link-start -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- bootstrap-link-end -->
+    <!-- owl-carousel-start -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+    <!-- owl-carousel-end -->
+    <!-- range-slider-start -->
+    <link rel="stylesheet" href="./assets/css/range-slider.css" />
+    <!-- range-slider-end -->
+    <!-- fontawesome-link-start -->
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+    <!-- fontawesome-link-end -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-        <!-- Preloader area end -->
-        <!-- scroll-top-start -->
-        <div class="scrollTop" onclick="scrollToTop();">
-            <a href="#"> <i class="fa-solid fa-angles-up"></i></a>
+<body onload="preloder_function()">
+    <!-- Preloader area start -->
+    <div id="preloader"></div>
+    <!-- Preloader area end -->
+
+    <!-- Preloader area end -->
+    <!-- scroll-top-start -->
+    <div class="scrollTop" onclick="scrollToTop();">
+        <a href="#"> <i class="fa-solid fa-angles-up"></i></a>
+    </div>
+    <!-- scroll-top-end -->
+
+    <!-- discount-wheel-start -->
+    <div class="discount-wheel">
+        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"><img src="./assets/images/whell.png" alt="" /></button>
+    </div>
+    <!-- discount-wheel-end -->
+
+    <!-- offer-alert-start -->
+    <div class="offer-alert">
+        <div class="offer-content">
+            <marquee behavior="" direction="">
+                <h5>25% off <span>on selected winter product</span></h5>
+            </marquee>
         </div>
-        <!-- scroll-top-end -->
+    </div>
+    <!-- offer-alert-end -->
 
-        <!-- discount-wheel-start -->
-        <div class="discount-wheel">
-            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img src="./assets/images/whell.png" alt="" /></button>
-        </div>
-        <!-- discount-wheel-end -->
+    <!-- navbar-start -->
+    <nav class="navbar navbar-expand-xl ">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="categories-button">
+                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvastwo"
+                        aria-controls="offcanvastwo"><i class="fa-solid fa-bars-staggered"></i></button>
 
-          <!-- offer-alert-start -->
-          <div class="offer-alert">
-            <div class="offer-content">
-                <marquee behavior="" direction="">
-                    <h5>25% off <span>on selected winter product</span></h5>
-                </marquee>
-            </div>
-        </div>
-        <!-- offer-alert-end -->
-
-        <!-- navbar-start -->
-        <nav class="navbar navbar-expand-xl ">
-            <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="categories-button">
-                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvastwo" aria-controls="offcanvastwo"><i class="fa-solid fa-bars-staggered"></i></button>
-
-                        <div class="c-content">all categories</div>
-                    </div>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="about.html">about</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="shop.html">shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <div class="page-drop">
-                                <a class="nav-link active" aria-current="page" href="#">page <i class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
-
-                                <div class="page-item shadow-sm mb-5 bg-body rounded">
-                                    <ul class="">
-                                        <li>
-                                            <a href="product.html"><span>All products</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="product-grid.html" class="active"><span>product grid view</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="product-list.html"><span>product list view</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="product-details.html"><span>product details</span></a>
-                                        </li>
-
-                                        <li>
-                                            <a href="sign-up.html"><span>sign-up</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <div class="page-drop">
-                                <a class="nav-link" aria-current="blog" href="#">blog <i class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
-
-                                <div class="page-item shadow-sm mb-5 bg-body rounded">
-                                    <ul class="">
-                                        <li>
-                                            <a href="blog.html"><span>blog</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="blog-details-1.html"><span>blog-details-1</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="blog-details-2.html"><span>blog-details-2</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="contact.html">contact</a>
-                        </li>
-                    </ul>
+                    <div class="c-content">all categories</div>
                 </div>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="shop.html">shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="page-drop">
+                            <a class="nav-link active" aria-current="page" href="#">page <i
+                                    class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
 
-                <div class="nav-right">
-                    <form class="d-flex" role="search">
-                        <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
-                        <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                    <div class="nav-icon d-flex align-items-center">
-                        <a href="log-in.html"> <i class="fa-light fa-user"></i></a>
+                            <div class="page-item shadow-sm mb-5 bg-body rounded">
+                                <ul class="">
+                                    <li>
+                                        <a href="product.html"><span>All products</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="product-grid.html" class="active"><span>product grid view</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="product-list.html"><span>product list view</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="product-details.html"><span>product details</span></a>
+                                    </li>
 
-                        <div class="dropdown">
-                            <button class="dropbtn">
-                                <a href="#"><i class="fa-sharp fa-light fa-cart-shopping" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i></a>
-                                <span>1</span>
-                            </button>
+                                    <li>
+                                        <a href="sign-up.html"><span>sign-up</span></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="page-drop">
+                            <a class="nav-link" aria-current="blog" href="#">blog <i
+                                    class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
 
-                    <div class="search-icon">
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#searchModal">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <div class="page-item shadow-sm mb-5 bg-body rounded">
+                                <ul class="">
+                                    <li>
+                                        <a href="blog.html"><span>blog</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-details-1.html"><span>blog-details-1</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-details-2.html"><span>blog-details-2</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <form class="d-flex" role="search">
+                    <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
+                    <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="nav-icon d-flex align-items-center">
+                    <a href="log-in.html"> <i class="fa-light fa-user"></i></a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a href="#"><i class="fa-sharp fa-light fa-cart-shopping" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i></a>
+                            <span>1</span>
                         </button>
                     </div>
                 </div>
-            </div>
-        </nav>
-        <!-- navbar-end -->
 
-        <!-- banner-section-start -->
-        <section class="banner-section">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-md-6">
-                        <div class="banner-content">
-                            <h3>products grid view</h3>
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">products grid view</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="banner-img text-end">
-                            <img src="assets/images/banner/banner.png" alt="" />
-                        </div>
-                    </div>
+                <div class="search-icon">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
                 </div>
             </div>
-        </section>
-        <!-- banner-section-end -->
+        </div>
+    </nav>
+    <!-- navbar-end -->
 
-        <!-- product-start -->
-        <section class="product-section section-2">
-            <div class="container">
-                <div class="row g-4 g-lg-5">
-                    <div class="col-xl-3 col-lg-4">
-                        <div class="filter-area">
-                            <div class="accordion-item">
-                                <h5 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        Product Search
-                                    </button>
-                                </h5>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
-                                    <div class="accordion-body">
-                                        <div class="filter-box">
-                                            <div class="grid-top">
-                                                <div class="search-container">
-                                                    <form action="#">
-                                                        <input type="text" placeholder="Search here" name="search" />
-                                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h5 class="accordion-header" id=" headingTow">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Price
-                                    </button>
-                                </h5>
-                                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo">
-                                    <div class="accordion-body">
-                                        <div class="filter-box">
-                                            <div class="input-box">
-                                                <span class="irs irs--flat js-irs-0 irs-with-grid">
-                                                    <span class="irs">
-                                                        <span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">0</span><span class="irs-max" style="visibility: visible;">1 000</span>
-                                                        <span class="irs-from" style="visibility: visible; left: 14.1363%;">200</span><span class="irs-to" style="visibility: visible; left: 53.2107%;">611</span>
-                                                        <span class="irs-single" style="visibility: hidden; left: 22.4783%;">200 — 611</span>
-                                                    </span>
-                                                    <span class="irs-grid" style="width: 94.4444%; left: 2.67778%;">
-                                                        <span class="irs-grid-pol" style="left: 0%;"></span><span class="irs-grid-text js-grid-text-0" style="left: 0%; margin-left: 0%;">0</span>
-                                                        <span class="irs-grid-pol small" style="left: 20%;"></span><span class="irs-grid-pol small" style="left: 15%;"></span><span class="irs-grid-pol small" style="left: 10%;"></span>
-                                                        <span class="irs-grid-pol small" style="left: 5%;"></span><span class="irs-grid-pol" style="left: 25%;"></span>
-                                                        <span class="irs-grid-text js-grid-text-1" style="left: 25%; visibility: visible; margin-left: 0%;">250</span><span class="irs-grid-pol small" style="left: 45%;"></span>
-                                                        <span class="irs-grid-pol small" style="left: 40%;"></span><span class="irs-grid-pol small" style="left: 35%;"></span><span class="irs-grid-pol small" style="left: 30%;"></span>
-                                                        <span class="irs-grid-pol" style="left: 50%;"></span><span class="irs-grid-text js-grid-text-2" style="left: 50%; visibility: visible; margin-left: 0%;">500</span>
-                                                        <span class="irs-grid-pol small" style="left: 70%;"></span><span class="irs-grid-pol small" style="left: 65%;"></span><span class="irs-grid-pol small" style="left: 60%;"></span>
-                                                        <span class="irs-grid-pol small" style="left: 55%;"></span><span class="irs-grid-pol" style="left: 75%;"></span>
-                                                        <span class="irs-grid-text js-grid-text-3" style="left: 75%; visibility: visible; margin-left: 0%;">750</span><span class="irs-grid-pol small" style="left: 95%;"></span>
-                                                        <span class="irs-grid-pol small" style="left: 90%;"></span><span class="irs-grid-pol small" style="left: 85%;"></span><span class="irs-grid-pol small" style="left: 80%;"></span>
-                                                        <span class="irs-grid-pol" style="left: 100%;"></span><span class="irs-grid-text js-grid-text-4" style="left: 100%; margin-left: 0%;">1 000</span>
-                                                    </span>
-                                                    <span class="irs-bar" style="left: 21.6667%; width: 38.8167%;"></span><span class="irs-shadow shadow-from" style="display: none;"></span>
-                                                    <span class="irs-shadow shadow-to" style="display: none;"></span><span class="irs-handle from" style="left: 18.8889%;"><i></i><i></i><i></i></span>
-                                                    <span class="irs-handle to type_last" style="left: 57.7056%;"><i></i><i></i><i></i></span>
-                                                </span>
-                                                <input type="text" class="irs-hidden-input" name="my_range" value="" tabindex="-1" readonly="" />
-
-                                                <div class="range-custom d-flex justify-content-between">
-                                                    <label for="customRange1" class="form-label mt-3"> $5,000</label>
-                                                    <label for="customRange1" class="form-label mt-3"> $1,00,000</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h5 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Product Categories
-                                    </button>
-                                </h5>
-                                <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree">
-                                    <div class="accordion-body">
-                                        <div class="filter-box">
-                                            <div class="check-box">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="color1" />
-                                                    <label class="form-check-label" for="color1"> T-Shirt </label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="color2" />
-                                                    <label class="form-check-label" for="color2"> Shirt </label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="color3" />
-                                                    <label class="form-check-label" for="color3"> Shoes </label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="color4" />
-                                                    <label class="form-check-label" for="color4">Sunglass</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="color5" />
-                                                    <label class="form-check-label" for="color5"> Hoddie </label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="color6" />
-                                                    <label class="form-check-label" for="color6">School Bag</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="color7" />
-                                                    <label class="form-check-label" for="color7">Watch</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="color8" />
-                                                    <label class="form-check-label" for="color8">Shampoo</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="color9" />
-                                                    <label class="form-check-label" for="color9">Womne Dress</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="color10" />
-                                                    <label class="form-check-label" for="color10">Hand Bag</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="color11" />
-                                                    <label class="form-check-label" for="color11">Suit</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="color12" />
-                                                    <label class="form-check-label" for="color12">jeans</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h5 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        color
-                                    </button>
-                                </h5>
-                                <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour">
-                                    <div class="accordion-body">
-                                        <div class="filter-box">
-                                            <div class="color-box">
-                                                <h4>color</h4>
-                                                <input class="color-black form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
-                                                <input class="color-neve-blue form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
-                                                <input class="color-white form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" />
-                                                <input class="color-green form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h5 class="accordion-header" id="headingFive">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        Size
-                                    </button>
-                                </h5>
-                                <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive">
-                                    <div class="accordion-body">
-                                        <div class="filter-box">
-                                            <div class="size-box d-flex">
-                                                <a href="#">S</a>
-                                                <a href="#">L</a>
-                                                <a href="#">M</a>
-                                                <a href="#">XL</a>
-                                                <a href="#">XXL</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h5 class="accordion-header" id="headingSix">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        Popular Tags
-                                    </button>
-                                </h5>
-                                <div id="collapseSix" class="accordion-collapse collapse show" aria-labelledby="headingSix">
-                                    <div class="accordion-body">
-                                        <div class="filter-box">
-                                            <div class="check-box">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="condition1" />
-                                                    <label class="form-check-label" for="condition1">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="condition2" />
-                                                    <label class="form-check-label" for="condition2">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fa-regular fa-star"></i>
-                                                    </label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="condition3" />
-                                                    <label class="form-check-label" for="condition3">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fa-regular fa-star"></i>
-                                                        <i class="fa-regular fa-star"></i>
-                                                    </label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="condition4" />
-                                                    <label class="form-check-label" for="condition4">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fa-regular fa-star"></i>
-                                                        <i class="fa-regular fa-star"></i>
-                                                        <i class="fa-regular fa-star"></i>
-                                                    </label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="condition5" />
-                                                    <label class="form-check-label" for="condition5">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fa-regular fa-star"></i>
-                                                        <i class="fa-regular fa-star"></i>
-                                                        <i class="fa-regular fa-star"></i>
-                                                        <i class="fa-regular fa-star"></i>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h5 class="accordion-header" id="headingSeven">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                        Popular Tags
-                                    </button>
-                                </h5>
-                                <div id="collapseSeven" class="accordion-collapse collapse show" aria-labelledby="headingSeven">
-                                    <div class="accordion-body">
-                                        <div class="filter-box">
-                                            <div class="checkbox-group">
-                                                <span>
-                                                    <input type="checkbox" class="btn-check" id="btn-check-3" autocomplete="off" />
-                                                    <label class="btn btn-primary" for="btn-check-3">Apple</label>
-                                                </span>
-                                                <span>
-                                                    <input type="checkbox" class="btn-check" id="btn-check-4" autocomplete="off" />
-                                                    <label class="btn btn-primary" for="btn-check-4">Pineapple</label>
-                                                </span>
-                                                <span>
-                                                    <input type="checkbox" class="btn-check" id="btn-check-5" autocomplete="off" />
-                                                    <label class="btn btn-primary" for="btn-check-5">Strawberry</label>
-                                                </span>
-                                                <span>
-                                                    <input type="checkbox" class="btn-check" id="btn-check-6" autocomplete="off" />
-                                                    <label class="btn btn-primary" for="btn-check-6">Cucumber</label>
-                                                </span>
-                                                <span>
-                                                    <input type="checkbox" class="btn-check" id="btn-check-1" autocomplete="off" />
-                                                    <label class="btn btn-primary" for="btn-check-1">Orange</label>
-                                                </span>
-                                                <span>
-                                                    <input type="checkbox" class="btn-check" id="btn-check-2" autocomplete="off" />
-                                                    <label class="btn btn-primary" for="btn-check-2">Lettuce</label>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-9 col-lg-8">
-                        <div class="row g-0">
-                            <div class="col-md-12">
-                                <div class="grid-box d-flex justify-content-between flex-wrap">
-                                    <div class="grid-icon">
-                                        <a href="product-grid.html"><i class="fa-solid fa-border-all active"></i></a>
-                                        <a href="product-list.html"><i class="fa-solid fa-list"></i></a>
-                                    </div>
-                                    <div class="select-box">
-                                        <div class="grid-select flex-wrap d-flex align-items-center">
-                                            <h5>show:</h5>
-                                            <select class="form-select1" aria-label="Default select example">
-                                                <option selected="">12</option>
-                                                <option value="1">13</option>
-                                                <option value="2">14</option>
-                                                <option value="3">15</option>
-                                            </select>
-                                            <h5>short by:</h5>
-                                            <select class="form-select2" aria-label="Default select example">
-                                                <option selected="">Default Sorting</option>
-                                                <option value="1">13</option>
-                                                <option value="2">14</option>
-                                                <option value="3">15</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="prodcut-box">
-                                    <div class="product-title">
-                                        <a href="#">-25%</a>
-                                    </div>
-                                    <div class="product-img">
-                                        <a href="product-details.html"><img class="img-fluid" src="./assets/images/product/product1.png" alt="" /></a>
-                                    </div>
-                                    <div class="product-content-box">
-                                        <div class="product-content">
-                                            <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak...</a></h6>
-                                            <h4>$200.00</h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-icon d-flex flex-column">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-rotate"></i>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="prodcut-box">
-                                    <div class="product-title">
-                                        <a href="#">-25%</a>
-                                    </div>
-                                    <div class="product-img">
-                                        <a href="product-details.html"><img class="img-fluid" src="./assets/images/product/product2.png" alt="" /></a>
-                                    </div>
-                                    <div class="product-content-box">
-                                        <div class="product-content">
-                                            <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak...</a></h6>
-                                            <h4>$200.00</h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-icon d-flex flex-column">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-rotate"></i>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="prodcut-box">
-                                    <div class="product-title">
-                                        <a href="#">-25%</a>
-                                    </div>
-                                    <div class="product-img">
-                                        <a href="product-details.html"><img class="img-fluid" src="./assets/images/product/product3.png" alt="" /></a>
-                                    </div>
-                                    <div class="product-content-box">
-                                        <div class="product-content">
-                                            <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak...</a></h6>
-                                            <h4>$200.00</h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-icon d-flex flex-column">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-rotate"></i>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="prodcut-box">
-                                    <div class="product-title">
-                                        <a href="#">-25%</a>
-                                    </div>
-                                    <div class="product-img">
-                                        <a href="product-details.html"><img class="img-fluid" src="./assets/images/product/product4.png" alt="" /></a>
-                                    </div>
-                                    <div class="product-content-box">
-                                        <div class="product-content">
-                                            <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak...</a></h6>
-                                            <h4>$200.00</h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-icon d-flex flex-column">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-rotate"></i>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="prodcut-box">
-                                    <div class="product-title">
-                                        <a href="#">-25%</a>
-                                    </div>
-                                    <div class="product-img">
-                                        <a href="product-details.html"><img class="img-fluid" src="./assets/images/product/product5.png" alt="" /></a>
-                                    </div>
-                                    <div class="product-content-box">
-                                        <div class="product-content">
-                                            <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak...</a></h6>
-                                            <h4>$200.00</h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-icon d-flex flex-column">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-rotate"></i>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="prodcut-box">
-                                    <div class="product-title">
-                                        <a href="#">-25%</a>
-                                    </div>
-                                    <div class="product-img">
-                                        <a href="product-details.html"><img class="img-fluid" src="./assets/images/product/product6.png" alt="" /></a>
-                                    </div>
-                                    <div class="product-content-box">
-                                        <div class="product-content">
-                                            <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak...</a></h6>
-                                            <h4>$200.00</h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-icon d-flex flex-column">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-rotate"></i>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="prodcut-box">
-                                    <div class="product-title">
-                                        <a href="#">-25%</a>
-                                    </div>
-                                    <div class="product-img">
-                                        <a href="product-details.html"><img class="img-fluid" src="./assets/images/product/product7.png" alt="" /></a>
-                                    </div>
-                                    <div class="product-content-box">
-                                        <div class="product-content">
-                                            <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak...</a></h6>
-                                            <h4>$200.00</h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-icon d-flex flex-column">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-rotate"></i>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="prodcut-box">
-                                    <div class="product-title">
-                                        <a href="#">-25%</a>
-                                    </div>
-                                    <div class="product-img">
-                                        <a href="product-details.html"><img class="img-fluid" src="./assets/images/product/product8.png" alt="" /></a>
-                                    </div>
-                                    <div class="product-content-box">
-                                        <div class="product-content">
-                                            <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak...</a></h6>
-                                            <h4>$200.00</h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-icon d-flex flex-column">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-rotate"></i>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="prodcut-box">
-                                    <div class="product-title">
-                                        <a href="#">-25%</a>
-                                    </div>
-                                    <div class="product-img">
-                                        <a href="product-details.html"><img class="img-fluid" src="./assets/images/product/product9.png" alt="" /></a>
-                                    </div>
-                                    <div class="product-content-box">
-                                        <div class="product-content">
-                                            <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak...</a></h6>
-                                            <h4>$200.00</h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-icon d-flex flex-column">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-rotate"></i>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="prodcut-box">
-                                    <div class="product-title">
-                                        <a href="#">-25%</a>
-                                    </div>
-                                    <div class="product-img">
-                                        <a href="product-details.html"><img class="img-fluid" src="./assets/images/product/product10.png" alt="" /></a>
-                                    </div>
-                                    <div class="product-content-box">
-                                        <div class="product-content">
-                                            <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak...</a></h6>
-                                            <h4>$200.00</h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-icon d-flex flex-column">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-rotate"></i>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="prodcut-box">
-                                    <div class="product-title">
-                                        <a href="#">-25%</a>
-                                    </div>
-                                    <div class="product-img">
-                                        <a href="product-details.html"><img class="img-fluid" src="./assets/images/product/product11.png" alt="" /></a>
-                                    </div>
-                                    <div class="product-content-box">
-                                        <div class="product-content">
-                                            <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak...</a></h6>
-                                            <h4>$200.00</h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-icon d-flex flex-column">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-rotate"></i>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="prodcut-box">
-                                    <div class="product-title">
-                                        <a href="#">-25%</a>
-                                    </div>
-                                    <div class="product-img">
-                                        <a href="product-details.html"><img class="img-fluid" src="./assets/images/product/product12.png" alt="" /></a>
-                                    </div>
-                                    <div class="product-content-box">
-                                        <div class="product-content">
-                                            <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak...</a></h6>
-                                            <h4>$200.00</h4>
-                                        </div>
-                                    </div>
-                                    <div class="product-icon d-flex flex-column">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-rotate"></i>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <!-- banner-section-start -->
+    <section class="banner-section">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6">
+                    <div class="banner-content">
+                        <h3>products grid view</h3>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">products grid view</li>
+                            </ol>
+                        </nav>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- product-end -->
-
-        <!-- footer-start -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-box section-1">
-                    <div class="footer-content">
-                        <h2>subscribe now and <span>20%</span> OFF</h2>
-                        <p>Learn first about our newest products and special promotions.</p>
-                    </div>
-                    <div class="footer-search-box">
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Enter your email:" aria-label="Recipient's username" aria-describedby="button-addon2" />
-                            <button class="btn" type="button" id="button-addon2">subscribe</button>
-                        </div>
-                    </div>
-                    <div class="footer-nav">
-                        <a href="#">home</a>
-                        <a href="#">about</a>
-                        <a href="#">page</a>
-                        <a href="#">blog</a>
-                        <a href="#">contact</a>
-                    </div>
-                    <div class="footer-nav">
-                        <a href="#">categories</a>
-                        <a href="#">featured</a>
-                        <a href="#">best-selling</a>
-                        <a href="#">latest-collection</a>
-                        <a href="#">profile</a>
-                    </div>
-                    <div class="follow-us">
-                        <h4>follow us</h4>
-                        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container d-flex justify-content-between">
-                    <div class="fotter-b-content">
-                        <p>Copyright © 2023 <span>Techno</span> All Rights Reserved</p>
-                    </div>
-                    <div class="footer-b-list">
-                        <a href="contact.html">Contact Us</a>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms &amp; Conditions</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- footer-end -->
-
-        <!-- search-modal-start -->
-        <div class="search-modal">
-            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <form class="d-flex" role="search">
-                                <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
-                                <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            </form>
-                        </div>
+                <div class="col-md-6">
+                    <div class="banner-img text-end">
+                        <img src="assets/images/banner/banner.png" alt="" />
                     </div>
                 </div>
             </div>
         </div>
-        <!-- search-modal-end -->
+    </section>
+    <!-- banner-section-end -->
 
-        <!-- categories-canvas-start -->
-        <div class="categories-canvas">
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvastwo" aria-labelledby="offcanvastwoLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvastwoLabel">categories</h5>
-                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-arrow-left"></i></button>
+    <!-- product-start -->
+    <section class="product-section section-2">
+        <div class="container">
+            <div class="row g-4 g-lg-5">
+                <div class="col-xl-3 col-lg-4">
+                    <div class="filter-area">
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Product Search
+                                </button>
+                            </h5>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    <div class="filter-box">
+                                        <div class="grid-top">
+                                            <div class="search-container">
+                                                <form action="#">
+                                                    <input type="text" placeholder="Search here" name="search" />
+                                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id=" headingTow">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Price
+                                </button>
+                            </h5>
+                            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo">
+                                <div class="accordion-body">
+                                    <div class="filter-box">
+                                        <div class="input-box">
+                                            <span class="irs irs--flat js-irs-0 irs-with-grid">
+                                                <span class="irs">
+                                                    <span class="irs-line" tabindex="0"></span><span class="irs-min"
+                                                        style="visibility: visible;">0</span><span class="irs-max"
+                                                        style="visibility: visible;">1 000</span>
+                                                    <span class="irs-from"
+                                                        style="visibility: visible; left: 14.1363%;">200</span><span
+                                                        class="irs-to"
+                                                        style="visibility: visible; left: 53.2107%;">611</span>
+                                                    <span class="irs-single"
+                                                        style="visibility: hidden; left: 22.4783%;">200 — 611</span>
+                                                </span>
+                                                <span class="irs-grid" style="width: 94.4444%; left: 2.67778%;">
+                                                    <span class="irs-grid-pol" style="left: 0%;"></span><span
+                                                        class="irs-grid-text js-grid-text-0"
+                                                        style="left: 0%; margin-left: 0%;">0</span>
+                                                    <span class="irs-grid-pol small" style="left: 20%;"></span><span
+                                                        class="irs-grid-pol small" style="left: 15%;"></span><span
+                                                        class="irs-grid-pol small" style="left: 10%;"></span>
+                                                    <span class="irs-grid-pol small" style="left: 5%;"></span><span
+                                                        class="irs-grid-pol" style="left: 25%;"></span>
+                                                    <span class="irs-grid-text js-grid-text-1"
+                                                        style="left: 25%; visibility: visible; margin-left: 0%;">250</span><span
+                                                        class="irs-grid-pol small" style="left: 45%;"></span>
+                                                    <span class="irs-grid-pol small" style="left: 40%;"></span><span
+                                                        class="irs-grid-pol small" style="left: 35%;"></span><span
+                                                        class="irs-grid-pol small" style="left: 30%;"></span>
+                                                    <span class="irs-grid-pol" style="left: 50%;"></span><span
+                                                        class="irs-grid-text js-grid-text-2"
+                                                        style="left: 50%; visibility: visible; margin-left: 0%;">500</span>
+                                                    <span class="irs-grid-pol small" style="left: 70%;"></span><span
+                                                        class="irs-grid-pol small" style="left: 65%;"></span><span
+                                                        class="irs-grid-pol small" style="left: 60%;"></span>
+                                                    <span class="irs-grid-pol small" style="left: 55%;"></span><span
+                                                        class="irs-grid-pol" style="left: 75%;"></span>
+                                                    <span class="irs-grid-text js-grid-text-3"
+                                                        style="left: 75%; visibility: visible; margin-left: 0%;">750</span><span
+                                                        class="irs-grid-pol small" style="left: 95%;"></span>
+                                                    <span class="irs-grid-pol small" style="left: 90%;"></span><span
+                                                        class="irs-grid-pol small" style="left: 85%;"></span><span
+                                                        class="irs-grid-pol small" style="left: 80%;"></span>
+                                                    <span class="irs-grid-pol" style="left: 100%;"></span><span
+                                                        class="irs-grid-text js-grid-text-4"
+                                                        style="left: 100%; margin-left: 0%;">1 000</span>
+                                                </span>
+                                                <span class="irs-bar"
+                                                    style="left: 21.6667%; width: 38.8167%;"></span><span
+                                                    class="irs-shadow shadow-from" style="display: none;"></span>
+                                                <span class="irs-shadow shadow-to" style="display: none;"></span><span
+                                                    class="irs-handle from"
+                                                    style="left: 18.8889%;"><i></i><i></i><i></i></span>
+                                                <span class="irs-handle to type_last"
+                                                    style="left: 57.7056%;"><i></i><i></i><i></i></span>
+                                            </span>
+                                            <input type="text" class="irs-hidden-input" name="my_range" value=""
+                                                tabindex="-1" readonly="" />
+
+                                            <div class="range-custom d-flex justify-content-between">
+                                                <label for="customRange1" class="form-label mt-3"> $5,000</label>
+                                                <label for="customRange1" class="form-label mt-3"> $1,00,000</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingThree">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Product Categories
+                                </button>
+                            </h5>
+                            <div id="collapseThree" class="accordion-collapse collapse show"
+                                aria-labelledby="headingThree">
+                                <div class="accordion-body">
+                                    <div class="filter-box">
+                                        <div class="check-box">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="color1" />
+                                                <label class="form-check-label" for="color1"> T-Shirt </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="color2" />
+                                                <label class="form-check-label" for="color2"> Shirt </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="color3" />
+                                                <label class="form-check-label" for="color3"> Shoes </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="color4" />
+                                                <label class="form-check-label" for="color4">Sunglass</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="color5" />
+                                                <label class="form-check-label" for="color5"> Hoddie </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="color6" />
+                                                <label class="form-check-label" for="color6">School Bag</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="color7" />
+                                                <label class="form-check-label" for="color7">Watch</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="color8" />
+                                                <label class="form-check-label" for="color8">Shampoo</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="color9" />
+                                                <label class="form-check-label" for="color9">Womne Dress</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="color10" />
+                                                <label class="form-check-label" for="color10">Hand Bag</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="color11" />
+                                                <label class="form-check-label" for="color11">Suit</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="color12" />
+                                                <label class="form-check-label" for="color12">jeans</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingFour">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    color
+                                </button>
+                            </h5>
+                            <div id="collapseFour" class="accordion-collapse collapse show"
+                                aria-labelledby="headingFour">
+                                <div class="accordion-body">
+                                    <div class="filter-box">
+                                        <div class="color-box">
+                                            <h4>color</h4>
+                                            <input class="color-black form-check-input" type="radio"
+                                                name="exampleRadios" id="exampleRadios1" value="option1" checked />
+                                            <input class="color-neve-blue form-check-input" type="radio"
+                                                name="exampleRadios" id="exampleRadios2" value="option2" />
+                                            <input class="color-white form-check-input" type="radio"
+                                                name="exampleRadios" id="exampleRadios3" value="option3" />
+                                            <input class="color-green form-check-input" type="radio"
+                                                name="exampleRadios" id="exampleRadios4" value="option4" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingFive">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Size
+                                </button>
+                            </h5>
+                            <div id="collapseFive" class="accordion-collapse collapse show"
+                                aria-labelledby="headingFive">
+                                <div class="accordion-body">
+                                    <div class="filter-box">
+                                        <div class="size-box d-flex">
+                                            <a href="#">S</a>
+                                            <a href="#">L</a>
+                                            <a href="#">M</a>
+                                            <a href="#">XL</a>
+                                            <a href="#">XXL</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingSix">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Popular Tags
+                                </button>
+                            </h5>
+                            <div id="collapseSix" class="accordion-collapse collapse show" aria-labelledby="headingSix">
+                                <div class="accordion-body">
+                                    <div class="filter-box">
+                                        <div class="check-box">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="condition1" />
+                                                <label class="form-check-label" for="condition1">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="condition2" />
+                                                <label class="form-check-label" for="condition2">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="condition3" />
+                                                <label class="form-check-label" for="condition3">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="condition4" />
+                                                <label class="form-check-label" for="condition4">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="condition5" />
+                                                <label class="form-check-label" for="condition5">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Popular Tags
+                                </button>
+                            </h5>
+                            <div id="collapseSeven" class="accordion-collapse collapse show"
+                                aria-labelledby="headingSeven">
+                                <div class="accordion-body">
+                                    <div class="filter-box">
+                                        <div class="checkbox-group">
+                                            <span>
+                                                <input type="checkbox" class="btn-check" id="btn-check-3"
+                                                    autocomplete="off" />
+                                                <label class="btn btn-primary" for="btn-check-3">Apple</label>
+                                            </span>
+                                            <span>
+                                                <input type="checkbox" class="btn-check" id="btn-check-4"
+                                                    autocomplete="off" />
+                                                <label class="btn btn-primary" for="btn-check-4">Pineapple</label>
+                                            </span>
+                                            <span>
+                                                <input type="checkbox" class="btn-check" id="btn-check-5"
+                                                    autocomplete="off" />
+                                                <label class="btn btn-primary" for="btn-check-5">Strawberry</label>
+                                            </span>
+                                            <span>
+                                                <input type="checkbox" class="btn-check" id="btn-check-6"
+                                                    autocomplete="off" />
+                                                <label class="btn btn-primary" for="btn-check-6">Cucumber</label>
+                                            </span>
+                                            <span>
+                                                <input type="checkbox" class="btn-check" id="btn-check-1"
+                                                    autocomplete="off" />
+                                                <label class="btn btn-primary" for="btn-check-1">Orange</label>
+                                            </span>
+                                            <span>
+                                                <input type="checkbox" class="btn-check" id="btn-check-2"
+                                                    autocomplete="off" />
+                                                <label class="btn btn-primary" for="btn-check-2">Lettuce</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="offcanvas-body">
-                    <div class="categories-item">
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        women
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <h3>categories</h3>
-                                            <li><a href="#">Activewear</a></li>
-                                            <li><a href="#">Cargos</a></li>
-                                            <li><a href="#">Coats & Jackets</a></li>
-                                            <li><a href="#">Dresses</a></li>
-                                            <li><a href="#">One-Pieces</a></li>
-                                            <li><a href="#">Pants</a></li>
-                                            <li><a href="#">Shirts & Tops</a></li>
-                                            <li><a href="#">Sleepwear & Loungewear</a></li>
-                                            <li><a href="#">Activewear</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>explore</h3>
-                                            <li><a href="#">Latest Arrivals</a></li>
-                                            <li><a href="#">Our sales</a></li>
-                                            <li><a href="#">Bestsellers</a></li>
-                                            <li><a href="#">Not expensive</a></li>
-                                            <li><a href="#">Expensive</a></li>
-                                            <li><a href="#">Exclusive</a></li>
-                                            <li><a href="#">Season summer</a></li>
-                                            <li><a href="#">Season winter</a></li>
-                                            <li><a href="#">Season autumn</a></li>
-                                        </ul>
+                <div class="col-xl-9 col-lg-8">
+                    <div class="row g-0">
+                        <div class="col-md-12">
+                            <div class="grid-box d-flex justify-content-between flex-wrap">
+                                <div class="grid-icon">
+                                    <a href="product-grid.html"><i class="fa-solid fa-border-all active"></i></a>
+                                    <a href="product-list.html"><i class="fa-solid fa-list"></i></a>
+                                </div>
+                                <div class="select-box">
+                                    <div class="grid-select flex-wrap d-flex align-items-center">
+                                        <h5>show:</h5>
+                                        <select class="form-select1" aria-label="Default select example">
+                                            <option selected="">12</option>
+                                            <option value="1">13</option>
+                                            <option value="2">14</option>
+                                            <option value="3">15</option>
+                                        </select>
+                                        <h5>short by:</h5>
+                                        <select class="form-select2" aria-label="Default select example">
+                                            <option selected="">Default Sorting</option>
+                                            <option value="1">13</option>
+                                            <option value="2">14</option>
+                                            <option value="3">15</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        men
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <h3>popular</h3>
-                                            <li><a href="#"> Arm Warmers & Sleeves</a></li>
-                                            <li><a href="#">Balaclavas</a></li>
-                                            <li><a href="#"> Bandanas & Headties</a></li>
-                                            <li><a href="#"> Bridal Accessories</a></li>
-                                            <li><a href="#"> Earmuffs</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>on sale</h3>
-                                            <li><a href="#"> Hand Muffs</a></li>
-                                            <li><a href="#">Hats</a></li>
-                                            <li><a href="#"> Sunglasses</a></li>
-                                            <li><a href="#"> Suspenders</a></li>
-                                            <li><a href="#"> Scarves & Shawls</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>explore</h3>
-                                            <li><a href="#"> Latest Arrivals</a></li>
-                                            <li><a href="#">Our sales</a></li>
-                                            <li><a href="#"> Bestsellers</a></li>
-                                            <li><a href="#"> Not expensive</a></li>
-                                            <li><a href="#"> Expensive</a></li>
-                                        </ul>
+                        </div>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="prodcut-box">
+                                <div class="product-title">
+                                    <a href="#">-25%</a>
+                                </div>
+                                <div class="product-img">
+                                    <a href="product-details.html"><img class="img-fluid"
+                                            src="./assets/images/product/product1.png" alt="" /></a>
+                                </div>
+                                <div class="product-content-box">
+                                    <div class="product-content">
+                                        <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie,
+                                                zipper, sneak...</a></h6>
+                                        <h4>$200.00</h4>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        kids
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <h3>categories</h3>
-                                            <li><a href="#">Overalls</a></li>
-                                            <li><a href="#">Mittens</a></li>
-                                            <li><a href="#">Beanie</a></li>
-                                            <li><a href="#">Baby apron</a></li>
-                                            <li><a href="#">Socks</a></li>
-                                            <li><a href="#">Diaper</a></li>
-                                            <li><a href="#">Singlet</a></li>
-                                            <li><a href="#">Shoes</a></li>
-                                            <li><a href="#">Safety pin</a></li>
-                                        </ul>
-                                    </div>
+                                <div class="product-icon d-flex flex-column">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-solid fa-cart-shopping"></i>
                                 </div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingfour">
-                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                        Dresses
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </h2>
-                                <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <li>Economics</li>
-                                            <li>Sociology</li>
-                                            <li>Nursing</li>
-                                            <li>English</li>
-                                        </ul>
+                        </div>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="prodcut-box">
+                                <div class="product-title">
+                                    <a href="#">-25%</a>
+                                </div>
+                                <div class="product-img">
+                                    <a href="product-details.html"><img class="img-fluid"
+                                            src="./assets/images/product/product2.png" alt="" /></a>
+                                </div>
+                                <div class="product-content-box">
+                                    <div class="product-content">
+                                        <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie,
+                                                zipper, sneak...</a></h6>
+                                        <h4>$200.00</h4>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingfive">
-                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-                                        clothing
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </h2>
-                                <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <h3>winter cloth</h3>
-                                            <li><a href="#">Sweater</a></li>
-                                            <li><a href="#">Gloves</a></li>
-                                            <li><a href="#">Fleece jacket</a></li>
-                                            <li><a href="#">Trench coat (Women)</a></li>
-                                            <li><a href="#">Boots</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>summer cloth</h3>
-                                            <li><a href="#">T-shirt</a></li>
-                                            <li><a href="#">Singlet</a></li>
-                                            <li><a href="#">Swim trunks</a></li>
-                                            <li><a href="#">One-piece bathing suit</a></li>
-                                            <li><a href="#">Cap</a></li>
-                                        </ul>
-                                    </div>
+                                <div class="product-icon d-flex flex-column">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-solid fa-cart-shopping"></i>
                                 </div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingSix">
-                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        shoes
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </h2>
-                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <h3>Athletic Shoes</h3>
-                                            <li><a href="#">Golf shoes</a></li>
-                                            <li><a href="#">Hiking boots</a></li>
-                                            <li><a href="#">High-tops</a></li>
-                                            <li><a href="#">Running shoes</a></li>
-                                            <li><a href="#">Climbing shoes</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>Boots</h3>
-                                            <li><a href="#">Knee-high boots</a></li>
-                                            <li><a href="#">Laced booties</a></li>
-                                            <li><a href="#">Hiking boots</a></li>
-                                            <li><a href="#">Riding boots</a></li>
-                                            <li><a href="#">Snow boots</a></li>
-                                        </ul>
+                        </div>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="prodcut-box">
+                                <div class="product-title">
+                                    <a href="#">-25%</a>
+                                </div>
+                                <div class="product-img">
+                                    <a href="product-details.html"><img class="img-fluid"
+                                            src="./assets/images/product/product3.png" alt="" /></a>
+                                </div>
+                                <div class="product-content-box">
+                                    <div class="product-content">
+                                        <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie,
+                                                zipper, sneak...</a></h6>
+                                        <h4>$200.00</h4>
                                     </div>
+                                </div>
+                                <div class="product-icon d-flex flex-column">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="prodcut-box">
+                                <div class="product-title">
+                                    <a href="#">-25%</a>
+                                </div>
+                                <div class="product-img">
+                                    <a href="product-details.html"><img class="img-fluid"
+                                            src="./assets/images/product/product4.png" alt="" /></a>
+                                </div>
+                                <div class="product-content-box">
+                                    <div class="product-content">
+                                        <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie,
+                                                zipper, sneak...</a></h6>
+                                        <h4>$200.00</h4>
+                                    </div>
+                                </div>
+                                <div class="product-icon d-flex flex-column">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="prodcut-box">
+                                <div class="product-title">
+                                    <a href="#">-25%</a>
+                                </div>
+                                <div class="product-img">
+                                    <a href="product-details.html"><img class="img-fluid"
+                                            src="./assets/images/product/product5.png" alt="" /></a>
+                                </div>
+                                <div class="product-content-box">
+                                    <div class="product-content">
+                                        <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie,
+                                                zipper, sneak...</a></h6>
+                                        <h4>$200.00</h4>
+                                    </div>
+                                </div>
+                                <div class="product-icon d-flex flex-column">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="prodcut-box">
+                                <div class="product-title">
+                                    <a href="#">-25%</a>
+                                </div>
+                                <div class="product-img">
+                                    <a href="product-details.html"><img class="img-fluid"
+                                            src="./assets/images/product/product6.png" alt="" /></a>
+                                </div>
+                                <div class="product-content-box">
+                                    <div class="product-content">
+                                        <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie,
+                                                zipper, sneak...</a></h6>
+                                        <h4>$200.00</h4>
+                                    </div>
+                                </div>
+                                <div class="product-icon d-flex flex-column">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="prodcut-box">
+                                <div class="product-title">
+                                    <a href="#">-25%</a>
+                                </div>
+                                <div class="product-img">
+                                    <a href="product-details.html"><img class="img-fluid"
+                                            src="./assets/images/product/product7.png" alt="" /></a>
+                                </div>
+                                <div class="product-content-box">
+                                    <div class="product-content">
+                                        <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie,
+                                                zipper, sneak...</a></h6>
+                                        <h4>$200.00</h4>
+                                    </div>
+                                </div>
+                                <div class="product-icon d-flex flex-column">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="prodcut-box">
+                                <div class="product-title">
+                                    <a href="#">-25%</a>
+                                </div>
+                                <div class="product-img">
+                                    <a href="product-details.html"><img class="img-fluid"
+                                            src="./assets/images/product/product8.png" alt="" /></a>
+                                </div>
+                                <div class="product-content-box">
+                                    <div class="product-content">
+                                        <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie,
+                                                zipper, sneak...</a></h6>
+                                        <h4>$200.00</h4>
+                                    </div>
+                                </div>
+                                <div class="product-icon d-flex flex-column">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="prodcut-box">
+                                <div class="product-title">
+                                    <a href="#">-25%</a>
+                                </div>
+                                <div class="product-img">
+                                    <a href="product-details.html"><img class="img-fluid"
+                                            src="./assets/images/product/product9.png" alt="" /></a>
+                                </div>
+                                <div class="product-content-box">
+                                    <div class="product-content">
+                                        <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie,
+                                                zipper, sneak...</a></h6>
+                                        <h4>$200.00</h4>
+                                    </div>
+                                </div>
+                                <div class="product-icon d-flex flex-column">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="prodcut-box">
+                                <div class="product-title">
+                                    <a href="#">-25%</a>
+                                </div>
+                                <div class="product-img">
+                                    <a href="product-details.html"><img class="img-fluid"
+                                            src="./assets/images/product/product10.png" alt="" /></a>
+                                </div>
+                                <div class="product-content-box">
+                                    <div class="product-content">
+                                        <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie,
+                                                zipper, sneak...</a></h6>
+                                        <h4>$200.00</h4>
+                                    </div>
+                                </div>
+                                <div class="product-icon d-flex flex-column">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="prodcut-box">
+                                <div class="product-title">
+                                    <a href="#">-25%</a>
+                                </div>
+                                <div class="product-img">
+                                    <a href="product-details.html"><img class="img-fluid"
+                                            src="./assets/images/product/product11.png" alt="" /></a>
+                                </div>
+                                <div class="product-content-box">
+                                    <div class="product-content">
+                                        <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie,
+                                                zipper, sneak...</a></h6>
+                                        <h4>$200.00</h4>
+                                    </div>
+                                </div>
+                                <div class="product-icon d-flex flex-column">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="prodcut-box">
+                                <div class="product-title">
+                                    <a href="#">-25%</a>
+                                </div>
+                                <div class="product-img">
+                                    <a href="product-details.html"><img class="img-fluid"
+                                            src="./assets/images/product/product12.png" alt="" /></a>
+                                </div>
+                                <div class="product-content-box">
+                                    <div class="product-content">
+                                        <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie,
+                                                zipper, sneak...</a></h6>
+                                        <h4>$200.00</h4>
+                                    </div>
+                                </div>
+                                <div class="product-icon d-flex flex-column">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <i class="fa-solid fa-cart-shopping"></i>
                                 </div>
                             </div>
                         </div>
@@ -996,135 +828,423 @@
                 </div>
             </div>
         </div>
-        <!-- categories-canvas-end -->
+    </section>
+    <!-- product-end -->
 
-        <!-- modal-start -->
-        <div class="cart-canvas">
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header justify-content-end">
-                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <!-- footer-start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-box section-1">
+                <div class="footer-content">
+                    <h2>subscribe now and <span>20%</span> OFF</h2>
+                    <p>Learn first about our newest products and special promotions.</p>
                 </div>
-                <div class="offcanvas-body">
-                    <div class="dropdown-content">
-                        <div class="shoping-cart-top">
-                            <div class="shoping-cart-title">
-                                <h4>shopping cart</h4>
-                                <p>
-                                    Congratulations! You are qualified a <span>FREE SHIPPING <i class="fa-solid fa-truck-fast"></i></span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="cart-box d-flex align-items-center">
-                            <div class="cart-img">
-                                <img src="./assets/images/home/feature-product-3.png" alt="" />
-                            </div>
-                            <div class="cart-content-box">
-                                <div class="cart-content">
-                                    <h5>Sneakers Basketball shoes</h5>
-                                    <div class="cart-details">
-                                        <h6>size : 6</h6>
-                                        <h6>color : deep green</h6>
-                                    </div>
-                                </div>
-                                <div class="cart-info d-flex align-items-center justify-content-between">
-                                    <div class="prize">
-                                        <h6><span>$</span>65.00</h6>
-                                    </div>
-                                    <div class="cart-quantity">
-                                        <button><i class="fa-solid fa-minus"></i></button>
-                                        <span>1</span>
-                                        <button><i class="fa-solid fa-plus"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="trash-icon">
-                                <button><i class="fa-light fa-trash"></i></button>
-                            </div>
-                        </div>
+                <div class="footer-search-box">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email:"
+                            aria-label="Recipient's username" aria-describedby="button-addon2" />
+                        <button class="btn" type="button" id="button-addon2">subscribe</button>
                     </div>
-                    <div class="checkout-box">
-                        <div class="sub-total">
-                            <h6>
-                                <span><i class="fa-solid fa-tag fa-rotate-90"></i></span>week of 30% off ($19.50)
-                            </h6>
-                            <h4>subtotal $45.50 USD</h4>
-                        </div>
-                        <div class="form-wrap">
-                            <input class="form-input form-control-has-validation" id="subscribe-form-email" type="email" name="note" placeholder="Order special instructions" />
-                            <label class="form-label rd-input-label" for="subscribe-form-email"></label>
-                        </div>
-                        <div class="checkout-btn d-flex flex-wrap justify-content-between">
-                            <div class="view-cart">
-                                <button>view-cart</button>
+                </div>
+                <div class="footer-nav">
+                    <a href="#">home</a>
+                    <a href="#">about</a>
+                    <a href="#">page</a>
+                    <a href="#">blog</a>
+                    <a href="#">contact</a>
+                </div>
+                <div class="footer-nav">
+                    <a href="#">categories</a>
+                    <a href="#">featured</a>
+                    <a href="#">best-selling</a>
+                    <a href="#">latest-collection</a>
+                    <a href="#">profile</a>
+                </div>
+                <div class="follow-us">
+                    <h4>follow us</h4>
+                    <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container d-flex justify-content-between">
+                <div class="fotter-b-content">
+                    <p>Copyright © 2023 <span>Techno</span> All Rights Reserved</p>
+                </div>
+                <div class="footer-b-list">
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- search-modal-start -->
+    <div class="search-modal">
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form class="d-flex" role="search">
+                            <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
+                            <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search-modal-end -->
+
+    <!-- categories-canvas-start -->
+    <div class="categories-canvas">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvastwo" aria-labelledby="offcanvastwoLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvastwoLabel">categories</h5>
+                <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                        class="fa-solid fa-arrow-left"></i></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="categories-item">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="d-flex justify-content-between align-items-center collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                    aria-expanded="false" aria-controls="collapseOne">
+                                    women
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <h3>categories</h3>
+                                        <li><a href="#">Activewear</a></li>
+                                        <li><a href="#">Cargos</a></li>
+                                        <li><a href="#">Coats & Jackets</a></li>
+                                        <li><a href="#">Dresses</a></li>
+                                        <li><a href="#">One-Pieces</a></li>
+                                        <li><a href="#">Pants</a></li>
+                                        <li><a href="#">Shirts & Tops</a></li>
+                                        <li><a href="#">Sleepwear & Loungewear</a></li>
+                                        <li><a href="#">Activewear</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h3>explore</h3>
+                                        <li><a href="#">Latest Arrivals</a></li>
+                                        <li><a href="#">Our sales</a></li>
+                                        <li><a href="#">Bestsellers</a></li>
+                                        <li><a href="#">Not expensive</a></li>
+                                        <li><a href="#">Expensive</a></li>
+                                        <li><a href="#">Exclusive</a></li>
+                                        <li><a href="#">Season summer</a></li>
+                                        <li><a href="#">Season winter</a></li>
+                                        <li><a href="#">Season autumn</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="check-out">
-                                <button>check out</button>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="d-flex justify-content-between align-items-center collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    men
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <h3>popular</h3>
+                                        <li><a href="#"> Arm Warmers & Sleeves</a></li>
+                                        <li><a href="#">Balaclavas</a></li>
+                                        <li><a href="#"> Bandanas & Headties</a></li>
+                                        <li><a href="#"> Bridal Accessories</a></li>
+                                        <li><a href="#"> Earmuffs</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h3>on sale</h3>
+                                        <li><a href="#"> Hand Muffs</a></li>
+                                        <li><a href="#">Hats</a></li>
+                                        <li><a href="#"> Sunglasses</a></li>
+                                        <li><a href="#"> Suspenders</a></li>
+                                        <li><a href="#"> Scarves & Shawls</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h3>explore</h3>
+                                        <li><a href="#"> Latest Arrivals</a></li>
+                                        <li><a href="#">Our sales</a></li>
+                                        <li><a href="#"> Bestsellers</a></li>
+                                        <li><a href="#"> Not expensive</a></li>
+                                        <li><a href="#"> Expensive</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="d-flex justify-content-between align-items-center collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    kids
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <h3>categories</h3>
+                                        <li><a href="#">Overalls</a></li>
+                                        <li><a href="#">Mittens</a></li>
+                                        <li><a href="#">Beanie</a></li>
+                                        <li><a href="#">Baby apron</a></li>
+                                        <li><a href="#">Socks</a></li>
+                                        <li><a href="#">Diaper</a></li>
+                                        <li><a href="#">Singlet</a></li>
+                                        <li><a href="#">Shoes</a></li>
+                                        <li><a href="#">Safety pin</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfour">
+                                <button class="d-flex justify-content-between align-items-center collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour"
+                                    aria-expanded="false" aria-controls="collapsefour">
+                                    Dresses
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Economics</li>
+                                        <li>Sociology</li>
+                                        <li>Nursing</li>
+                                        <li>English</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfive">
+                                <button class="d-flex justify-content-between align-items-center collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive"
+                                    aria-expanded="false" aria-controls="collapsefive">
+                                    clothing
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <h3>winter cloth</h3>
+                                        <li><a href="#">Sweater</a></li>
+                                        <li><a href="#">Gloves</a></li>
+                                        <li><a href="#">Fleece jacket</a></li>
+                                        <li><a href="#">Trench coat (Women)</a></li>
+                                        <li><a href="#">Boots</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h3>summer cloth</h3>
+                                        <li><a href="#">T-shirt</a></li>
+                                        <li><a href="#">Singlet</a></li>
+                                        <li><a href="#">Swim trunks</a></li>
+                                        <li><a href="#">One-piece bathing suit</a></li>
+                                        <li><a href="#">Cap</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="d-flex justify-content-between align-items-center collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                    aria-expanded="false" aria-controls="collapseSix">
+                                    shoes
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <h3>Athletic Shoes</h3>
+                                        <li><a href="#">Golf shoes</a></li>
+                                        <li><a href="#">Hiking boots</a></li>
+                                        <li><a href="#">High-tops</a></li>
+                                        <li><a href="#">Running shoes</a></li>
+                                        <li><a href="#">Climbing shoes</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h3>Boots</h3>
+                                        <li><a href="#">Knee-high boots</a></li>
+                                        <li><a href="#">Laced booties</a></li>
+                                        <li><a href="#">Hiking boots</a></li>
+                                        <li><a href="#">Riding boots</a></li>
+                                        <li><a href="#">Snow boots</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- modal-end -->
+    </div>
+    <!-- categories-canvas-end -->
 
-        <!-- discount-wheel-canvas-start -->
-        <div class="discount-wheel-canvas">
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="row d-flex flex-lg-row-reverse">
-                        <div class="col-lg-6">
-                            <div class="spin-button">
-                                <h2>Fall Sale!</h2>
-                                <p>It's your chance to win a big discount this Fall. Press the "SPIN THE WHEEL" button and try your luck on our Coupon Wheel!</p>
-                                <button class="spin" onclick="spin()"><img src="./assets/images/right-arrow.png" alt="" />spin</button>
+    <!-- modal-start -->
+    <div class="cart-canvas">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header justify-content-end">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="dropdown-content">
+                    <div class="shoping-cart-top">
+                        <div class="shoping-cart-title">
+                            <h4>shopping cart</h4>
+                            <p>
+                                Congratulations! You are qualified a <span>FREE SHIPPING <i
+                                        class="fa-solid fa-truck-fast"></i></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart-box d-flex align-items-center">
+                        <div class="cart-img">
+                            <img src="./assets/images/home/feature-product-3.png" alt="" />
+                        </div>
+                        <div class="cart-content-box">
+                            <div class="cart-content">
+                                <h5>Sneakers Basketball shoes</h5>
+                                <div class="cart-details">
+                                    <h6>size : 6</h6>
+                                    <h6>color : deep green</h6>
+                                </div>
+                            </div>
+                            <div class="cart-info d-flex align-items-center justify-content-between">
+                                <div class="prize">
+                                    <h6><span>$</span>65.00</h6>
+                                </div>
+                                <div class="cart-quantity">
+                                    <button><i class="fa-solid fa-minus"></i></button>
+                                    <span>1</span>
+                                    <button><i class="fa-solid fa-plus"></i></button>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="spin-box">
-                                <div class="mainbox" id="mainbox">
-                                    <div class="box" id="box">
-                                        <div class="box1">
-                                            <span class="font span1"><b>21% off</b></span>
-                                            <span class="font span2"><b>150 tk off</b></span>
-                                            <span class="font span3"><b>7% off</b></span>
-                                            <span class="font span4"><b>200 tk off</b></span>
-                                            <span class="font span5"><b>15% off </b></span>
-                                        </div>
-                                        <div class="box2">
-                                            <span class="font span1"><b>5% off</b></span>
-                                            <span class="font span2"><b>80 tk off </b></span>
-                                            <span class="font span3"><b>50 tk off</b></span>
-                                            <span class="font span4"><b>10% off</b></span>
-                                            <span class="font span5"><b>22% off </b></span>
-                                        </div>
-                                    </div>
-                                    <button>spin</button>
-                                </div>
-                                <audio controls="controls" id="applause" src="./assets/images/applause.mp3" type="audio/mp3"></audio>
-                                <audio controls="controls" id="wheel" src="./assets/images/wheel.mp3" type="audio/mp3"></audio>
-                            </div>
+                        <div class="trash-icon">
+                            <button><i class="fa-light fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-box">
+                    <div class="sub-total">
+                        <h6>
+                            <span><i class="fa-solid fa-tag fa-rotate-90"></i></span>week of 30% off ($19.50)
+                        </h6>
+                        <h4>subtotal $45.50 USD</h4>
+                    </div>
+                    <div class="form-wrap">
+                        <input class="form-input form-control-has-validation" id="subscribe-form-email" type="email"
+                            name="note" placeholder="Order special instructions" />
+                        <label class="form-label rd-input-label" for="subscribe-form-email"></label>
+                    </div>
+                    <div class="checkout-btn d-flex flex-wrap justify-content-between">
+                        <div class="view-cart">
+                            <button>view-cart</button>
+                        </div>
+                        <div class="check-out">
+                            <button>check out</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- discount-wheel-canvas-end -->
+    </div>
+    <!-- modal-end -->
 
-        <script src="./assets/js/jquery-3.7.1.min.js"></script>
-        <script src="./assets/js/bootstrap.bundle.min.js"></script>
-        <script src="./assets/js/owl.carousel.min.js"></script>
-        <script src="./assets/js/countMe.min.js"></script>
-        <script src="./assets/js/range-slider.min.js"></script>
+    <!-- discount-wheel-canvas-start -->
+    <div class="discount-wheel-canvas">
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="row d-flex flex-lg-row-reverse">
+                    <div class="col-lg-6">
+                        <div class="spin-button">
+                            <h2>Fall Sale!</h2>
+                            <p>It's your chance to win a big discount this Fall. Press the "SPIN THE WHEEL" button and
+                                try your luck on our Coupon Wheel!</p>
+                            <button class="spin" onclick="spin()"><img src="./assets/images/right-arrow.png"
+                                    alt="" />spin</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="spin-box">
+                            <div class="mainbox" id="mainbox">
+                                <div class="box" id="box">
+                                    <div class="box1">
+                                        <span class="font span1"><b>21% off</b></span>
+                                        <span class="font span2"><b>150 tk off</b></span>
+                                        <span class="font span3"><b>7% off</b></span>
+                                        <span class="font span4"><b>200 tk off</b></span>
+                                        <span class="font span5"><b>15% off </b></span>
+                                    </div>
+                                    <div class="box2">
+                                        <span class="font span1"><b>5% off</b></span>
+                                        <span class="font span2"><b>80 tk off </b></span>
+                                        <span class="font span3"><b>50 tk off</b></span>
+                                        <span class="font span4"><b>10% off</b></span>
+                                        <span class="font span5"><b>22% off </b></span>
+                                    </div>
+                                </div>
+                                <button>spin</button>
+                            </div>
+                            <audio controls="controls" id="applause" src="./assets/images/applause.mp3"
+                                type="audio/mp3"></audio>
+                            <audio controls="controls" id="wheel" src="./assets/images/wheel.mp3"
+                                type="audio/mp3"></audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- discount-wheel-canvas-end -->
 
-        <script src="./assets/js/fancybox.umd.js"></script>
-        <script src="./assets/js/jquery.easing.min.js"></script>
-        <script src="./assets/js/notiflix.min.js"></script>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/countMe.min.js"></script>
+    <script src="./assets/js/range-slider.min.js"></script>
 
-        <script src="./assets/js/main.js"></script>
-    </body>
+    <script src="./assets/js/fancybox.umd.js"></script>
+    <script src="./assets/js/jquery.easing.min.js"></script>
+    <script src="./assets/js/notiflix.min.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
