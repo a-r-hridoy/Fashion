@@ -501,6 +501,9 @@ ul {
          font-weight: 600;
       }
    }
+   .offer-content2{
+      display: none;
+   }
 }
 // offer-alert-end
 
@@ -574,6 +577,7 @@ ul {
          .nav-item {
             .page-drop {
                position: relative;
+               overflow: hidden;
                &:active {
                   a {
                      color: var(--primary);
@@ -1890,7 +1894,7 @@ footer {
 // banner-start
 .banner-section {
    background-color: var(--background);
-   // padding: 100px 0 0;
+   padding: 100px 0 0;
    .banner-content {
       h3 {
          text-transform: capitalize;
@@ -3013,12 +3017,13 @@ footer {
 // size-chart-canvas-start
 .size-chart-canvas {
    .modal-body {
+      padding: 0 10px;
       .size-chart {
          h1{
-            font-size: 20px;
+            font-size: 18px;
             text-align: center;
             font-weight: 600;
-            padding: 10px 0;
+            padding: 15px 0;
          }
          .sizeChart {
             thead tr {
@@ -3887,8 +3892,6 @@ footer {
 @media (max-width: 1199px) {
    .navbar {
       .navbar-collapse {
-         padding: 20px 0;
-
          .categories-button {
             display: block;
             margin: 30px 0 10px;
@@ -4150,6 +4153,28 @@ footer {
 }
 
 @media (max-width: 767px) {
+   .offer-alert{
+      .close {
+         top: 15px;
+         right: 12px;
+      }
+      .offer-content{
+         display: none;
+      }
+      .offer-content2{
+         display: block;
+         background-color: var(--bg-feature2);
+         display: flex;
+         padding: 20px;
+         justify-content: center;
+         align-items: center;
+         font-size: 13px;
+         strong {
+            margin-right: 5px;
+         }
+      }
+   }
+   
    .navbar {
       .nav-right {
          form {
@@ -4192,7 +4217,6 @@ footer {
          }
       }
    }
-
    .feature2-section {
       .feature-conten2 {
          margin-left: 50px;
@@ -4223,7 +4247,7 @@ footer {
       }
    }
    .banner-section {
-      padding: 150px 0 50px;
+      padding: 80px 0 50px;
       .banner-content {
          text-align: center;
          nav {
