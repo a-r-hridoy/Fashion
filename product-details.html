@@ -1,306 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Fashion</title>
-        <!-- bootstrap-link-start -->
-        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-        <!-- bootstrap-link-end -->
-        <!-- owl-carousel-start -->
-        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
-        <!-- owl-carousel-end -->
-        <!-- fontawesome-link-start -->
-        <link rel="stylesheet" href="./assets/css/all.min.css" />
-        <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
-        <!-- fontawesome-link-end -->
-        <!-- fancybox-start -->
-        <link rel="stylesheet" href="./assets/css/fancybox.css" />
-        <!-- fancybox-end -->
-        <link rel="stylesheet" href="./assets/css/style.css" />
-    </head>
 
-    <body onload="preloder_function()">
-        <!-- Preloader area start -->
-        <div id="preloader"></div>
-        <!-- Preloader area end -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion</title>
+    <!-- bootstrap-link-start -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- bootstrap-link-end -->
+    <!-- owl-carousel-start -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+    <!-- owl-carousel-end -->
+    <!-- fontawesome-link-start -->
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+    <!-- fontawesome-link-end -->
+    <!-- fancybox-start -->
+    <link rel="stylesheet" href="./assets/css/fancybox.css" />
+    <!-- fancybox-end -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-        <!-- Preloader area end -->
-        <!-- scroll-top-start -->
-        <div class="scrollTop" onclick="scrollToTop();">
-            <a href="#"> <i class="fa-solid fa-angles-up"></i></a>
+<body onload="preloder_function()">
+    <!-- Preloader area start -->
+    <div id="preloader"></div>
+    <!-- Preloader area end -->
+
+    <!-- Preloader area end -->
+    <!-- scroll-top-start -->
+    <div class="scrollTop" onclick="scrollToTop();">
+        <a href="#"> <i class="fa-solid fa-angles-up"></i></a>
+    </div>
+    <!-- scroll-top-end -->
+
+    <!-- discount-wheel-start -->
+    <div class="discount-wheel">
+        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"><img src="./assets/images/whell.png" alt="" /></button>
+    </div>
+    <!-- discount-wheel-end -->
+
+
+    <!-- offer-alert-start -->
+    <div class="offer-alert">
+        <button class="close"><i class="fa-solid fa-xmark"></i></button>
+        <div class="offer-content">
+            <strong>WINTER PRODUCT SALE! Up to 25% off </strong>selected items, &amp; more!
+            <button type="submit">save up to 25%</button>
         </div>
-        <!-- scroll-top-end -->
+    </div>
+    <!-- offer-alert-end -->
 
-        <!-- discount-wheel-start -->
-        <div class="discount-wheel">
-            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img src="./assets/images/whell.png" alt="" /></button>
-        </div>
-        <!-- discount-wheel-end -->
+    <!-- navbar-start -->
+    <nav class="navbar navbar-expand-xl ">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="categories-button">
+                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvastwo"
+                        aria-controls="offcanvastwo"><i class="fa-solid fa-bars-staggered"></i></button>
 
-          <!-- offer-alert-start -->
-          <div class="offer-alert">
-            <div class="offer-content">
-                <marquee behavior="" direction="">
-                    <h5>25% off <span>on selected winter product</span></h5>
-                </marquee>
-            </div>
-        </div>
-        <!-- offer-alert-end -->
-
-        <!-- navbar-start -->
-        <nav class="navbar navbar-expand-xl ">
-            <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="categories-button">
-                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvastwo" aria-controls="offcanvastwo"><i class="fa-solid fa-bars-staggered"></i></button>
-
-                        <div class="c-content">all categories</div>
-                    </div>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="about.html">about</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="shop.html">shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <div class="page-drop">
-                                <a class="nav-link active" aria-current="page" href="#">page <i class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
-
-                                <div class="page-item shadow-sm mb-5 bg-body rounded">
-                                    <ul class="">
-                                        <li>
-                                            <a href="product.html"><span>All products</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="product-grid.html"><span>product grid view</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="product-list.html"><span>product list view</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="product-details.html" class="active"><span>product details</span></a>
-                                        </li>
-
-                                        <li>
-                                            <a href="sign-up.html"><span>sign-up</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <div class="page-drop">
-                                <a class="nav-link" aria-current="blog" href="#">blog <i class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
-
-                                <div class="page-item shadow-sm mb-5 bg-body rounded">
-                                    <ul class="">
-                                        <li>
-                                            <a href="blog.html"><span>blog</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="blog-details-1.html"><span>blog-details-1</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="blog-details-2.html"><span>blog-details-2</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="contact.html">contact</a>
-                        </li>
-                    </ul>
+                    <div class="c-content">all categories</div>
                 </div>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="shop.html">shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="page-drop">
+                            <a class="nav-link active" aria-current="page" href="#">page <i
+                                    class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
 
-                <div class="nav-right">
-                    <form class="d-flex" role="search">
-                        <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
-                        <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                    <div class="nav-icon d-flex align-items-center">
-                        <a href="log-in.html"> <i class="fa-light fa-user"></i></a>
+                            <div class="page-item shadow-sm mb-5 bg-body rounded">
+                                <ul class="">
+                                    <li>
+                                        <a href="product.html"><span>All products</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="product-grid.html"><span>product grid view</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="product-list.html"><span>product list view</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="product-details.html" class="active"><span>product details</span></a>
+                                    </li>
 
-                        <div class="dropdown">
-                            <button class="dropbtn">
-                                <a href="#"><i class="fa-sharp fa-light fa-cart-shopping" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i></a>
-                                <span>1</span>
-                            </button>
+                                    <li>
+                                        <a href="sign-up.html"><span>sign-up</span></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="page-drop">
+                            <a class="nav-link" aria-current="blog" href="#">blog <i
+                                    class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
 
-                    <div class="search-icon">
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#searchModal">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <div class="page-item shadow-sm mb-5 bg-body rounded">
+                                <ul class="">
+                                    <li>
+                                        <a href="blog.html"><span>blog</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-details-1.html"><span>blog-details-1</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-details-2.html"><span>blog-details-2</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <form class="d-flex" role="search">
+                    <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
+                    <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="nav-icon d-flex align-items-center">
+                    <a href="log-in.html"> <i class="fa-light fa-user"></i></a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a href="#"><i class="fa-sharp fa-light fa-cart-shopping" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i></a>
+                            <span>1</span>
                         </button>
                     </div>
                 </div>
-            </div>
-        </nav>
-        <!-- navbar-end -->
 
-        <!-- banner-section-start -->
-        <section class="banner-section">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-md-6">
-                        <div class="banner-content">
-                            <h3>products details</h3>
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">products details</li>
-                                </ol>
-                            </nav>
-                        </div>
+                <div class="search-icon">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar-end -->
+
+    <!-- banner-section-start -->
+    <section class="banner-section">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6">
+                    <div class="banner-content">
+                        <h3>products details</h3>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">products details</li>
+                            </ol>
+                        </nav>
                     </div>
-                    <div class="col-md-6">
-                        <div class="banner-img text-end">
-                            <img src="assets/images/banner/banner.png" alt="" />
-                        </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="banner-img text-end">
+                        <img src="assets/images/banner/banner.png" alt="" />
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- banner-section-end -->
+        </div>
+    </section>
+    <!-- banner-section-end -->
 
-        <!-- .product-details-start -->
-        <section class="product-details section-1">
-            <div class="container">
-                <div class="row g-lg-4">
-                    <div class="col-lg-6">
-                        <div class="gallery-box">
-                            <div id="mainCarousel" class="carousel mx-auto main_carousel">
-                                <div class="carousel__slide text-center" data-src="./assets/images/product-details/1.png" data-fancybox="gallery" data-caption="">
-                                    <!-- <img class="img-fluid" src="./assets/images/product-details/product-view1.png" /> -->
-                                    <video class="w-100" src="./assets/images/product-details/product-video/1.mp4" autoplay="true" loop muted class="video"></video>
-                                </div>
-                                <div class="carousel__slide text-center" data-src="./assets/images/product-details/2.png" data-fancybox="gallery" data-caption="">
-                                    <!-- <img class="img-fluid" src="./assets/images/product-details//product-view2.png" /> -->
-                                    <video class="w-100" src="./assets/images/product-details/product-video/2.mp4" autoplay="true" loop muted class="video"></video>
-                                </div>
-                                <div class="carousel__slide text-center" data-src="./assets/images/product-details/3.png" data-fancybox="gallery" data-caption="">
-                                    <!-- <img class="img-fluid" src="./assets/images/product-details/product-view3.png" /> -->
-                                    <video class="w-100" src="./assets/images/product-details/product-video/3.mp4" autoplay="true" loop muted class="video"></video>
-                                </div>
-                                <div class="carousel__slide text-center" data-src="/assets/images/product-details/4.png" data-fancybox="gallery" data-caption="">
-                                    <!-- <img class="img-fluid" src="./assets/images/product-details/product-view4.png" /> -->
-                                    <video class="w-100" src="./assets/images/product-details/product-video/4.mp4" autoplay="true" loop muted class="video"></video>
-                                </div>
+    <!-- .product-details-start -->
+    <section class="product-details section-1">
+        <div class="container">
+            <div class="row g-lg-4">
+                <div class="col-lg-6">
+                    <div class="gallery-box">
+                        <div id="mainCarousel" class="carousel mx-auto main_carousel">
+                            <div class="carousel__slide text-center" data-src="./assets/images/product-details/1.png"
+                                data-fancybox="gallery" data-caption="">
+                                <!-- <img class="img-fluid" src="./assets/images/product-details/product-view1.png" /> -->
+                                <video class="w-100" src="./assets/images/product-details/product-video/1.mp4"
+                                    autoplay="true" loop muted class="video"></video>
                             </div>
-
-                            <div id="thumbCarousel" class="carousel max-w-xl mx-auto thumb_carousel">
-                                <div class="carousel__slide text-center">
-                                    <img class="panzoom__content img-fluid" src="./assets/images/product-details/1.png" />
-                                </div>
-                                <div class="carousel__slide text-center">
-                                    <img class="panzoom__content img-fluid" src="./assets/images/product-details/2.png" />
-                                </div>
-                                <div class="carousel__slide text-center">
-                                    <img class="panzoom__content img-fluid" src="./assets/images/product-details/3.png" />
-                                </div>
-                                <div class="carousel__slide text-center">
-                                    <img class="panzoom__content img-fluid" src="./assets/images/product-details/4.png" />
-                                </div>
+                            <div class="carousel__slide text-center" data-src="./assets/images/product-details/2.png"
+                                data-fancybox="gallery" data-caption="">
+                                <!-- <img class="img-fluid" src="./assets/images/product-details//product-view2.png" /> -->
+                                <video class="w-100" src="./assets/images/product-details/product-video/2.mp4"
+                                    autoplay="true" loop muted class="video"></video>
+                            </div>
+                            <div class="carousel__slide text-center" data-src="./assets/images/product-details/3.png"
+                                data-fancybox="gallery" data-caption="">
+                                <!-- <img class="img-fluid" src="./assets/images/product-details/product-view3.png" /> -->
+                                <video class="w-100" src="./assets/images/product-details/product-video/3.mp4"
+                                    autoplay="true" loop muted class="video"></video>
+                            </div>
+                            <div class="carousel__slide text-center" data-src="/assets/images/product-details/4.png"
+                                data-fancybox="gallery" data-caption="">
+                                <!-- <img class="img-fluid" src="./assets/images/product-details/product-view4.png" /> -->
+                                <video class="w-100" src="./assets/images/product-details/product-video/4.mp4"
+                                    autoplay="true" loop muted class="video"></video>
                             </div>
                         </div>
-                        <div class="description-tab">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Description</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
-                                        Additional Information
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Reviews</button>
-                                </li>
-                            </ul>
+
+                        <div id="thumbCarousel" class="carousel max-w-xl mx-auto thumb_carousel">
+                            <div class="carousel__slide text-center">
+                                <img class="panzoom__content img-fluid" src="./assets/images/product-details/1.png" />
+                            </div>
+                            <div class="carousel__slide text-center">
+                                <img class="panzoom__content img-fluid" src="./assets/images/product-details/2.png" />
+                            </div>
+                            <div class="carousel__slide text-center">
+                                <img class="panzoom__content img-fluid" src="./assets/images/product-details/3.png" />
+                            </div>
+                            <div class="carousel__slide text-center">
+                                <img class="panzoom__content img-fluid" src="./assets/images/product-details/4.png" />
+                            </div>
                         </div>
-                        <div class="description-content">
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                        qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accAUSntium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                        veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                                    </p>
+                    </div>
+                    <div class="description-tab">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">Description</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    aria-controls="contact-tab-pane" aria-selected="false">
+                                    Additional Information
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">Reviews</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="description-content">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                    non proident, sunt in culpa
+                                    qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
+                                    natus error sit voluptatem accAUSntium doloremque laudantium, totam rem aperiam,
+                                    eaque ipsa quae ab illo inventore
+                                    veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                aria-labelledby="contact-tab" tabindex="0">
+                                <div class="addtiional-info">
+                                    <h4>Additional Information</h4>
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <th>Multiple Color Available</th>
+                                                <td>Yes</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Available Colors</th>
+                                                <td>Red, Cayan, Blue</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Available Sizes</th>
+                                                <td>M, XL, XXL</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                                    <div class="addtiional-info">
-                                        <h4>Additional Information</h4>
-                                        <table class="table table-bordered">
-                                            <tbody>
-                                                <tr>
-                                                    <th>Multiple Color Available</th>
-                                                    <td>Yes</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Available Colors</th>
-                                                    <td>Red, Cayan, Blue</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Available Sizes</th>
-                                                    <td>M, XL, XXL</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                                    <div class="reviews-info">
-                                        <div class="form-wrapper">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h4>customer review</h4>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="rating-box d-flex align-items-center gap-3 mb-3">
-                                                        <div class="rating-content">
-                                                            <h5 class="mb-0">Your Rating</h5>
-                                                        </div>
-                                                        <div class="rating">
-                                                            <input type="radio" id="star1" name="rate" value="1" />
-                                                            <label for="star1" title="text"></label>
-                                                            <input type="radio" id="star2" name="rate" value="2" />
-                                                            <label for="star2" title="text"></label>
-                                                            <input checked="" type="radio" id="star3" name="rate" value="3" />
-                                                            <label for="star3" title="text"></label>
-                                                            <input type="radio" id="star4" name="rate" value="4" />
-                                                            <label for="star4" title="text"></label>
-                                                            <input type="radio" id="star5" name="rate" value="5" />
-                                                            <label for="star5" title="text"></label>
-                                                        </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">
+                                <div class="reviews-info">
+                                    <div class="form-wrapper">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h4>customer review</h4>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="rating-box d-flex align-items-center gap-3 mb-3">
+                                                    <div class="rating-content">
+                                                        <h5 class="mb-0">Your Rating</h5>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <input type="radio" id="star1" name="rate" value="1" />
+                                                        <label for="star1" title="text"></label>
+                                                        <input type="radio" id="star2" name="rate" value="2" />
+                                                        <label for="star2" title="text"></label>
+                                                        <input checked="" type="radio" id="star3" name="rate"
+                                                            value="3" />
+                                                        <label for="star3" title="text"></label>
+                                                        <input type="radio" id="star4" name="rate" value="4" />
+                                                        <label for="star4" title="text"></label>
+                                                        <input type="radio" id="star5" name="rate" value="5" />
+                                                        <label for="star5" title="text"></label>
                                                     </div>
                                                 </div>
-                                                <div class="col-12">
-                                                    <form>
-                                                        <div class="mb-3">
-                                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="username" />
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password" />
-                                                        </div>
-                                                        <div class="mb-3 form-check">
-                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                                                            <label class="form-check-label" for="exampleCheck1">remember me</label>
-                                                        </div>
-                                                        <button type="submit" class="form-btn">Submit</button>
-                                                    </form>
-                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" placeholder="username" />
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="password" class="form-control"
+                                                            id="exampleInputPassword1" placeholder="password" />
+                                                    </div>
+                                                    <div class="mb-3 form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="exampleCheck1" />
+                                                        <label class="form-check-label" for="exampleCheck1">remember
+                                                            me</label>
+                                                    </div>
+                                                    <button type="submit" class="form-btn">Submit</button>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
@@ -308,580 +344,756 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="details-content">
-                            <h2>Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak</h2>
-                            <p>
-                                Discover the latest range of men's hoodies & sweatshirts with ASOS. Shop for a range of men's sweatshirt styles, from plain to zip up and oversized hoodies. Shop for hoodie & sweatshirts for men at Zumiez. We
-                                have the best hoodie selection with over 300 streetwear brands like Vans, Nike SB, Adidas and more.
-                            </p>
-                            <div class="rivew-icon">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <span>(0)</span>
-                            </div>
-                            <div class="prodcut-prize">
-                                $150.00 <span>$200.00</span>
-                                <h5>available in stoke</h5>
-                            </div>
-                            <div class="view-product">
-                                <button><a href="view.html">view 3d</a></button>
-                            </div>
-                            <div class="color-box">
-                                <h4>color</h4>
-                                <input class="color-black form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
-                                <input class="color-neve-blue form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
-                                <input class="color-white form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" />
-                                <input class="color-green form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4" />
-                            </div>
-                            <div class="size-box">
-                                <h4>size</h4>
-                                <a href="#">S</a>
-                                <a href="#">L</a>
-                                <a href="#">M</a>
-                                <a href="#">XL</a>
-                                <a href="#">XXL</a>
-                            </div>
-                            <div class="size-guide">
-                                <img src="./assets/images/product-details/ruler.png" alt="" />
-                                <a type="button" class=" " data-bs-toggle="modal" data-bs-target="#sizeModal" href="">Size Guide</a>
-                            </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="details-content">
+                        <h2>Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak</h2>
+                        <p>
+                            Discover the latest range of men's hoodies & sweatshirts with ASOS. Shop for a range of
+                            men's sweatshirt styles, from plain to zip up and oversized hoodies. Shop for hoodie &
+                            sweatshirts for men at Zumiez. We
+                            have the best hoodie selection with over 300 streetwear brands like Vans, Nike SB, Adidas
+                            and more.
+                        </p>
+                        <div class="rivew-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(0)</span>
+                        </div>
+                        <div class="prodcut-prize">
+                            $150.00 <span>$200.00</span>
+                            <h5>available in stoke</h5>
+                        </div>
+                        <div class="view-product">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"><a href="#">view 3d</a></button>
+                        </div>
+                        <div class="color-box">
+                            <h4>color</h4>
+                            <input class="color-black form-check-input" type="radio" name="exampleRadios"
+                                id="exampleRadios1" value="option1" checked />
+                            <input class="color-neve-blue form-check-input" type="radio" name="exampleRadios"
+                                id="exampleRadios2" value="option2" />
+                            <input class="color-white form-check-input" type="radio" name="exampleRadios"
+                                id="exampleRadios3" value="option3" />
+                            <input class="color-green form-check-input" type="radio" name="exampleRadios"
+                                id="exampleRadios4" value="option4" />
+                        </div>
+                        <div class="size-box">
+                            <h4>size</h4>
+                            <a href="#">S</a>
+                            <a href="#">L</a>
+                            <a href="#">M</a>
+                            <a href="#">XL</a>
+                            <a href="#">XXL</a>
+                        </div>
+                        <div class="size-guide">
+                            <img src="./assets/images/product-details/ruler.png" alt="" />
+                            <a type="button" class=" " data-bs-toggle="modal" data-bs-target="#sizeModal" href="">Size
+                                Guide</a>
+                        </div>
 
-                            <div class="count-box">
-                                <div class="count">
+                        <div class="count-box">
+                            <div class="count">
+                                <button><i class="fa-solid fa-minus"></i></button>
+                                <span>1</span>
+                                <button><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="cart-btn">
+                                <button><i class="fa-solid fa-cart-plus"></i>add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-type">
+                            <ul>
+                                <li>category: <span>Men’s Fashion</span></li>
+                                <li>tags: <span>Fashion, Hoodie, New</span></li>
+
+                                <button class="share">
+                                    <div id="shareBlock2">
+                                        <a class="btn btn-light" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Flistplace.bugfinder.net%2Flisting-details%2Fnext-level-electronics%2F6" target="_blank" title="Share on facebook">
+                                            <i class="fab fa-facebook fa-2x" aria-hidden="true" style="color: rgb(66, 103, 178);"></i>
+                                        </a>
+                                        <a
+                                            class="btn btn-light"
+                                            href="https://twitter.com/share?url=https%3A%2F%2Flistplace.bugfinder.net%2Flisting-details%2Fnext-level-electronics%2F6&amp;text=ListPlace%20%7C%20Next%20Level%20Electronics%20Listing%20Details&amp;via=&amp;hashtags="
+                                            target="_blank"
+                                            title="Share on twitter"
+                                        >
+                                            <i class="fab fa-twitter fa-2x" aria-hidden="true" style="color: rgb(0, 172, 238);"></i>
+                                        </a>
+                                        <a
+                                            class="btn btn-light"
+                                            href="https://pinterest.com/pin/create/bookmarklet/?media=&amp;url=https%3A%2F%2Flistplace.bugfinder.net%2Flisting-details%2Fnext-level-electronics%2F6&amp;is_video=false&amp;description=ListPlace%20%7C%20Next%20Level%20Electronics%20Listing%20Details"
+                                            target="_blank"
+                                            title="Share on pinterest"
+                                        >
+                                            <i class="fab fa-pinterest fa-2x" aria-hidden="true" style="color: rgb(230, 0, 35);"></i>
+                                        </a>
+                                        <a
+                                            class="btn btn-light"
+                                            href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Flistplace.bugfinder.net%2Flisting-details%2Fnext-level-electronics%2F6&amp;title=ListPlace%20%7C%20Next%20Level%20Electronics%20Listing%20Details"
+                                            target="_blank"
+                                            title="Share on linkedin"
+                                        >
+                                            <i class="fab fa-linkedin fa-2x" aria-hidden="true" style="color: rgb(0, 114, 177);"></i>
+                                        </a>
+                                        <a
+                                            class="btn btn-light"
+                                            href="https://reddit.com/submit?url=https%3A%2F%2Flistplace.bugfinder.net%2Flisting-details%2Fnext-level-electronics%2F6&amp;title=ListPlace%20%7C%20Next%20Level%20Electronics%20Listing%20Details"
+                                            target="_blank"
+                                            title="Share on reddit"
+                                        >
+                                            <i class="fab fa-reddit fa-2x" aria-hidden="true" style="color: rgb(255, 87, 0);"></i>
+                                        </a>
+                                        <a
+                                            class="btn btn-light"
+                                            href="https://getpocket.com/save?url=https%3A%2F%2Flistplace.bugfinder.net%2Flisting-details%2Fnext-level-electronics%2F6&amp;title=ListPlace%20%7C%20Next%20Level%20Electronics%20Listing%20Details"
+                                            target="_blank"
+                                            title="Share on pocket"
+                                        >
+                                            <i class="fab fa-get-pocket fa-2x" aria-hidden="true" style="color: rgb(230, 0, 35);"></i>
+                                        </a>
+                                        <a
+                                            class="btn btn-light"
+                                            href="mailto:?subject=ListPlace%20%7C%20Next%20Level%20Electronics%20Listing%20Details&amp;body=Check out this site: https%3A%2F%2Flistplace.bugfinder.net%2Flisting-details%2Fnext-level-electronics%2F6"
+                                            target="_blank"
+                                            title="Share on email"
+                                        >
+                                            <i class="fas fa-envelope fa-2x" aria-hidden="true" style="color: rgb(85, 34, 164);"></i>
+                                        </a>
+                                        <a
+                                            class="btn btn-light"
+                                            href="https://wa.me/?text=ListPlace%20%7C%20Next%20Level%20Electronics%20Listing%20Details+https%3A%2F%2Flistplace.bugfinder.net%2Flisting-details%2Fnext-level-electronics%2F6"
+                                            target="_blank"
+                                            title="Share on whatsapp"
+                                        >
+                                            <i class="fab fa-whatsapp fa-2x" aria-hidden="true" style="color: rgb(30, 125, 52);"></i>
+                                        </a>
+                                    </div>
+                                    <i class="fal fa-share-alt" aria-hidden="true"></i>
+                                </button>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- .product-details-end -->
+
+    <!-- product-start -->
+    <section class="product-section section-1">
+        <div class="container">
+            <div class="product-top">
+                <h3>related products</h3>
+            </div>
+            <div class="row g-0">
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="prodcut-box">
+                        <div class="product-title">
+                            <a href="#">-25%</a>
+                        </div>
+                        <div class="product-img">
+                            <a href="product-details.html"><img class="img-fluid"
+                                    src="./assets/images/product/product4.png" alt="" /></a>
+                        </div>
+                        <div class="product-content-box">
+                            <div class="product-content">
+                                <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper,
+                                        sneak...</a></h6>
+                                <h4>$200.00</h4>
+                            </div>
+                        </div>
+                        <div class="product-icon d-flex flex-column">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="prodcut-box">
+                        <div class="product-title">
+                            <a href="#">-25%</a>
+                        </div>
+                        <div class="product-img">
+                            <a href="product-details.html"><img class="img-fluid"
+                                    src="./assets/images/product/product2.png" alt="" /></a>
+                        </div>
+                        <div class="product-content-box">
+                            <div class="product-content">
+                                <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper,
+                                        sneak...</a></h6>
+                                <h4>$200.00</h4>
+                            </div>
+                        </div>
+                        <div class="product-icon d-flex flex-column">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="prodcut-box">
+                        <div class="product-title">
+                            <a href="#">-25%</a>
+                        </div>
+                        <div class="product-img">
+                            <a href="product-details.html"><img class="img-fluid"
+                                    src="./assets/images/product/product3.png" alt="" /></a>
+                        </div>
+                        <div class="product-content-box">
+                            <div class="product-content">
+                                <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper,
+                                        sneak...</a></h6>
+                                <h4>$200.00</h4>
+                            </div>
+                        </div>
+                        <div class="product-icon d-flex flex-column">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="prodcut-box">
+                        <div class="product-title">
+                            <a href="#">-25%</a>
+                        </div>
+                        <div class="product-img">
+                            <a href="product-details.html"><img class="img-fluid"
+                                    src="./assets/images/product/product9.png" alt="" /></a>
+                        </div>
+                        <div class="product-content-box">
+                            <div class="product-content">
+                                <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper,
+                                        sneak...</a></h6>
+                                <h4>$200.00</h4>
+                            </div>
+                        </div>
+                        <div class="product-icon d-flex flex-column">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-rotate"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product-end -->
+
+    <!-- footer-start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-box section-1">
+                <div class="footer-content">
+                    <h2>subscribe now and <span>20%</span> OFF</h2>
+                    <p>Learn first about our newest products and special promotions.</p>
+                </div>
+                <div class="footer-search-box">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email:"
+                            aria-label="Recipient's username" aria-describedby="button-addon2" />
+                        <button class="btn" type="button" id="button-addon2">subscribe</button>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <a href="#">home</a>
+                    <a href="#">about</a>
+                    <a href="#">page</a>
+                    <a href="#">blog</a>
+                    <a href="#">contact</a>
+                </div>
+                <div class="footer-nav">
+                    <a href="#">categories</a>
+                    <a href="#">featured</a>
+                    <a href="#">best-selling</a>
+                    <a href="#">latest-collection</a>
+                    <a href="#">profile</a>
+                </div>
+                <div class="follow-us">
+                    <h4>follow us</h4>
+                    <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container d-flex justify-content-between">
+                <div class="fotter-b-content">
+                    <p>Copyright © 2023 <span>Techno</span> All Rights Reserved</p>
+                </div>
+                <div class="footer-b-list">
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-end -->
+    <!-- 3d-Modal -->
+    <div class="prduct-view">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header ">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">View 3D</h1>
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="view-3d">
+                            <model-viewer class="w-100 " id="mv-demo" shadow-intensity="1"
+                                src="./assets/images/product-details/tshirt-3D.glb" alt="A 3D model of an astronaut"
+                                auto-rotate camera-controls poster="./spacesuit.jpg"></model-viewer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3d-Modal -->
+
+    <!-- search-modal-start -->
+    <div class="search-modal">
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form class="d-flex" role="search">
+                            <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
+                            <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search-modal-end -->
+
+    <!-- categories-canvas-start -->
+    <div class="categories-canvas">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvastwo" aria-labelledby="offcanvastwoLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvastwoLabel">categories</h5>
+                <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                        class="fa-solid fa-arrow-left"></i></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="categories-item">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="d-flex justify-content-between align-items-center collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                    aria-expanded="false" aria-controls="collapseOne">
+                                    women
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <h3>categories</h3>
+                                        <li><a href="#">Activewear</a></li>
+                                        <li><a href="#">Cargos</a></li>
+                                        <li><a href="#">Coats & Jackets</a></li>
+                                        <li><a href="#">Dresses</a></li>
+                                        <li><a href="#">One-Pieces</a></li>
+                                        <li><a href="#">Pants</a></li>
+                                        <li><a href="#">Shirts & Tops</a></li>
+                                        <li><a href="#">Sleepwear & Loungewear</a></li>
+                                        <li><a href="#">Activewear</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h3>explore</h3>
+                                        <li><a href="#">Latest Arrivals</a></li>
+                                        <li><a href="#">Our sales</a></li>
+                                        <li><a href="#">Bestsellers</a></li>
+                                        <li><a href="#">Not expensive</a></li>
+                                        <li><a href="#">Expensive</a></li>
+                                        <li><a href="#">Exclusive</a></li>
+                                        <li><a href="#">Season summer</a></li>
+                                        <li><a href="#">Season winter</a></li>
+                                        <li><a href="#">Season autumn</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="d-flex justify-content-between align-items-center collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    men
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <h3>popular</h3>
+                                        <li><a href="#"> Arm Warmers & Sleeves</a></li>
+                                        <li><a href="#">Balaclavas</a></li>
+                                        <li><a href="#"> Bandanas & Headties</a></li>
+                                        <li><a href="#"> Bridal Accessories</a></li>
+                                        <li><a href="#"> Earmuffs</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h3>on sale</h3>
+                                        <li><a href="#"> Hand Muffs</a></li>
+                                        <li><a href="#">Hats</a></li>
+                                        <li><a href="#"> Sunglasses</a></li>
+                                        <li><a href="#"> Suspenders</a></li>
+                                        <li><a href="#"> Scarves & Shawls</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h3>explore</h3>
+                                        <li><a href="#"> Latest Arrivals</a></li>
+                                        <li><a href="#">Our sales</a></li>
+                                        <li><a href="#"> Bestsellers</a></li>
+                                        <li><a href="#"> Not expensive</a></li>
+                                        <li><a href="#"> Expensive</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="d-flex justify-content-between align-items-center collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    kids
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <h3>categories</h3>
+                                        <li><a href="#">Overalls</a></li>
+                                        <li><a href="#">Mittens</a></li>
+                                        <li><a href="#">Beanie</a></li>
+                                        <li><a href="#">Baby apron</a></li>
+                                        <li><a href="#">Socks</a></li>
+                                        <li><a href="#">Diaper</a></li>
+                                        <li><a href="#">Singlet</a></li>
+                                        <li><a href="#">Shoes</a></li>
+                                        <li><a href="#">Safety pin</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfour">
+                                <button class="d-flex justify-content-between align-items-center collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour"
+                                    aria-expanded="false" aria-controls="collapsefour">
+                                    Dresses
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Economics</li>
+                                        <li>Sociology</li>
+                                        <li>Nursing</li>
+                                        <li>English</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfive">
+                                <button class="d-flex justify-content-between align-items-center collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive"
+                                    aria-expanded="false" aria-controls="collapsefive">
+                                    clothing
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <h3>winter cloth</h3>
+                                        <li><a href="#">Sweater</a></li>
+                                        <li><a href="#">Gloves</a></li>
+                                        <li><a href="#">Fleece jacket</a></li>
+                                        <li><a href="#">Trench coat (Women)</a></li>
+                                        <li><a href="#">Boots</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h3>summer cloth</h3>
+                                        <li><a href="#">T-shirt</a></li>
+                                        <li><a href="#">Singlet</a></li>
+                                        <li><a href="#">Swim trunks</a></li>
+                                        <li><a href="#">One-piece bathing suit</a></li>
+                                        <li><a href="#">Cap</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="d-flex justify-content-between align-items-center collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                    aria-expanded="false" aria-controls="collapseSix">
+                                    shoes
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <h3>Athletic Shoes</h3>
+                                        <li><a href="#">Golf shoes</a></li>
+                                        <li><a href="#">Hiking boots</a></li>
+                                        <li><a href="#">High-tops</a></li>
+                                        <li><a href="#">Running shoes</a></li>
+                                        <li><a href="#">Climbing shoes</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h3>Boots</h3>
+                                        <li><a href="#">Knee-high boots</a></li>
+                                        <li><a href="#">Laced booties</a></li>
+                                        <li><a href="#">Hiking boots</a></li>
+                                        <li><a href="#">Riding boots</a></li>
+                                        <li><a href="#">Snow boots</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- categories-canvas-end -->
+
+    <!-- cart-canvas-start -->
+    <div class="cart-canvas">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header justify-content-end">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="dropdown-content">
+                    <div class="shoping-cart-top">
+                        <div class="shoping-cart-title">
+                            <h4>shopping cart</h4>
+                            <p>
+                                Congratulations! You are qualified a <span>FREE SHIPPING <i
+                                        class="fa-solid fa-truck-fast"></i></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart-box d-flex align-items-center">
+                        <div class="cart-img">
+                            <img src="./assets/images/home/feature-product-3.png" alt="" />
+                        </div>
+                        <div class="cart-content-box">
+                            <div class="cart-content">
+                                <h5>Sneakers Basketball shoes</h5>
+                                <div class="cart-details">
+                                    <h6>size : 6</h6>
+                                    <h6>color : deep green</h6>
+                                </div>
+                            </div>
+                            <div class="cart-info d-flex align-items-center justify-content-between">
+                                <div class="prize">
+                                    <h6><span>$</span>65.00</h6>
+                                </div>
+                                <div class="cart-quantity">
                                     <button><i class="fa-solid fa-minus"></i></button>
                                     <span>1</span>
                                     <button><i class="fa-solid fa-plus"></i></button>
                                 </div>
-                                <div class="cart-btn">
-                                    <button><i class="fa-solid fa-cart-plus"></i>add to cart</button>
-                                </div>
                             </div>
-                            <div class="product-type">
-                                <ul>
-                                    <li>category: <span>Men’s Fashion</span></li>
-                                    <li>tags: <span>Fashion, Hoodie, New</span></li>
-
-                                    <div class="share-icon d-flex">
-                                        <h6>share now:</h6>
-                                        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
-                                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                                    </div>
-                                </ul>
-                            </div>
+                        </div>
+                        <div class="trash-icon">
+                            <button><i class="fa-light fa-trash"></i></button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- .product-details-end -->
-
-        <!-- product-start -->
-        <section class="product-section section-1">
-            <div class="container">
-                <div class="product-top">
-                    <h3>related products</h3>
-                </div>
-                <div class="row g-0">
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="prodcut-box">
-                            <div class="product-title">
-                                <a href="#">-25%</a>
-                            </div>
-                            <div class="product-img">
-                                <a href="product-details.html"><img class="img-fluid" src="./assets/images/product/product4.png" alt="" /></a>
-                            </div>
-                            <div class="product-content-box">
-                                <div class="product-content">
-                                    <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak...</a></h6>
-                                    <h4>$200.00</h4>
-                                </div>
-                            </div>
-                            <div class="product-icon d-flex flex-column">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-rotate"></i>
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </div>
+                <div class="checkout-box">
+                    <div class="sub-total">
+                        <h6>
+                            <span><i class="fa-solid fa-tag fa-rotate-90"></i></span>week of 30% off ($19.50)
+                        </h6>
+                        <h4>subtotal $45.50 USD</h4>
+                    </div>
+                    <div class="form-wrap">
+                        <input class="form-input form-control-has-validation" id="subscribe-form-email" type="email"
+                            name="note" placeholder="Order special instructions" />
+                        <label class="form-label rd-input-label" for="subscribe-form-email"></label>
+                    </div>
+                    <div class="checkout-btn d-flex flex-wrap justify-content-between">
+                        <div class="view-cart">
+                            <button>view-cart</button>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="prodcut-box">
-                            <div class="product-title">
-                                <a href="#">-25%</a>
-                            </div>
-                            <div class="product-img">
-                                <a href="product-details.html"><img class="img-fluid" src="./assets/images/product/product2.png" alt="" /></a>
-                            </div>
-                            <div class="product-content-box">
-                                <div class="product-content">
-                                    <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak...</a></h6>
-                                    <h4>$200.00</h4>
-                                </div>
-                            </div>
-                            <div class="product-icon d-flex flex-column">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-rotate"></i>
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="prodcut-box">
-                            <div class="product-title">
-                                <a href="#">-25%</a>
-                            </div>
-                            <div class="product-img">
-                                <a href="product-details.html"><img class="img-fluid" src="./assets/images/product/product3.png" alt="" /></a>
-                            </div>
-                            <div class="product-content-box">
-                                <div class="product-content">
-                                    <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak...</a></h6>
-                                    <h4>$200.00</h4>
-                                </div>
-                            </div>
-                            <div class="product-icon d-flex flex-column">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-rotate"></i>
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="prodcut-box">
-                            <div class="product-title">
-                                <a href="#">-25%</a>
-                            </div>
-                            <div class="product-img">
-                                <a href="product-details.html"><img class="img-fluid" src="./assets/images/product/product9.png" alt="" /></a>
-                            </div>
-                            <div class="product-content-box">
-                                <div class="product-content">
-                                    <h6><a href="product-details.html">Hoodie Air Jordan Nike Jacket Coat, Hoodie, zipper, sneak...</a></h6>
-                                    <h4>$200.00</h4>
-                                </div>
-                            </div>
-                            <div class="product-icon d-flex flex-column">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-rotate"></i>
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- product-end -->
-
-        <!-- footer-start -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-box section-1">
-                    <div class="footer-content">
-                        <h2>subscribe now and <span>20%</span> OFF</h2>
-                        <p>Learn first about our newest products and special promotions.</p>
-                    </div>
-                    <div class="footer-search-box">
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Enter your email:" aria-label="Recipient's username" aria-describedby="button-addon2" />
-                            <button class="btn" type="button" id="button-addon2">subscribe</button>
-                        </div>
-                    </div>
-                    <div class="footer-nav">
-                        <a href="#">home</a>
-                        <a href="#">about</a>
-                        <a href="#">page</a>
-                        <a href="#">blog</a>
-                        <a href="#">contact</a>
-                    </div>
-                    <div class="footer-nav">
-                        <a href="#">categories</a>
-                        <a href="#">featured</a>
-                        <a href="#">best-selling</a>
-                        <a href="#">latest-collection</a>
-                        <a href="#">profile</a>
-                    </div>
-                    <div class="follow-us">
-                        <h4>follow us</h4>
-                        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container d-flex justify-content-between">
-                    <div class="fotter-b-content">
-                        <p>Copyright © 2023 <span>Techno</span> All Rights Reserved</p>
-                    </div>
-                    <div class="footer-b-list">
-                        <a href="contact.html">Contact Us</a>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms &amp; Conditions</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- footer-end -->
-
-        <!-- search-modal-start -->
-        <div class="search-modal">
-            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <form class="d-flex" role="search">
-                                <input class="form-control" type="search" placeholder="Search here" aria-label="Search" />
-                                <button class=" " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            </form>
+                        <div class="check-out">
+                            <button>check out</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- search-modal-end -->
+    </div>
+    <!-- cart-canvas-end -->
 
-        <!-- categories-canvas-start -->
-        <div class="categories-canvas">
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvastwo" aria-labelledby="offcanvastwoLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvastwoLabel">categories</h5>
-                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-arrow-left"></i></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="categories-item">
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        women
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <h3>categories</h3>
-                                            <li><a href="#">Activewear</a></li>
-                                            <li><a href="#">Cargos</a></li>
-                                            <li><a href="#">Coats & Jackets</a></li>
-                                            <li><a href="#">Dresses</a></li>
-                                            <li><a href="#">One-Pieces</a></li>
-                                            <li><a href="#">Pants</a></li>
-                                            <li><a href="#">Shirts & Tops</a></li>
-                                            <li><a href="#">Sleepwear & Loungewear</a></li>
-                                            <li><a href="#">Activewear</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>explore</h3>
-                                            <li><a href="#">Latest Arrivals</a></li>
-                                            <li><a href="#">Our sales</a></li>
-                                            <li><a href="#">Bestsellers</a></li>
-                                            <li><a href="#">Not expensive</a></li>
-                                            <li><a href="#">Expensive</a></li>
-                                            <li><a href="#">Exclusive</a></li>
-                                            <li><a href="#">Season summer</a></li>
-                                            <li><a href="#">Season winter</a></li>
-                                            <li><a href="#">Season autumn</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        men
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <h3>popular</h3>
-                                            <li><a href="#"> Arm Warmers & Sleeves</a></li>
-                                            <li><a href="#">Balaclavas</a></li>
-                                            <li><a href="#"> Bandanas & Headties</a></li>
-                                            <li><a href="#"> Bridal Accessories</a></li>
-                                            <li><a href="#"> Earmuffs</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>on sale</h3>
-                                            <li><a href="#"> Hand Muffs</a></li>
-                                            <li><a href="#">Hats</a></li>
-                                            <li><a href="#"> Sunglasses</a></li>
-                                            <li><a href="#"> Suspenders</a></li>
-                                            <li><a href="#"> Scarves & Shawls</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>explore</h3>
-                                            <li><a href="#"> Latest Arrivals</a></li>
-                                            <li><a href="#">Our sales</a></li>
-                                            <li><a href="#"> Bestsellers</a></li>
-                                            <li><a href="#"> Not expensive</a></li>
-                                            <li><a href="#"> Expensive</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        kids
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <h3>categories</h3>
-                                            <li><a href="#">Overalls</a></li>
-                                            <li><a href="#">Mittens</a></li>
-                                            <li><a href="#">Beanie</a></li>
-                                            <li><a href="#">Baby apron</a></li>
-                                            <li><a href="#">Socks</a></li>
-                                            <li><a href="#">Diaper</a></li>
-                                            <li><a href="#">Singlet</a></li>
-                                            <li><a href="#">Shoes</a></li>
-                                            <li><a href="#">Safety pin</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingfour">
-                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                        Dresses
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </h2>
-                                <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <li>Economics</li>
-                                            <li>Sociology</li>
-                                            <li>Nursing</li>
-                                            <li>English</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingfive">
-                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-                                        clothing
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </h2>
-                                <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <h3>winter cloth</h3>
-                                            <li><a href="#">Sweater</a></li>
-                                            <li><a href="#">Gloves</a></li>
-                                            <li><a href="#">Fleece jacket</a></li>
-                                            <li><a href="#">Trench coat (Women)</a></li>
-                                            <li><a href="#">Boots</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>summer cloth</h3>
-                                            <li><a href="#">T-shirt</a></li>
-                                            <li><a href="#">Singlet</a></li>
-                                            <li><a href="#">Swim trunks</a></li>
-                                            <li><a href="#">One-piece bathing suit</a></li>
-                                            <li><a href="#">Cap</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingSix">
-                                    <button class="d-flex justify-content-between align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        shoes
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </h2>
-                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <h3>Athletic Shoes</h3>
-                                            <li><a href="#">Golf shoes</a></li>
-                                            <li><a href="#">Hiking boots</a></li>
-                                            <li><a href="#">High-tops</a></li>
-                                            <li><a href="#">Running shoes</a></li>
-                                            <li><a href="#">Climbing shoes</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h3>Boots</h3>
-                                            <li><a href="#">Knee-high boots</a></li>
-                                            <li><a href="#">Laced booties</a></li>
-                                            <li><a href="#">Hiking boots</a></li>
-                                            <li><a href="#">Riding boots</a></li>
-                                            <li><a href="#">Snow boots</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- categories-canvas-end -->
-
-        <!-- modal-start -->
-        <div class="cart-canvas">
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header justify-content-end">
-                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="dropdown-content">
-                        <div class="shoping-cart-top">
-                            <div class="shoping-cart-title">
-                                <h4>shopping cart</h4>
-                                <p>
-                                    Congratulations! You are qualified a <span>FREE SHIPPING <i class="fa-solid fa-truck-fast"></i></span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="cart-box d-flex align-items-center">
-                            <div class="cart-img">
-                                <img src="./assets/images/home/feature-product-3.png" alt="" />
-                            </div>
-                            <div class="cart-content-box">
-                                <div class="cart-content">
-                                    <h5>Sneakers Basketball shoes</h5>
-                                    <div class="cart-details">
-                                        <h6>size : 6</h6>
-                                        <h6>color : deep green</h6>
-                                    </div>
-                                </div>
-                                <div class="cart-info d-flex align-items-center justify-content-between">
-                                    <div class="prize">
-                                        <h6><span>$</span>65.00</h6>
-                                    </div>
-                                    <div class="cart-quantity">
-                                        <button><i class="fa-solid fa-minus"></i></button>
-                                        <span>1</span>
-                                        <button><i class="fa-solid fa-plus"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="trash-icon">
-                                <button><i class="fa-light fa-trash"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="checkout-box">
-                        <div class="sub-total">
-                            <h6>
-                                <span><i class="fa-solid fa-tag fa-rotate-90"></i></span>week of 30% off ($19.50)
-                            </h6>
-                            <h4>subtotal $45.50 USD</h4>
-                        </div>
-                        <div class="form-wrap">
-                            <input class="form-input form-control-has-validation" id="subscribe-form-email" type="email" name="note" placeholder="Order special instructions" />
-                            <label class="form-label rd-input-label" for="subscribe-form-email"></label>
-                        </div>
-                        <div class="checkout-btn d-flex flex-wrap justify-content-between">
-                            <div class="view-cart">
-                                <button>view-cart</button>
-                            </div>
-                            <div class="check-out">
-                                <button>check out</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- modal-end -->
-
-        <!-- size-modal-start -->
+    <!-- size-modal-start -->
+    <div class="size-chart-canvas">
         <div class="modal fade" id="sizeModal" tabindex="-1" aria-labelledby="sizeModal" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                    <!-- <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                aria-label="Close"></button>
-        </div> -->
                     <div class="modal-body">
-                        <div class="size-guied-img">
-                            <img src="./assets/images/product-details/size-guied.jpg" alt="" />
+                        <!-- <div class="size-guied-img">
+                        <img src="./assets/images/product-details/size-guied.jpg" alt="" />
+                    </div> -->
+                        <div class="size-chart">
+                            <h1>Men Clothing Size Chart</h1>
+                            <table class="sizeChart" ,border="0" cellpadding="10" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <td>General Size</td>
+                                        <td>US</td>
+                                        <td>FR</td>
+                                        <td>IT</td>
+                                        <td>AU</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>XS</td>
+                                        <td>34</td>
+                                        <td>44</td>
+                                        <td>44</td>
+                                        <td>34</td>
+                                    </tr>
+                                    <tr>
+                                        <td>S</td>
+                                        <td>36</td>
+                                        <td>46</td>
+                                        <td>46</td>
+                                        <td>36</td>
+                                    </tr>
+                                    <tr>
+                                        <td>M</td>
+                                        <td>38</td>
+                                        <td>48</td>
+                                        <td>48</td>
+                                        <td>38</td>
+                                    </tr>
+                                    <tr>
+                                        <td>L</td>
+                                        <td>40</td>
+                                        <td>50</td>
+                                        <td>50</td>
+                                        <td>40</td>
+                                    </tr>
+                                    <tr>
+                                        <td>XL</td>
+                                        <td>42</td>
+                                        <td>52</td>
+                                        <td>52</td>
+                                        <td>42</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- size-modal-end -->
+    </div>
+    <!-- size-modal-end -->
 
-        <!-- discount-wheel-canvas-start -->
-        <div class="discount-wheel-canvas">
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
-                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="row d-flex flex-lg-row-reverse">
-                        <div class="col-lg-6">
-                            <div class="spin-button">
-                                <h2>Fall Sale!</h2>
-                                <p>It's your chance to win a big discount this Fall. Press the "SPIN THE WHEEL" button and try your luck on our Coupon Wheel!</p>
-                                <button class="spin" onclick="spin()"><img src="./assets/images/right-arrow.png" alt="" />spin</button>
-                            </div>
+    <!-- discount-wheel-canvas-start -->
+    <div class="discount-wheel-canvas">
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="row d-flex flex-lg-row-reverse">
+                    <div class="col-lg-6">
+                        <div class="spin-button">
+                            <h2>Fall Sale!</h2>
+                            <p>It's your chance to win a big discount this Fall. Press the "SPIN THE WHEEL" button and
+                                try your luck on our Coupon Wheel!</p>
+                            <button class="spin" onclick="spin()"><img src="./assets/images/right-arrow.png"
+                                    alt="" />spin</button>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="spin-box">
-                                <div class="mainbox" id="mainbox">
-                                    <div class="box" id="box">
-                                        <div class="box1">
-                                            <span class="font span1"><b>21% off</b></span>
-                                            <span class="font span2"><b>150 tk off</b></span>
-                                            <span class="font span3"><b>7% off</b></span>
-                                            <span class="font span4"><b>200 tk off</b></span>
-                                            <span class="font span5"><b>15% off </b></span>
-                                        </div>
-                                        <div class="box2">
-                                            <span class="font span1"><b>5% off</b></span>
-                                            <span class="font span2"><b>80 tk off </b></span>
-                                            <span class="font span3"><b>50 tk off</b></span>
-                                            <span class="font span4"><b>10% off</b></span>
-                                            <span class="font span5"><b>22% off </b></span>
-                                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="spin-box">
+                            <div class="mainbox" id="mainbox">
+                                <div class="box" id="box">
+                                    <div class="box1">
+                                        <span class="font span1"><b>21% off</b></span>
+                                        <span class="font span2"><b>150 tk off</b></span>
+                                        <span class="font span3"><b>7% off</b></span>
+                                        <span class="font span4"><b>200 tk off</b></span>
+                                        <span class="font span5"><b>15% off </b></span>
                                     </div>
-                                    <button>spin</button>
+                                    <div class="box2">
+                                        <span class="font span1"><b>5% off</b></span>
+                                        <span class="font span2"><b>80 tk off </b></span>
+                                        <span class="font span3"><b>50 tk off</b></span>
+                                        <span class="font span4"><b>10% off</b></span>
+                                        <span class="font span5"><b>22% off </b></span>
+                                    </div>
                                 </div>
-                                <audio controls="controls" id="applause" src="./assets/images/applause.mp3" type="audio/mp3"></audio>
-                                <audio controls="controls" id="wheel" src="./assets/images/wheel.mp3" type="audio/mp3"></audio>
+                                <button>spin</button>
                             </div>
+                            <audio controls="controls" id="applause" src="./assets/images/applause.mp3"
+                                type="audio/mp3"></audio>
+                            <audio controls="controls" id="wheel" src="./assets/images/wheel.mp3"
+                                type="audio/mp3"></audio>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- discount-wheel-canvas-end -->
+    </div>
+    <!-- discount-wheel-canvas-end -->
 
-        <script src="./assets/js/jquery-3.7.1.min.js"></script>
-        <script src="./assets/js/bootstrap.bundle.min.js"></script>
-        <script src="./assets/js/owl.carousel.min.js"></script>
-        <script src="./assets/js/countMe.min.js"></script>
-        <script src="./assets/js/range-slider.min.js"></script>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/countMe.min.js"></script>
+    <script src="./assets/js/range-slider.min.js"></script>
+    <!-- .3d-view-js -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <!-- .3d-view-js -->
+    <script src="./assets/js/fancybox.umd.js"></script>
+    <script src="./assets/js/jquery.easing.min.js"></script>
+    <script src="./assets/js/notiflix.min.js"></script>
 
-        <script src="./assets/js/fancybox.umd.js"></script>
-        <script src="./assets/js/jquery.easing.min.js"></script>
-        <script src="./assets/js/notiflix.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
 
-        <script src="./assets/js/main.js"></script>
-    </body>
 </html>
