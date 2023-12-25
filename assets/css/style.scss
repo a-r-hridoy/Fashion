@@ -17,7 +17,7 @@ body {
    position: fixed;
    width: 100%;
    height: 100vh;
-   background: #ffffff url(../images/preloader/1494.gif) no-repeat center;
+   background: #ffffff url(../images/preloader/fashion4.gif) no-repeat center;
    z-index: 99999;
    top: 0;
    left: 0;
@@ -165,7 +165,11 @@ ul {
             }
          }
       }
+      .offcanvas-header {
+         background-color: var(--background);
+      }
       .offcanvas-body {
+         background-color: var(--bg-light);
          .spin-box {
             position: relative;
          }
@@ -469,40 +473,19 @@ ul {
 
 // offer-alert-start
 .offer-alert {
-   position: relative;
-   .close {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      border: none;
-      background-color: transparent;
-      i {
-         font-weight: 600;
-         font-size: 20px;
-      }
-   }
-   .offer-content {
+   .alert {
       background-color: var(--bg-feature2);
-      display: flex;
-      padding: 20px;
-      justify-content: center;
-      align-items: center;
+      margin-bottom: 0;
+      border-radius: 0;
       strong {
          margin-right: 5px;
       }
       button {
-         margin-left: 10px;
-         padding: 5px 12px;
-         border-radius: 8px;
-         border: none;
-         background-color: var(--white);
-         text-transform: capitalize;
-         font-size: 15px;
-         font-weight: 600;
+         &:focus {
+            outline: 0;
+            box-shadow: 0 0 0.25rem rgba(13, 110, 253, 0);
+         }
       }
-   }
-   .offer-content2{
-      display: none;
    }
 }
 // offer-alert-end
@@ -556,7 +539,7 @@ ul {
                   transition: 0.5s;
                   visibility: hidden;
                   position: absolute;
-                  right: 18px;
+                  right: 15px;
                   top: 12px;
                }
             }
@@ -577,7 +560,6 @@ ul {
          .nav-item {
             .page-drop {
                position: relative;
-               overflow: hidden;
                &:active {
                   a {
                      color: var(--primary);
@@ -662,6 +644,48 @@ ul {
                   i {
                      color: var(--primary) I !important;
                   }
+               }
+            }
+         }
+         .account {
+            position: relative;
+            img {
+               width: 40px;
+               height: 40px;
+               border-radius: 50%;
+            }
+            .account-drop {
+               padding: 15px;
+               position: absolute;
+               width: 250px;
+               height: 125px;
+               top: 60px;
+               right: 0;
+               visibility: hidden;
+               opacity: 0;
+               background-color: var(--bg-light) !important;
+               border-top: 2px solid var(--primary);
+               border-radius: 5px;
+               transition: 0.5s;
+               ul {
+                  li {
+                     margin: 5px 0;
+                     padding: 8px 0px;
+                     a {
+                        color: var(--black);
+                        transition: 0.5s;
+                        &:hover {
+                           color: var(--primary);
+                        }
+                     }
+                  }
+               }
+            }
+            &:hover {
+               .account-drop {
+                  visibility: visible;
+                  opacity: 1;
+                  top: 50px;
                }
             }
          }
@@ -1462,13 +1486,17 @@ ul {
       position: absolute;
       top: -70px;
       right: 0;
+      display: flex;
       button {
-         width: 50px;
-         height: 50px;
+         width: 40px;
+         height: 40px;
          margin: 0 5px;
          background-color: var(--primary) !important;
          border-radius: 50%;
          border-radius: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
          span {
             font-size: 30px;
             color: var(--white);
@@ -1894,7 +1922,7 @@ footer {
 // banner-start
 .banner-section {
    background-color: var(--background);
-   padding: 100px 0 0;
+   // padding: 100px 0 0;
    .banner-content {
       h3 {
          text-transform: capitalize;
@@ -2968,7 +2996,7 @@ footer {
             }
          }
       }
-      .share{
+      .share {
          border: none;
          position: relative;
          margin-right: 10px;
@@ -2980,7 +3008,7 @@ footer {
          background: var(--primary);
          color: var(--white);
          border-radius: 3px;
-         #shareBlock2{
+         #shareBlock2 {
             position: absolute;
             width: 250px;
             display: flex;
@@ -2995,17 +3023,17 @@ footer {
             transform: translateX(-50%);
             opacity: 0;
             visibility: hidden;
-            transition: .4s;
-            a{
+            transition: 0.4s;
+            a {
                margin: 2px 0;
                background-color: var(--bg-light);
-               i{
+               i {
                   font-size: 25px;
                }
             }
          }
-         &:hover{
-            #shareBlock2{
+         &:hover {
+            #shareBlock2 {
                visibility: visible;
                opacity: 1;
                left: 124px;
@@ -3019,7 +3047,7 @@ footer {
    .modal-body {
       padding: 0 10px;
       .size-chart {
-         h1{
+         h1 {
             font-size: 18px;
             text-align: center;
             font-weight: 600;
@@ -3261,14 +3289,17 @@ footer {
          h6 {
             color: var(--font-color3);
          }
+         .form {
+            padding: 10px 0;
+         }
          input {
             background: transparent;
-            height: 80px;
+            height: 65px;
             padding: 0 20px 0 50px;
          }
          select {
             background: transparent;
-            height: 80px;
+            height: 65px;
             padding: 0 20px 0 0;
             border: none;
             border-bottom: 1px solid var(--font-color3);
@@ -3940,6 +3971,9 @@ footer {
 
    .home-section {
       .categories-drop {
+         .categories-button {
+            margin: 10px 0 10px;
+         }
          .categories-item {
             display: none;
          }
@@ -4153,28 +4187,6 @@ footer {
 }
 
 @media (max-width: 767px) {
-   .offer-alert{
-      .close {
-         top: 15px;
-         right: 12px;
-      }
-      .offer-content{
-         display: none;
-      }
-      .offer-content2{
-         display: block;
-         background-color: var(--bg-feature2);
-         display: flex;
-         padding: 20px;
-         justify-content: center;
-         align-items: center;
-         font-size: 13px;
-         strong {
-            margin-right: 5px;
-         }
-      }
-   }
-   
    .navbar {
       .nav-right {
          form {
@@ -4392,7 +4404,7 @@ footer {
          }
          .footer-nav {
             a {
-               margin: 0 10px;
+               margin: 0 5px;
                font-size: 13px;
                &::after {
                   right: -12px;
@@ -4468,6 +4480,13 @@ footer {
                i {
                   font-size: 17px;
                   margin: 0 10px;
+               }
+            }
+         }
+         .nav-icon {
+            .account {
+               .account-drop {
+                  right: -95px;
                }
             }
          }
@@ -4692,14 +4711,14 @@ footer {
             padding: 5px;
          }
       }
-      .details-content{
+      .details-content {
          .size-box {
-            a{
+            a {
                margin: 0;
             }
          }
       }
-   } 
+   }
    .log-in-section {
       .log-box {
          padding: 20px;

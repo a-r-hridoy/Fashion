@@ -38,7 +38,20 @@ $(document).ready(function () {
       $("#flasModal").modal("show");
       sessionStorage.setItem("flash_sale_popup_hide", 1);
    }
+
+   let getIsClicked = sessionStorage.getItem("offer-alert-popup");
+
+   if (getIsClicked) {
+      $(".offer-alert").addClass("d-none");
+   } else {
+      $(".offer-alert").removeClass("d-none");
+   }
 });
+
+$(document).on("click", ".lover-boy-hridoy", function () {
+   let setIsClicked = sessionStorage.setItem("offer-alert-popup", 1);
+});
+
 // falsh-modal-end
 
 // homeCarousel
@@ -271,7 +284,6 @@ function spin() {
    // alert
    setTimeout(function () {
       applause.play();
-      // swal("Congratulations", "You Won The " + SelectedItem + ".", "success");
       Notiflix.Report.Success(
          "Congratulations",
          "You Won The " + SelectedItem + ".",
